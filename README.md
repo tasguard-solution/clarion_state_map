@@ -17,7 +17,7 @@ The generator does several critical transformations:
 
 ### Generate All States
 ```bash
-python generate.py
+python geo.py
 ```
 This will populate the `data/` folder with individual `.json` files (e.g., `lagos.json`, `kano.json`). If a file already exists, it is skipped (unless `--force` is used).
 

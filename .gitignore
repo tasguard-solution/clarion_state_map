@@ -1,5 +1,5 @@
 # Ignore the raw GeoJSON download cache (large, re-downloaded on demand)
-data/_geojson_cache.json
+data/geo/_geojson_cache.json
 
 # Python
 __pycache__/
