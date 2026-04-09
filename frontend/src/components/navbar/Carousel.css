@@ -1,0 +1,44 @@
+.carousel-container {
+    width: 80%;
+    overflow: hidden;
+    margin: 100px auto;
+    position: relative;
+    display: block;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 25s linear infinite;
+}
+
+.carousel-group {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    white-space: nowrap;
+    color: var(--orange-button-bg);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@keyframes ticker-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.carousel-container:hover .carousel-track {
+    animation-play-state: paused;
+}

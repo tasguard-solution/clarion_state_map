@@ -1,0 +1,42 @@
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+
+}
+
+.sign-up-shadow {
+    display: block;
+    width: 99%;
+    height: 32px;
+    margin-top: -10px;
+    margin-bottom: -1px;
+    background-color: var(--orange-button-bg-shadow);
+    border-radius: 6px;
+    border: 0.5px solid var(--orange-button-border);
+    z-index: -1;
+}
+.sign-up-btn {
+    transition: transform 0.15s ease;
+}
+.sign-up-container button {
+    /* padding: 6px 12px; */
+    border-radius: 6px;
+    border: 0.4px solid var(--orange-button-border);
+    width: 100%;
+    background-color: var(--orange-button-bg);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.sign-up-container:hover .sign-up-btn {
+    transform: translateY(-2px);
+}
+
+.sign-up-container:active .sign-up-btn {
+    transform: translateY(0);
+}
