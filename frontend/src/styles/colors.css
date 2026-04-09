@@ -1,0 +1,43 @@
+:root {
+  /* Light Theme Defaults */
+  --accent-rgb: 230, 224, 213;
+  --navbar-bg: rgba(var(--accent-rgb), 0.75);
+  --navbar-bg-hover: rgba(200, 194, 183, 0.95); 
+  --bg: #e3d6c3;
+  --border-primary: #000000;
+  --text-primary: #000000;
+  --text-secondary: #2f2319;
+  --orange-button-bg: #ffa200;
+  --orange-button-bg-shadow: #c77e00;
+  --orange-button-border:#805100;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+:root {
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+[data-theme='dark'] {
+  /* Dark Theme Overrides - ONLY the changes */
+  --accent-rgb: 25, 30, 20;
+  --navbar-bg: rgba(var(--accent-rgb), 0.75);
+  --navbar-bg-hover: rgba(45, 50, 40, 0.95);
+  --border-primary: #374151;
+  --bg-primary: #000000;
+  --text-primary: #ffffff;  /* Flip text to white */
+  --text-secondary: #a1a1a1; /* Dim secondary text */
+}

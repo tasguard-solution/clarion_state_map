@@ -1,0 +1,37 @@
+.logo-container{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 0px;
+  background-color: var(--orange-button-bg-shadow);
+  border: 1px solid var(--border-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-circle{
+  width: 65px;
+  height: auto;
+  border-radius: 50%;
+  border: 0.5px solid var(--orange-button-border);
+  background-color: var(--orange-button-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  justify-content: center;
+}
+.logo-circle img{
+    height: auto;
+    width: auto;
+    transition: scale 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+
+.logo-container:hover .logo-circle {
+    scale: 0.95;
+}
+
+.logo-container:active .logo-circle {
+    scale: 1;
+}
