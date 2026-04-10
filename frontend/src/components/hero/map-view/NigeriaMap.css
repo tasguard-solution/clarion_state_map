@@ -1,0 +1,13 @@
+.mapWrapper {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+ 
+.mapwrapper svg {
+  display: block;
+  width: auto;
+  height: auto;
+}
+ 

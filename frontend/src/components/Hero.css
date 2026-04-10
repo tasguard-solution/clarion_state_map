@@ -1,0 +1,33 @@
+#hero {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  flex-grow: 1;
+}
+
+.news-report {
+    max-width: 400px;
+    margin: 40px 0px 0px 10px;
+    justify-content: center;
+}
+
+.news-report h1 {
+    font-size: 40px;
+    text-align: justify;
+    justify-self: center;
+}
+.news-report p {
+    font-size: 16px;
+    text-align: justify;
+    justify-self: center;
+    margin: 12px 0px;
+}
+.news-report img{
+    width: 100%;
+    border-radius: 8px;
+    margin: 0 0 10px;
+    border: 0.5px solid var(--border-primary);
+    /* Order: offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.629);
+}
+

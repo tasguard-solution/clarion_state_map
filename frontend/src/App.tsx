@@ -1,21 +1,8 @@
-import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 import "./styles/colors.css";
-import "./App.css";
 
 function App() {
-  return (
-    <>
-      <section id="navbar">
-        <Navbar />
-      </section>
-      <section id="center"></section>
-
-      <div className="ticks"></div>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  );
+  return <Home />;
 }
 
 export default App;
