@@ -10,6 +10,15 @@ if [ ! -f "data/geo/nigeria-lgas.json" ]; then
   python geo.py
 else
   echo "data/geo/nigeria-lgas.json already exists - skipping generation"
+fi
+
+if [ ! -f "data/nigeria/states.json" ]; then
+  echo "data/nigeria/states.json not found - generating..."
+  cd generators
+  python3.10 geo.py
+else
+  echo "data/nigeria/states.json already exists - skipping generation"
+fi
 
 if [ ! -f "data/election/LGALevelResult.csv" ]; then
   echo "data/election/LGALevelResult.csv not found - generating... "

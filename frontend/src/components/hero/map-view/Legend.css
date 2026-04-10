@@ -1,0 +1,29 @@
+.legend {
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 8px;
+    padding: 6px 10px;
+  }
+
+  .legendItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .legendDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  .legendLabel {
+    font-size: 10px;
+    color: #555;
+    font-weight: 600;
+  }

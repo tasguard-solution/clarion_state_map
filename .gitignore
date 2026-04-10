@@ -4,8 +4,9 @@ data/geo/_geojson_cache.json
 # Python
 __pycache__/
 *.pyc
-.venv/
-venv/
+backend/.venv/
+backend/venv/
+backend/.idea
 
 # Logs
 frontend/logs

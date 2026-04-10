@@ -11,14 +11,9 @@ function Navbar() {
     { label: "Other", path: "/other" },
   ];
   return (
-    <nav className="navbar">
+    <nav id="navbar">
       <Logo />
-      <div
-        id="taskbar"
-        data-scheme="primary"
-        data-menu-container="true"
-        className="taskbar"
-      >
+      <div data-scheme="primary" data-menu-container="true" className="taskbar">
         <div className="navbar-content">
           <div role="menu" className="left-menu">
             {navLinks.map((link) => (
