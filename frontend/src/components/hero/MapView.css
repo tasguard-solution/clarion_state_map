@@ -1,27 +1,17 @@
 #map-view{
-    width: 900px;
-    height: fit-content;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    width: 150%;
     background-color: var(--map-view-bg);
     justify-content: center;
-    place-self: center;
-    align-items: center;
+    align-content: center;
     gap: 16px;
 
 }
 
 
  
-.hint {
-background: rgba(0,0,0,0.6);
-color: white;
-font-size: 12px;
-padding: 8px 16px;
-border-radius: 20px;
-pointer-events: none;
-white-space: nowrap;
-width: fit-content;
-}
+
  
   

@@ -1,22 +1,64 @@
+// src/components/Hero.tsx
+import { useState, useEffect } from "react";
+
 import "./Hero.css";
 import MapView from "./hero/MapView";
+import InfoPanel from "./hero/InfoPanel";
 import terror from "../assets/terror.png";
+import NewsReport from "./hero/NewsReport";
+
+import { type StateId, type MapData, type Feature } from "../data/nigeria"; // adjust path if needed
 
 function Hero() {
+  const [mapData, setMapData] = useState<MapData | null>(null);
+  const [hoveredState, setHoveredState] = useState<StateId | null>(null);
+  const [selectedState, setSelectedState] = useState<StateId | null>(null);
+
+  // Fetch data once (only in Hero now)
+  useEffect(() => {
+    fetch("/states.json")
+      .then((r) => r.json())
+      .then((data: MapData) => setMapData(data))
+      .catch((err) => console.error("Failed to load map data:", err));
+  }, []);
+
+  if (!mapData) {
+    return <div className="loading">Loading map...</div>; // or your Loading component
+  }
+
+  const { viewbox, features } = mapData;
+  const selectedFeature = features.find((f) => f.id === selectedState);
+
   return (
     <section id="hero">
-      <div className="news-report">
-        <img src={terror} alt="Clarion State Map Logo" className="logo" />
-        <h1>Clarion State Map</h1>
-        <p>
-          Explore the socio-economic landscape of Nigeria with our interactive
-          state map. Dive into comprehensive data on population, GDP, and more,
-          all visualized for easy understanding. Whether you're a researcher,
-          student, or just curious, our map offers valuable insights into
-          Nigeria's diverse regions. Start your exploration today!
-        </p>
+      <div className="container">
+        <NewsReport />
+        {/* MapView now receives everything as props */}
+        <MapView
+          features={features}
+          viewbox={viewbox}
+          hoveredState={hoveredState}
+          selectedState={selectedState}
+          onHover={setHoveredState}
+          onSelect={setSelectedState}
+          onBackgroundClick={() => setSelectedState(null)}
+        />
+
+        {/* InfoPanel is now outside MapView and lives in Hero */}
+        <section id="selection-overview">
+          {selectedFeature && (
+            <InfoPanel
+              feature={selectedFeature}
+              onClose={() => setSelectedState(null)}
+            />
+          )}
+
+          {/* Optional hint when nothing is selected */}
+          {!selectedFeature && (
+            <div className="hint">Click any state on the map for details</div>
+          )}
+        </section>
       </div>
-      <MapView />
     </section>
   );
 }
