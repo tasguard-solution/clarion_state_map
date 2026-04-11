@@ -1,7 +1,7 @@
 // src/components/map-view/InfoPanel.tsx
-import "./InfoPanel.css";
-import { type StateId, STATE_ZONES } from "../../../data/nigeria";
-import { type Feature } from "../../../data/nigeria";
+import "./Infopanel.css";
+import { type StateId, STATE_ZONES } from "../../data/nigeria";
+import { type Feature } from "../../data/nigeria";
 
 type InfoPanelProps = {
   feature: Feature;
