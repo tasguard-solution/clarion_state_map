@@ -1,9 +1,13 @@
 .news-report {
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid var(--orange-button-border);
+    padding-right: 24px;
 }
 
 .news-report h1 {
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
     line-height: 1.1;
     justify-self: center;
