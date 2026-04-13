@@ -26,4 +26,10 @@
     font-size: 10px;
     color: #555;
     font-weight: 600;
+    transition: color 0.2s ease, font-weight 0.2s ease;
+  }
+
+  .legendItem--active .legendLabel {
+    color: #111;
+    font-weight: 800;
   }

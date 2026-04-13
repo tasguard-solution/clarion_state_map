@@ -1,16 +1,12 @@
-import Navbar from "../components/Navbar";
+// src/pages/Home.tsx
+// The homepage. Layout (Navbar + Footer) is handled by App.tsx's Layout wrapper
+// — don't import them here again.
+
 import Hero from "../components/Hero";
 import "./Home.css";
-import Footer from "../components/Footer";
 
-function App() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Footer />
-    </>
-  );
+function Home() {
+  return <Hero />;
 }
 
-export default App;
+export default Home;

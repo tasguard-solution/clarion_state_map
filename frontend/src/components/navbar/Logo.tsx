@@ -1,4 +1,4 @@
-import reactLogo from "../../assets/logo.png";
+import appLogo from "../../assets/logo.png";
 import "./Logo.css";
 
 function Logo() {
@@ -6,7 +6,7 @@ function Logo() {
     <div className="logo-container">
       <div className="logo-circle">
         <button type="button">
-          <img src={reactLogo} alt="Logo" />
+          <img src={appLogo} alt="Logo" />
         </button>
       </div>
     </div>

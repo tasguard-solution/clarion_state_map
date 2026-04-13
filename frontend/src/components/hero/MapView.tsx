@@ -1,11 +1,16 @@
 // src/components/hero/MapView.tsx
+// Owns the map panel layout: shows Loading spinner while data isn't ready,
+// renders NigeriaMap + Legend when data is available,
+// and derives the active geo-zone from the selected state to highlight in Legend.
+
 import NigeriaMap from "./map-view/NigeriaMap";
 import Legend from "./map-view/Legend";
 import Loading from "./map-view/Loading";
 
-import { type StateId, type Feature, type MapData } from "../../data/nigeria";
+import { type StateId, type Feature, STATE_ZONES } from "../../data/nigeria";
 
 type MapViewProps = {
+  loading: boolean;
   features: Feature[];
   viewbox: string;
   hoveredState: StateId | null;
@@ -16,6 +21,7 @@ type MapViewProps = {
 };
 
 export default function MapView({
+  loading,
   features,
   viewbox,
   hoveredState,
@@ -24,6 +30,17 @@ export default function MapView({
   onSelect,
   onBackgroundClick,
 }: MapViewProps) {
+  // Derive the active geo-zone from the selected state so Legend can highlight it
+  const activeZone = selectedState ? STATE_ZONES[selectedState] : undefined;
+
+  if (loading) {
+    return (
+      <div id="map-view">
+        <Loading />
+      </div>
+    );
+  }
+
   return (
     <div id="map-view">
       <NigeriaMap
@@ -35,8 +52,7 @@ export default function MapView({
         onSelect={onSelect}
         onBackgroundClick={onBackgroundClick}
       />
-
-      <Legend />
+      <Legend activeZone={activeZone} />
     </div>
   );
 }
