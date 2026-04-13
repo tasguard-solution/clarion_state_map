@@ -18,15 +18,10 @@
   display: flex;
   justify-content: center;
   height: fit-content;
+  padding: 10px;
 }
 
-.stateCardButton button{
-    border-radius: 10px;
 
-  background: var(--orange-button-bg);
-  font-size: 12px;
-  padding: 8px;
-}
 .infoPanelInner {
 display: flex;
 flex-direction: row;

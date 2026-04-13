@@ -8,6 +8,7 @@ import "./InfoPanel.css";
 import { type StateId, STATE_ZONES } from "../../data/nigeria";
 import { STATE_HINTS } from "../../data/stateHints";
 import { type Feature } from "../../data/nigeria";
+import CustomButton from "../CustomButton";
 
 type InfoPanelProps = {
   feature: Feature | null;
@@ -34,9 +35,7 @@ export default function InfoPanel({ feature }: InfoPanelProps) {
               <h2 className="infoName">{feature.name}</h2>
             </div>
             <div className="stateCardButton">
-              <button>
-                Open <b>{feature.name}</b>
-              </button>
+              <CustomButton text={"Open " + feature.name}></CustomButton>
             </div>
           </div>
         </div>
