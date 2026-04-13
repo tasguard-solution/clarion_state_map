@@ -1,24 +1,31 @@
+/* src/styles/colors.css
+   Design tokens for the Clarion State Map.
+   All CSS variables live here — one source of truth.
+   ─────────────────────────────────────────────────── */
+
 :root {
-  /* Light Theme Defaults */
+  /* ── Color Palette ──────────────────────────── */
   --accent-rgb: 230, 224, 213;
   --navbar-bg: rgba(var(--accent-rgb), 0.75);
-  --navbar-bg-hover: rgba(200, 194, 183, 0.95); 
+  --navbar-bg-hover: rgba(200, 194, 183, 0.95);
   --bg: #e3d6c3;
   --border-primary: #000000;
   --text-primary: #000000;
   --text-secondary: #2f2319;
+  --text: var(--text-primary); /* alias — use var(--text) anywhere */
   --orange-button-bg: #ffa200;
   --orange-button-bg-shadow: #c77e00;
-  --orange-button-border:#805100;
+  --orange-button-border: #805100;
   --link-color: #000000;
   --footer-bg: #2f2319;
   --footer-text: #e3d6c3;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  /* ── Typography ─────────────────────────────── */
+  --sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
-}
-:root {
+
+  /* ── Base Typography ────────────────────────── */
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
@@ -34,13 +41,22 @@
   }
 }
 
-[data-theme='dark'] {
-  /* Dark Theme Overrides - ONLY the changes */
+/* ── Dark Theme Overrides ─────────────────────────────────
+   Toggle by setting data-theme="dark" on <html> or <body>
+   ─────────────────────────────────────────────────────── */
+[data-theme="dark"] {
   --accent-rgb: 25, 30, 20;
-  --navbar-bg: rgba(var(--accent-rgb), 0.75);
+  --navbar-bg: rgba(var(--accent-rgb), 0.85);
   --navbar-bg-hover: rgba(45, 50, 40, 0.95);
+  --bg: #0f1109;
   --border-primary: #374151;
-  --bg-primary: #000000;
-  --text-primary: #ffffff;  /* Flip text to white */
-  --text-secondary: #a1a1a1; /* Dim secondary text */
+  --text-primary: #f0ece3;
+  --text-secondary: #a1a1a1;
+  --text: var(--text-primary);
+  --orange-button-bg: #cc8200;
+  --orange-button-bg-shadow: #8a5800;
+  --orange-button-border: #6b4200;
+  --link-color: #f0ece3;
+  --footer-bg: #090c06;
+  --footer-text: #c9c2b3;
 }

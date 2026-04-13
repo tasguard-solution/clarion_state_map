@@ -1,16 +1,11 @@
-// src/components/Hero.tsx
-// Hero section for the Home page.
-// Data fetching lives in useMapData — Hero only manages interaction state.
-
 import { useState } from "react";
 import { useMapData } from "../hooks/useMapData";
-import "./Hero.css";
-import MapView from "./hero/MapView";
-import InfoPanel from "./hero/InfoPanel";
-import NewsReport from "./hero/NewsReport";
+import MapView from "../components/hero/MapView";
+import InfoPanel from "../components/hero/InfoPanel";
 import { type StateId } from "../data/nigeria";
+import "./MapPage.css";
 
-function Hero() {
+function MapPage() {
   const mapData = useMapData();
   const [hoveredState, setHoveredState] = useState<StateId | null>(null);
   const [selectedState, setSelectedState] = useState<StateId | null>(null);
@@ -19,10 +14,8 @@ function Hero() {
     mapData?.features.find((f) => f.id === selectedState) ?? null;
 
   return (
-    <section id="hero">
-      <div className="container">
-        <NewsReport />
-
+    <main id="map-page">
+      <div className="map-page-layout">
         <MapView
           loading={!mapData}
           features={mapData?.features ?? []}
@@ -34,12 +27,12 @@ function Hero() {
           onBackgroundClick={() => setSelectedState(null)}
         />
 
-        <section id="selection-overview">
+        <aside className="map-page-sidebar">
           <InfoPanel feature={selectedFeature} />
-        </section>
+        </aside>
       </div>
-    </section>
+    </main>
   );
 }
 
-export default Hero;
+export default MapPage;

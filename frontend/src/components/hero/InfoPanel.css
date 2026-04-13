@@ -1,11 +1,35 @@
 .infoPanel {
-  min-width: 100%;
-  background: white;
-  border-radius: 12px;
+  width: 20rem;
+  background: var(--navbar-bg);
+  border-radius: 12px 12px 0 0;
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+}
+.infoState{
+  flex-direction: column;
+}
+
+.stateCard{
+  flex-direction: column;
+  border-bottom: 0.5px solid var(--border-primary);
+}
+
+.stateCardButton{
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+
+.stateCardButton button{
+    border-radius: 10px;
+
+  background: var(--orange-button-bg);
+  font-size: 12px;
+  padding: 8px;
 }
 .infoPanelInner {
 display: flex;
+flex-direction: row;
 gap: 12px;
 }
 .infoZone {
@@ -21,14 +45,13 @@ font-size: 18px;
 font-weight: 800;
 flex: 1;
 }
-.closeBtn {
-background: none;
-border: none;
-cursor: pointer;
-font-size: 14px;
-color: #aaa;
-padding: 4px 8px;
-border-radius: 6px;
+.infoState-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 6px;
 }
 .infoHint {
 font-size: 12px;
