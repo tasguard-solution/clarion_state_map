@@ -78,4 +78,4 @@ clarion_state_map/
 
 ---
 
-Built with ❤️ for Clarion.
+Built with ❤️.
