@@ -27,7 +27,7 @@ export default function NigeriaMap({
   onBackgroundClick,
 }: NigeriaMapProps) {
   return (
-    <div className="mapWrapper">
+    <div className="mapwrapper">
       <svg
         viewBox={viewbox}
         preserveAspectRatio="xMidYMid meet"

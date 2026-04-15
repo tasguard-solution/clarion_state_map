@@ -17,3 +17,16 @@ export function useMapData() {
 
   return mapData;
 }
+
+export function useNeighborsData() {
+  const [neighborsData, setNeighborsData] = useState<MapData | null>(null);
+
+  useEffect(() => {
+    fetch("/neighbors.json")
+      .then((r) => r.json())
+      .then((data: MapData) => setNeighborsData(data))
+      .catch((err) => console.error("Failed to load neighbors data:", err));
+  }, []);
+
+  return neighborsData;
+}

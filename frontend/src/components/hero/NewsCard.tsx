@@ -3,7 +3,6 @@
 // Used by NewsReport — accepts a NewsArticle and renders image, title, summary, link.
 
 import { type NewsArticle } from "../../data/newsArticles";
-import CustomButton from "../CustomButton";
 import "./NewsCard.css";
 
 type NewsCardProps = {
