@@ -1,0 +1,50 @@
+.state-card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.state-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+}
+
+.stat {
+  color: #00ff88;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.label {
+  color: white;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Placeholder style when no data */
+.state-card.placeholder {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+}
+
+.state-card.placeholder .overlay-content {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+}
+
+.state-card.placeholder .stat {
+  color: #666;
+  font-size: 1rem;
+}

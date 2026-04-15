@@ -1,13 +1,10 @@
-#map-view{
+.map-view{
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    width: 150%;
-    background-color: var(--map-view-bg);
-    justify-content: center;
-    align-content: center;
-    gap: 16px;
-
+    width: 100%;
+    flex: 1;
+    justify-content: start;
+    gap: 20px;
 }
 
 

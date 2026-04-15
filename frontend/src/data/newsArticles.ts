@@ -23,6 +23,15 @@ export const NEWS_ARTICLES: NewsArticle[] = [
     imageAlt: "Kwara State attack scene",
     url: "https://truthnigeria.com/2026/04/terrorists-kill-forest-guard-commander-four-others-in-kwara-attack/",
   },
+  {
+    id: "bayelsa-joy",
+    title: "Joy in Bayelsa",
+    summary:
+      "After 60 years of waiting, road connections finally link riverine communities in Bayelsa State.",
+    imageUrl: "../src/assets/jonathan.png",
+    imageAlt: "Bayelsa joy",
+    url: "https://www.pulse.ng/story/bayelsa-road-tinubu-inauguration-2026041409174432695",
+  },
   // ── Add more articles below ──────────────────────────────
   // {
   //   id: "lagos-flooding",

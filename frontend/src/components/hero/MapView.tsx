@@ -4,6 +4,7 @@
 // and derives the active geo-zone from the selected state to highlight in Legend.
 
 import NigeriaMap from "./map-view/NigeriaMap";
+import "./MapView.css";
 import Legend from "./map-view/Legend";
 import Loading from "./map-view/Loading";
 
@@ -35,14 +36,14 @@ export default function MapView({
 
   if (loading) {
     return (
-      <div id="map-view">
+      <div className="map-view">
         <Loading />
       </div>
     );
   }
 
   return (
-    <div id="map-view">
+    <div className="map-view">
       <NigeriaMap
         features={features}
         viewbox={viewbox}
@@ -52,7 +53,9 @@ export default function MapView({
         onSelect={onSelect}
         onBackgroundClick={onBackgroundClick}
       />
-      <Legend activeZone={activeZone} />
+      <div style={{ justifySelf: "left" }}>
+        <Legend activeZone={activeZone} />
+      </div>
     </div>
   );
 }
