@@ -1,0 +1,45 @@
+state,zone,survey_year,pct_discriminatory_attitudes_toward_plhiv_women,pct_women_ever_tested_hiv,pct_women_tested_hiv_last_12mo,pct_men_ever_tested_hiv,pct_men_tested_hiv_last_12mo,notes
+NATIONAL,National,2024,67.0,32.2,10.6,38.8,10.0,National estimate
+ZONE: North Central,North Central,2024,62.3,38.8,12.0,50.3,15.1,Zonal aggregate
+ZONE: North East,North East,2024,58.1,36.0,10.5,47.0,11.8,Zonal aggregate
+ZONE: North West,North West,2024,74.5,23.6,5.6,66.8,6.3,Zonal aggregate
+ZONE: South East,South East,2024,67.7,53.1,14.3,64.9,20.4,Zonal aggregate
+ZONE: South South,South South,2024,63.3,54.6,20.3,58.4,24.5,Zonal aggregate
+ZONE: South West,South West,2024,69.5,41.5,9.5,60.7,12.5,Zonal aggregate
+FCT-Abuja,North Central,2024,44.9,56.6,15.6,39.5,19.0,State-level estimate
+Benue,North Central,2024,67.4,63.9,27.6,61.1,47.4,State-level estimate
+Kogi,North Central,2024,53.5,34.4,10.8,71.7,14.1,State-level estimate
+Kwara,North Central,2024,87.6,24.2,5.7,51.1,2.3,State-level estimate
+Nasarawa,North Central,2024,55.1,56.6,16.2,44.9,20.6,State-level estimate
+Niger,North Central,2024,69.8,21.5,5.1,50.4,2.3,State-level estimate
+Plateau,North Central,2024,50.0,29.5,8.3,38.5,6.6,State-level estimate
+Adamawa,North East,2024,54.0,38.9,14.4,45.3,6.6,State-level estimate
+Bauchi,North East,2024,68.7,40.1,11.4,47.6,6.1,State-level estimate
+Borno,North East,2024,54.1,26.7,5.1,49.2,1.5,State-level estimate
+Gombe,North East,2024,58.9,53.7,13.6,36.5,2.6,State-level estimate
+Taraba,North East,2024,33.9,40.5,16.7,52.7,17.8,State-level estimate
+Yobe,North East,2024,65.9,20.3,4.2,49.0,9.4,State-level estimate
+Jigawa,North West,2024,79.6,25.3,7.7,73.2,2.9,State-level estimate
+Kaduna,North West,2024,68.9,32.9,8.1,72.7,6.0,State-level estimate
+Kano,North West,2024,78.7,28.3,5.9,55.8,4.8,State-level estimate
+Katsina,North West,2024,70.1,26.5,4.7,63.5,2.9,State-level estimate
+Kebbi,North West,2024,77.9,5.5,2.0,88.6,0.3,State-level estimate
+Sokoto,North West,2024,78.9,6.6,1.9,,,State-level estimate
+Zamfara,North West,2024,,15.0,5.8,,,State-level estimate
+Abia,South East,2024,,55.8,16.1,,10.0,State-level estimate
+Anambra,South East,2024,,59.1,11.9,,18.1,State-level estimate
+Ebonyi,South East,2024,,38.5,8.1,,6.2,State-level estimate
+Enugu,South East,2024,,43.5,14.6,,18.5,State-level estimate
+Imo,South East,2024,,72.3,23.9,,14.7,State-level estimate
+Akwa Ibom,South South,2024,,70.4,39.1,,35.3,State-level estimate
+Bayelsa,South South,2024,,49.1,17.7,,3.1,State-level estimate
+Cross River,South South,2024,,58.5,21.3,,26.1,State-level estimate
+Delta,South South,2024,,48.2,12.5,,12.6,State-level estimate
+Edo,South South,2024,,40.4,8.6,,7.6,State-level estimate
+Rivers,South South,2024,,,,,14.9,State-level estimate
+Ekiti,South West,2024,,,,,,State-level estimate
+Lagos,South West,2024,,,,,,State-level estimate
+Ogun,South West,2024,,,,,,State-level estimate
+Ondo,South West,2024,,,,,,State-level estimate
+Osun,South West,2024,,,,,,State-level estimate
+Oyo,South West,2024,,,,,,State-level estimate

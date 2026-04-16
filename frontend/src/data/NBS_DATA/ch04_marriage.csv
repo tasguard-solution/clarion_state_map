@@ -1,0 +1,45 @@
+state,zone,survey_year,pct_current_marriage_registered,pct_women_in_polygynous_union,median_age_first_marriage_women_25_49,median_age_first_marriage_men_30_59,notes
+NATIONAL,National,2024,18.5,28.0,19.0,27.7,National estimate
+ZONE: North Central,North Central,2024,16.9,30.8,20.1,28.7,Zonal aggregate
+ZONE: North East,North East,2024,16.0,36.1,17.8,27.7,Zonal aggregate
+ZONE: North West,North West,2024,3.8,40.7,16.7,27.4,Zonal aggregate
+ZONE: South East,South East,2024,52.1,9.1,24.1,,Zonal aggregate
+ZONE: South South,South South,2024,31.1,4.4,24.5,,Zonal aggregate
+ZONE: South West,South West,2024,37.2,13.0,24.0,,Zonal aggregate
+FCT-Abuja,North Central,2024,34.3,9.2,24.2,,State-level estimate
+Benue,North Central,2024,14.8,19.2,20.1,28.1,State-level estimate
+Kogi,North Central,2024,24.0,30.7,20.6,27.7,State-level estimate
+Kwara,North Central,2024,33.1,22.5,22.2,,State-level estimate
+Nasarawa,North Central,2024,17.7,24.5,19.8,27.9,State-level estimate
+Niger,North Central,2024,4.8,50.8,18.2,28.3,State-level estimate
+Plateau,North Central,2024,15.3,25.0,19.9,26.2,State-level estimate
+Adamawa,North East,2024,33.1,32.6,18.1,28.3,State-level estimate
+Bauchi,North East,2024,6.8,43.8,17.5,26.4,State-level estimate
+Borno,North East,2024,45.5,27.2,18.3,28.8,State-level estimate
+Gombe,North East,2024,7.1,39.1,16.9,28.9,State-level estimate
+Taraba,North East,2024,4.1,23.6,19.2,27.2,State-level estimate
+Yobe,North East,2024,1.5,39.8,16.9,27.1,State-level estimate
+Jigawa,North West,2024,0.8,42.4,16.3,24.6,State-level estimate
+Kaduna,North West,2024,5.1,40.2,17.4,26.7,State-level estimate
+Kano,North West,2024,7.3,42.8,17.4,27.9,State-level estimate
+Katsina,North West,2024,1.3,42.9,16.6,28.8,State-level estimate
+Kebbi,North West,2024,1.1,42.3,17.1,26.8,State-level estimate
+Sokoto,North West,2024,1.8,31.3,15.9,28.3,State-level estimate
+Zamfara,North West,2024,3.5,39.4,15.7,26.0,State-level estimate
+Abia,South East,2024,57.5,2.3,,,State-level estimate
+Anambra,South East,2024,55.2,4.4,24.3,,State-level estimate
+Ebonyi,South East,2024,22.0,20.9,21.8,29.6,State-level estimate
+Enugu,South East,2024,44.3,2.3,,,State-level estimate
+Imo,South East,2024,88.5,6.9,24.7,,State-level estimate
+Akwa Ibom,South South,2024,28.4,0.5,22.3,,State-level estimate
+Bayelsa,South South,2024,24.1,10.2,23.3,29.8,State-level estimate
+Cross River,South South,2024,24.9,5.9,24.6,29.7,State-level estimate
+Delta,South South,2024,39.8,5.7,24.6,,State-level estimate
+Edo,South South,2024,38.2,5.0,24.9,,State-level estimate
+Rivers,South South,2024,26.1,3.0,,28.9,State-level estimate
+Ekiti,South West,2024,,15.0,22.3,29.5,State-level estimate
+Lagos,South West,2024,,6.8,,,State-level estimate
+Ogun,South West,2024,,14.7,23.1,29.8,State-level estimate
+Ondo,South West,2024,,17.5,22.5,,State-level estimate
+Osun,South West,2024,,20.7,22.9,29.7,State-level estimate
+Oyo,South West,2024,,12.8,23.3,29.9,State-level estimate
