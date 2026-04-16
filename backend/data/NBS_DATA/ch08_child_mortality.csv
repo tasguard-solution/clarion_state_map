@@ -1,0 +1,45 @@
+state,zone,survey_year,data_period,neonatal_mortality_rate,postneonatal_mortality_rate,infant_mortality_rate,child_mortality_rate,under5_mortality_rate,stillbirth_rate,early_neonatal_death_rate,perinatal_mortality_rate,notes
+NATIONAL,National,2024,5-year (2020-2024),41,22,63,50,110,19,33,52,5-year estimates; perinatal from 5yr period
+ZONE: North Central,North Central,2024,10-year,28,14,42,24,65,17,26,43,Zonal aggregate 10-year estimate; perinatal from 5yr period
+ZONE: North East,North East,2024,10-year,40,26,66,65,127,22,36,57,Zonal aggregate 10-year estimate; perinatal from 5yr period
+ZONE: North West,North West,2024,10-year,48,28,76,69,140,23,39,60,Zonal aggregate 10-year estimate; perinatal from 5yr period
+ZONE: South East,South East,2024,10-year,33,15,48,24,70,10,28,38,Zonal aggregate 10-year estimate; perinatal from 5yr period
+ZONE: South South,South South,2024,10-year,25,11,36,14,50,19,19,38,Zonal aggregate 10-year estimate; perinatal from 5yr period
+ZONE: South West,South West,2024,10-year,24,8,33,9,42,12,29,40,Zonal aggregate 10-year estimate; perinatal from 5yr period
+FCT-Abuja,North Central,2024,10-year,25,10,35,26,60,12,17,30,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Benue,North Central,2024,10-year,19,15,34,20,53,24,12,35,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Kogi,North Central,2024,10-year,39,20,59,21,78,15,49,63,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Kwara,North Central,2024,10-year,12,1,12,2,14,3,9,12,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Nasarawa,North Central,2024,10-year,50,20,70,38,106,27,34,60,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Niger,North Central,2024,10-year,22,10,31,18,49,15,26,40,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Plateau,North Central,2024,10-year,31,28,59,42,98,21,34,55,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Adamawa,North East,2024,10-year,43,33,75,75,144,24,38,61,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Bauchi,North East,2024,10-year,48,28,77,52,125,20,44,62,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Borno,North East,2024,10-year,30,18,48,39,86,9,36,44,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Gombe,North East,2024,10-year,45,36,81,83,157,31,33,64,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Taraba,North East,2024,10-year,38,26,64,66,126,20,30,49,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Yobe,North East,2024,10-year,34,20,54,96,145,33,27,59,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Jigawa,North West,2024,10-year,53,28,81,87,161,18,38,56,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Kaduna,North West,2024,10-year,47,39,85,74,153,51,37,86,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Kano,North West,2024,10-year,59,26,86,79,158,21,47,67,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Katsina,North West,2024,10-year,42,21,63,45,105,9,33,41,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Kebbi,North West,2024,10-year,49,41,90,75,159,18,39,56,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Sokoto,North West,2024,10-year,28,28,56,57,109,13,25,37,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Zamfara,North West,2024,10-year,42,18,60,62,119,11,43,54,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Abia,South East,2024,10-year,27,23,49,21,69,12,27,38,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Anambra,South East,2024,10-year,32,17,50,24,72,8,30,37,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Ebonyi,South East,2024,10-year,26,16,42,28,68,13,13,26,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Enugu,South East,2024,10-year,25,9,34,16,49,10,18,27,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Imo,South East,2024,10-year,51,12,62,24,85,7,54,60,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Akwa Ibom,South South,2024,10-year,38,17,56,25,80,31,25,55,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Bayelsa,South South,2024,10-year,32,24,56,18,73,22,18,40,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Cross River,South South,2024,10-year,24,15,39,22,60,21,16,36,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Delta,South South,2024,10-year,19,7,26,7,33,24,10,34,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Edo,South South,2024,10-year,7,6,13,6,19,9,10,19,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Rivers,South South,2024,10-year,30,9,39,15,54,13,30,43,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Ekiti,South West,2024,10-year,18,8,27,18,44,9,18,27,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Lagos,South West,2024,10-year,25,11,36,11,46,2,23,25,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Ogun,South West,2024,10-year,35,12,47,13,60,27,50,75,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Ondo,South West,2024,10-year,3,5,8,7,15,6,9,14,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Osun,South West,2024,10-year,36,14,49,6,55,16,23,38,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
+Oyo,South West,2024,10-year,17,1,18,5,23,8,26,33,State-level 10-year estimate (Table 8.3); perinatal from 5yr (Table 8.4)
