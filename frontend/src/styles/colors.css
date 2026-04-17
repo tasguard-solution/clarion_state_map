@@ -12,7 +12,8 @@
   --border-primary: #000000;
   --text-primary: #000000;
   --text-secondary: #2f2319;
-  --text: var(--text-primary); /* alias — use var(--text) anywhere */
+  --text: var(--text-primary);
+  /* alias — use var(--text) anywhere */
   --orange-button-bg: #ffa200;
   --orange-button-bg-shadow: #c77e00;
   --orange-button-border: #805100;
@@ -30,7 +31,10 @@
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
-  background: var(--bg);
+  background:
+    /* Grain Filter: Balanced baseFrequency (0.7) and Opacity (0.2) */
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 -9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.2'/%3E%3C/svg%3E"),
+    var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

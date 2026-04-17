@@ -89,6 +89,6 @@ export function getStateColor(
   const baseColor = REGION_COLORS[zone as Region];
 
   if (isSelected) return baseColor;
-  if (isHovered) return baseColor + "cc";   // 80% opacity
-  return baseColor + "55";                  // 33% opacity
+  if (isHovered) return baseColor + "F2";   // 95% opacity
+  return baseColor + "D9";                  // 85% opacity
 }
