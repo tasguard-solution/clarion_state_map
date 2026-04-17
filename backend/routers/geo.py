@@ -1,10 +1,12 @@
 import json
+import re
 from pathlib import Path
 from fastapi import APIRouter, HTTPException
 
 route = APIRouter(prefix="/geo", tags=["geo"])
 
 DATA_DIR = Path("data/geo")
+SLUG_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 def _available_states() -> list[str]:
     """Return all state slugs that have a generated JSON file."""
     return sorted(
@@ -14,7 +16,17 @@ def _available_states() -> list[str]:
 
 
 def _load_state(slug: str) -> dict:
-    path = DATA_DIR / f"{slug}.json"
+    if not SLUG_PATTERN.fullmatch(slug):
+        raise HTTPException(status_code=400, detail="Invalid state slug format")
+
+    base_dir = DATA_DIR.resolve()
+    path = (base_dir / f"{slug}.json").resolve()
+
+    try:
+        path.relative_to(base_dir)
+    except ValueError:
+        raise HTTPException(status_code=400, detail="Invalid state path")
+
     if not path.exists():
         raise HTTPException(
             status_code=404,
