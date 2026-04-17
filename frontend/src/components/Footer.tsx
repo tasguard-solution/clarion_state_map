@@ -1,8 +1,5 @@
 import "./Footer.css";
-import FacebookIcon from "../../public/icons/facebook.svg";
-import InstagramIcon from "../../public/icons/instagram.svg";
-import LinkedInIcon from "../../public/icons/LinkedinbyPixelIconsonIconScout.svg";
-import TwitterIcon from "../../public/icons/twitter.svg";
+
 
 function Footer() {
   return (
@@ -61,16 +58,16 @@ function Footer() {
             <h4>Coming soon on</h4>
             <div className="social-media-icons">
               <p>
-                <img src={FacebookIcon} alt="Facebook" />
+                <img src="/icons/facebook.svg" alt="Facebook" />
               </p>
               <p>
-                <img src={InstagramIcon} alt="Instagram" />
+                <img src="/icons/instagram.svg" alt="Instagram" />
               </p>
               <p>
-                <img src={LinkedInIcon} alt="LinkedIn" />
+                <img src="/icons/LinkedinbyPixelIconsonIconScout.svg" alt="LinkedIn" />
               </p>
               <p>
-                <img src={TwitterIcon} alt="Twitter" />
+                <img src="/icons/twitter.svg" alt="Twitter" />
               </p>
             </div>
           </div>
