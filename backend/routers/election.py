@@ -1,11 +1,12 @@
-import pandas
 from fastapi import APIRouter, HTTPException, Depends
 import pandas as pd
 import json
 from pathlib import Path
 
+from auth import get_current_user
+
 # Initialize the API router for election-related endpoints
-router = APIRouter(prefix="/election", tags=["election"])
+router = APIRouter(prefix="/election", tags=["election"], dependencies=[Depends(get_current_user)])
 
 # Define the directory where election data is stored
 DATA_DIR = Path("data/election")
@@ -19,7 +20,7 @@ def total(state: str = None, lga: str = None) -> dict:
     Can filter the dataset globally, by a specific State, or by a specific Local Government Area (LGA).
     """
     # Initialize an empty DataFrame using the first pandas import
-    df = pandas.DataFrame()
+    df = pd.DataFrame()
 
     # Determine the filtering level based on provided arguments
     if state is None and lga is None:

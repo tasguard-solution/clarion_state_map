@@ -1,3 +1,6 @@
+"""
+models.py
+"""
 from sqlalchemy import Column, String, DateTime, ForeignKey
 from sqlalchemy.dialects.postgresql import UUID
 from database import Base
@@ -16,7 +19,7 @@ class ProfilePrivate(Base):
     __tablename__ = "profiles_private"
 
     id = Column(UUID(as_uuid=True), ForeignKey("profiles_public.id"), primary_key=True)
-    fullname = Column(String, nullable=False)
+    full_name = Column(String, nullable=False)
     email = Column(String, nullable=False)
     theme = Column(String, nullable=False, default="Auto")
     created_at = Column(DateTime(timezone=True), default=datetime.utcnow)
