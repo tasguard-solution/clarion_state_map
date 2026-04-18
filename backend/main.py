@@ -13,8 +13,8 @@ import routers
 
 
 app = FastAPI(
-    title="Nigeria LGA Map API",
-    description="SVG path data for all Nigerian LGAs, projected and ready to render.",
+    title="Nigeria Map API",
+    description="SVG path data for all Nigerian Map, projected and ready to render.",
     version="2.0.0",
     redirect_slashes=False,
 )
@@ -32,8 +32,7 @@ for loader, module_name, is_pkg in pkgutil.iter_modules(routers.__path__):
         app.include_router(router)
 
 ALLOWED_ORIGINS = [
-    "https://clarion.tasguard.com",
-    "https://clarioncall.tasguard.com",
+    "https://datalorry.com",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
 ]
@@ -49,4 +48,4 @@ app.add_middleware(
 
 @app.get("/health")
 def health():
-    return {"message": "Welcome to Ucircle", "status": "ok"}
+    return {"message": "Welcome to DataLorry", "status": "ok"}
