@@ -13,8 +13,8 @@ import routers
 
 
 app = FastAPI(
-    title="Nigeria LGA Map API",
-    description="SVG path data for all Nigerian LGAs, projected and ready to render.",
+    title="Nigeria Map API",
+    description="SVG path data for all Nigerian Map, projected and ready to render.",
     version="2.0.0",
     redirect_slashes=False,
 )
@@ -32,21 +32,31 @@ for loader, module_name, is_pkg in pkgutil.iter_modules(routers.__path__):
         app.include_router(router)
 
 ALLOWED_ORIGINS = [
-    "https://clarion.tasguard.com",
-    "https://clarioncall.tasguard.com",
+    "https://datalorry.com",
     "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "http://127.0.0.1:8000",
+    "http://localhost:5173",
 ]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=False,
-    allow_methods=["GET", "OPTIONS"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "OPTIONS", "PUT", "DELETE"],
     allow_headers=["*"],
 )
+
+from database import engine, Base
+import models
+
+@app.on_event("startup")
+def on_startup():
+    print("🚀 Auto-migrating and ensuring database tables exist...")
+    # This creates any tables that do not exist based on models.py
+    Base.metadata.create_all(bind=engine)
+    print("✅ Database tables ensured.")
 
 
 @app.get("/health")
 def health():
-    return {"message": "Welcome to Ucircle", "status": "ok"}
+    return {"message": "Welcome to DataLorry", "status": "ok"}
