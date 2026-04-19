@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import SearchBar from "./navbar/SearchBar";
 import Logo from "./navbar/Logo";
 import Carousel from "./navbar/Carousel";
+import { useState, useEffect } from "react";
+import { supabase } from "../lib/supabase";
+import profileIcon from "../assets/Profile by Rizky Studio.svg";
 
 // ── Constants (not state — defined outside the component) ──────────────────
 const NAV_LINKS = [
@@ -14,6 +17,46 @@ const NAV_LINKS = [
 ];
 
 function Navbar() {
+  /////////////////////////////////////////
+  // This code snippet shows how to change something on user sign in or sign out
+  const [session, setSession] = useState<any>(null);
+
+  useEffect(() => {
+    const handleSync = async (currentSession: any) => {
+      setSession(currentSession);
+      if (currentSession?.user?.email) {
+        // Sync with backend postgres db
+        try {
+          await fetch("http://localhost:8000/api/users/sync", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${currentSession.access_token}`,
+            },
+            body: JSON.stringify({ email: currentSession.user.email }),
+          });
+        } catch (error) {
+          console.error("Failed to sync user with backend", error);
+        }
+      }
+    };
+
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      handleSync(session);
+    });
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      handleSync(session);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  // This code snippet shows how to change something on user sign in or sign out
+  /////////////////////////////////////////
+
   return (
     <nav id="navbar">
       <Logo />
@@ -29,7 +72,13 @@ function Navbar() {
           <Carousel />
           <aside className="right-menu">
             <SearchBar />
-            <CustomButton text="Sign Up" href="/signup" />
+            {session ? (
+              <div className="profile-icon-wrapper">
+                <img src={profileIcon} alt="Profile" className="profile-icon" />
+              </div>
+            ) : (
+              <CustomButton text="Sign Up" href="/signup" />
+            )}
           </aside>
         </div>
       </div>

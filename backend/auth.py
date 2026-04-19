@@ -88,7 +88,7 @@ def get_current_user_id(credentials: HTTPAuthorizationCredentials = Depends(secu
         )
 
 
-def get_current_user(user_id: str = Depends(get_current_user_id()), db: Session = Depends(get_db)):
+def get_current_user(user_id: str = Depends(get_current_user_id), db: Session = Depends(get_db)):
     """
     FastAPI dependency that fetches the full user profile from the database
     using the validated user_id.

@@ -107,6 +107,34 @@
   padding-top: 5px;
   height: 100%;
   outline: none;
+  align-items: center;
 }
 
+.profile-icon-wrapper {
+  background-color: var(--orange-button-bg);
+  border: 2px solid var(--border-primary);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 2px 2px 0px var(--border-primary);
+}
 
+.profile-icon-wrapper:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--border-primary);
+}
+
+.profile-icon-wrapper:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px var(--border-primary);
+}
+
+.profile-icon {
+  width: 18px;
+  height: 18px;
+}

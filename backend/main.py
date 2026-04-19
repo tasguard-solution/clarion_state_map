@@ -34,7 +34,7 @@ for loader, module_name, is_pkg in pkgutil.iter_modules(routers.__path__):
 ALLOWED_ORIGINS = [
     "https://datalorry.com",
     "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "http://127.0.0.1:8000",
 ]
 
 app.add_middleware(

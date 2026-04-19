@@ -13,7 +13,7 @@ if not PRIMARY_DB_URL:
     raise ValueError("PRIMARY_DB_URL has not been set")
 
 # Engine for primary database
-engine = create_engine(PRIMARY_DB_URL)
+engine = create_engine(PRIMARY_DB_URL, echo=True, pool_pre_ping=True)
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
