@@ -41,8 +41,21 @@ function Navbar() {
       }
     };
 
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      handleSync(session);
+    supabase.auth.getSession().then(async ({ data: { session } }) => {
+      if (session) {
+        // Double-check with the server to ensure the user still actually exists
+        // (Handles the edge case where a user was manually deleted from the database)
+        const { data: { user }, error } = await supabase.auth.getUser();
+        
+        if (error || !user) {
+          await supabase.auth.signOut();
+          handleSync(null);
+        } else {
+          handleSync(session);
+        }
+      } else {
+        handleSync(null);
+      }
     });
 
     const {

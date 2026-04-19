@@ -35,15 +35,26 @@ ALLOWED_ORIGINS = [
     "https://datalorry.com",
     "http://localhost:3000",
     "http://127.0.0.1:8000",
+    "http://localhost:5173",
 ]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=False,
-    allow_methods=["GET", "OPTIONS"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "OPTIONS", "PUT", "DELETE"],
     allow_headers=["*"],
 )
+
+from database import engine, Base
+import models
+
+@app.on_event("startup")
+def on_startup():
+    print("🚀 Auto-migrating and ensuring database tables exist...")
+    # This creates any tables that do not exist based on models.py
+    Base.metadata.create_all(bind=engine)
+    print("✅ Database tables ensured.")
 
 
 @app.get("/health")
