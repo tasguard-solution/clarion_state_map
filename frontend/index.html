@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Lorry — Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,700;1,300&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        /* ── Tokens ──────────────────────────────────────── */
+        :root {
+            --bg: #e3d6c3;
+            --accent-rgb: 230, 224, 213;
+            --border: #000000;
+            --text: #000000;
+            --text-secondary: #2f2319;
+            --orange: #ffa200;
+            --orange-shadow: #c77e00;
+            --dark: #2f2319;
+            --dark-text: #e3d6c3;
+            --heading: "Bebas Neue", sans-serif;
+            --body: "DM Sans", sans-serif;
+            --mono: "DM Mono", monospace;
+        }
+
+        /* ── Reset ───────────────────────────────────────── */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            background: var(--bg);
+            font-family: var(--body);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Grain overlay on body */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.18;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 0 0 0 -9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.2'/%3E%3C/svg%3E");
+        }
+
+        /* ── Layout ──────────────────────────────────────── */
+        .page {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── Top bar ─────────────────────────────────────── */
+        .topbar {
+            padding: 1.5rem 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .topbar-logo {
+            font-family: var(--heading);
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+        }
+
+        .topbar-tag {
+            font-family: var(--mono);
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding: 0.35rem 0.75rem;
+            border: 2px solid var(--border);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: var(--orange);
+        }
+
+        /* ── Split ───────────────────────────────────────── */
+        .split {
+            flex: 1;
+            display: flex;
+        }
+
+        /* LEFT — dark editorial side */
+        .side-left {
+            flex: 1.1;
+            background: var(--dark);
+            color: var(--dark-text);
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-right: 4px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* subtle noise on dark side */
+        .side-left::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.12;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
+
+        .left-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .big-title {
+            font-family: var(--heading);
+            font-size: clamp(5.5rem, 10vw, 9rem);
+            line-height: 0.92;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        .big-title span {
+            display: block;
+        }
+
+        .big-title .highlight {
+            color: var(--orange);
+        }
+
+        .tagline {
+            margin-top: 2rem;
+            font-size: 1.05rem;
+            font-weight: 300;
+            opacity: 0.75;
+            max-width: 300px;
+            line-height: 1.6;
+        }
+
+        .accent-bar {
+            width: 56px;
+            height: 7px;
+            background: var(--orange);
+            margin-top: 2rem;
+        }
+
+        /* decoration: big background text */
+        .bg-text {
+            position: absolute;
+            bottom: -2rem;
+            right: -1rem;
+            font-family: var(--heading);
+            font-size: 18rem;
+            line-height: 1;
+            color: rgba(255, 255, 255, 0.03);
+            pointer-events: none;
+            user-select: none;
+            z-index: 1;
+            letter-spacing: -4px;
+        }
+
+        /* left footer area */
+        .left-footer {
+            position: relative;
+            z-index: 2;
+        }
+
+        .left-footer p {
+            font-family: var(--mono);
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.4;
+        }
+
+        /* RIGHT — form side */
+        .side-right {
+            flex: 0.9;
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        .section-label {
+            font-family: var(--mono);
+            font-size: 0.7rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            opacity: 0.5;
+            margin-bottom: 0.6rem;
+        }
+
+        .heading-sm {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .body-copy {
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: var(--text-secondary);
+            line-height: 1.75;
+            max-width: 380px;
+        }
+
+        /* ── Notify form ─────────────────────────────────── */
+        .notify-block {
+            margin-top: 0.5rem;
+        }
+
+        .input-row {
+            display: flex;
+            gap: 0;
+            border: 2px solid var(--border);
+            box-shadow: 5px 5px 0 var(--border);
+            overflow: hidden;
+        }
+
+        .input-row input[type="email"] {
+            flex: 1;
+            padding: 1rem 1.25rem;
+            border: none;
+            background: white;
+            font-family: var(--body);
+            font-size: 0.95rem;
+            color: var(--text);
+            outline: none;
+        }
+
+        .input-row input[type="email"]::placeholder {
+            color: #aaa;
+        }
+
+        .notify-btn {
+            padding: 1rem 1.5rem;
+            background: var(--orange);
+            border: none;
+            border-left: 2px solid var(--border);
+            font-family: var(--body);
+            font-weight: 800;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.15s ease;
+            white-space: nowrap;
+        }
+
+        .notify-btn:hover {
+            background: var(--orange-shadow);
+        }
+
+        .notify-note {
+            margin-top: 0.75rem;
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            letter-spacing: 1px;
+            opacity: 0.4;
+            text-transform: uppercase;
+        }
+
+        .success-msg {
+            display: none;
+            padding: 1rem 1.25rem;
+            border: 2px solid var(--border);
+            background: #dcfce7;
+            color: #166534;
+            font-weight: 700;
+            font-size: 0.9rem;
+            box-shadow: 4px 4px 0 var(--border);
+        }
+
+        /* ── Divider ─────────────────────────────────────── */
+        .divider {
+            width: 100%;
+            height: 2px;
+            background: var(--border);
+            opacity: 0.12;
+        }
+
+        /* ── Countdown ───────────────────────────────────── */
+        .countdown-block {}
+
+        .countdown-grid {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .count-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .count-num {
+            font-family: var(--heading);
+            font-size: 3.5rem;
+            line-height: 1;
+            display: block;
+        }
+
+        .count-label {
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.45;
+            margin-top: 0.2rem;
+        }
+
+        .count-sep {
+            font-family: var(--heading);
+            font-size: 3rem;
+            line-height: 1;
+            align-self: flex-start;
+            opacity: 0.2;
+            padding-top: 0.05rem;
+        }
+
+        /* ── Animations ──────────────────────────────────── */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .side-left .left-content {
+            animation: fadeUp 0.7s ease both;
+        }
+
+        .side-right>* {
+            animation: fadeUp 0.7s ease both;
+        }
+
+        .side-right>*:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .side-right>*:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .side-right>*:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .side-right>*:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .side-right>*:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        /* ── Footer strip ────────────────────────────────── */
+        .footer-strip {
+            border-top: 2px solid var(--border);
+            padding: 1rem 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-strip p {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            opacity: 0.35;
+        }
+
+        /* ── Responsive ──────────────────────────────────── */
+        @media (max-width: 860px) {
+            .split {
+                flex-direction: column;
+            }
+
+            .side-left {
+                padding: 2.5rem;
+                border-right: none;
+                border-bottom: 4px solid var(--border);
+                min-height: 55vw;
+            }
+
+            .bg-text {
+                font-size: 10rem;
+            }
+
+            .side-right {
+                padding: 2.5rem;
+                gap: 2rem;
+            }
+
+            .countdown-grid {
+                gap: 1rem;
+            }
+
+            .count-num {
+                font-size: 2.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .topbar {
+                padding: 1.2rem 1.5rem;
+            }
+
+            .side-left,
+            .side-right {
+                padding: 2rem 1.5rem;
+            }
+
+            .footer-strip {
+                padding: 1rem 1.5rem;
+                flex-direction: column;
+                gap: 0.4rem;
+                text-align: center;
+            }
+
+            .input-row {
+                flex-direction: column;
+            }
+
+            .input-row input[type="email"] {
+                border-bottom: 2px solid var(--border);
+            }
+
+            .notify-btn {
+                border-left: none;
+                border-top: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+            <span class="topbar-logo">Data Lorry.</span>
+            <span class="topbar-tag">Staging / Preview</span>
+        </header>
+
+        <!-- SPLIT BODY -->
+        <main class="split">
+
+            <!-- LEFT: editorial dark -->
+            <div class="side-left">
+                <div class="left-content">
+                    <h1 class="big-title">
+                        <span>The</span>
+                        <span>Pulse</span>
+                        <span class="highlight">of the</span>
+                        <span>Nation.</span>
+                    </h1>
+                    <p class="tagline">Real-time data, mapped across every state. Something big is being built.</p>
+                    <div class="accent-bar"></div>
+                </div>
+
+                <div class="bg-text">DL</div>
+
+                <div class="left-footer">
+                    <p>© 2025 Data Lorry &mdash; All rights reserved</p>
+                </div>
+            </div>
+
+            <!-- RIGHT: coming soon content -->
+            <div class="side-right">
+
+                <!-- heading -->
+                <div>
+                    <p class="section-label">Status</p>
+                    <h2 class="heading-sm">We're loading<br>the lorry.</h2>
+                    <p class="body-copy" style="margin-top:0.8rem;">
+                        Data Lorry is in active development. We're mapping the pulse of Nigeria — state by state, story
+                        by story. Drop your email and you'll be the first to know when we go live.
+                    </p>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- email notify -->
+                <div class="notify-block">
+                    <p class="section-label">Get Early Access</p>
+                    <div class="input-row" id="form-row">
+                        <input type="email" id="email-input" placeholder="name@example.com" autocomplete="email" />
+                        <button class="notify-btn" onclick="handleNotify()">Notify Me</button>
+                    </div>
+                    <p class="notify-note">No spam. Just one email when we launch.</p>
+                    <div class="success-msg" id="success-msg">✓ You're on the list. We'll be in touch.</div>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- countdown -->
+                <div class="countdown-block">
+                    <p class="section-label">Launching in</p>
+                    <div class="countdown-grid">
+                        <div class="count-item">
+                            <span class="count-num" id="cd-days">00</span>
+                            <span class="count-label">Days</span>
+                        </div>
+                        <span class="count-sep">:</span>
+                        <div class="count-item">
+                            <span class="count-num" id="cd-hours">00</span>
+                            <span class="count-label">Hours</span>
+                        </div>
+                        <span class="count-sep">:</span>
+                        <div class="count-item">
+                            <span class="count-num" id="cd-mins">00</span>
+                            <span class="count-label">Mins</span>
+                        </div>
+                        <span class="count-sep">:</span>
+                        <div class="count-item">
+                            <span class="count-num" id="cd-secs">00</span>
+                            <span class="count-label">Secs</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- FOOTER STRIP -->
+        <footer class="footer-strip">
+            <p>Data Lorry &mdash; Mapping Nigeria's story</p>
+            <p>Built with intention &mdash; Staging build</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ── Countdown ─────────────────────────────────────────
+        // Set your launch date here (YYYY, MM-1, DD)
+        const LAUNCH = new Date(2025, 8, 1, 0, 0, 0); // Sept 1 2025 — change as needed
+
+        function pad(n) { return String(n).padStart(2, "0"); }
+
+        function tick() {
+            const now = new Date();
+            const diff = LAUNCH - now;
+
+            if (diff <= 0) {
+                document.getElementById("cd-days").textContent = "00";
+                document.getElementById("cd-hours").textContent = "00";
+                document.getElementById("cd-mins").textContent = "00";
+                document.getElementById("cd-secs").textContent = "00";
+                return;
+            }
+
+            const d = Math.floor(diff / 86400000);
+            const h = Math.floor((diff % 86400000) / 3600000);
+            const m = Math.floor((diff % 3600000) / 60000);
+            const s = Math.floor((diff % 60000) / 1000);
+
+            document.getElementById("cd-days").textContent = pad(d);
+            document.getElementById("cd-hours").textContent = pad(h);
+            document.getElementById("cd-mins").textContent = pad(m);
+            document.getElementById("cd-secs").textContent = pad(s);
+        }
+
+        tick();
+        setInterval(tick, 1000);
+
+        // ── Notify ────────────────────────────────────────────
+        function handleNotify() {
+            const input = document.getElementById("email-input");
+            const val = input.value.trim();
+            if (!val || !val.includes("@")) {
+                input.style.outline = "3px solid red";
+                input.focus();
+                return;
+            }
+            input.style.outline = "";
+            document.getElementById("form-row").style.display = "none";
+            document.getElementById("success-msg").style.display = "block";
+
+            // If you want to wire this up to a backend/Supabase later, do it here:
+            // await supabase.from("waitlist").insert({ email: val });
+        }
+
+        // Allow Enter key on email input
+        document.getElementById("email-input").addEventListener("keydown", function (e) {
+            if (e.key === "Enter") handleNotify();
+        });
+    </script>
+
+</body>
+
+</html>
