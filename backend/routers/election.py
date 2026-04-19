@@ -19,9 +19,6 @@ def total(state: str = None, lga: str = None) -> dict:
     Helper function to calculate the total votes for political parties (APC, PDP, LP, NNPP).
     Can filter the dataset globally, by a specific State, or by a specific Local Government Area (LGA).
     """
-    # Initialize an empty DataFrame using the first pandas import
-    df = pd.DataFrame()
-
     # Determine the filtering level based on provided arguments
     if state is None and lga is None:
         # No filters applied; use the entire dataset (National level)
