@@ -1,23 +1,32 @@
+/* src/components/hero/NewsReport.css */
+
 .news-report {
-  max-width: 280px;
+  min-width: 220px;
+  max-width: 260px;
   display: flex;
   flex-direction: column;
-  border-right: 2px solid var(--orange-button-border);
-  padding-right: 24px;
-  gap: 0px;
+
+  /* Dark editorial left panel — mirrors auth-visual */
+  background: var(--footer-bg);
+  border-right: 4px solid var(--border-primary);
+  padding: 20px 16px;
+  gap: 0;
 }
 
 .news-report-heading {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #888;
-  margin: 0 0 12px;
+  color: var(--footer-text);
+  opacity: 0.5;
+  margin: 0 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .news-report-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }

@@ -1,0 +1,71 @@
+/* src/components/explore/LGAMap.css */
+
+.lga-map-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px 12px;
+  gap: 16px;
+  border-right: 4px solid var(--border-primary);
+  justify-content: flex-start;
+}
+
+.lga-map-label {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  opacity: 0.5;
+  margin: 0;
+}
+
+.lga-map-svg {
+  width: 100%;
+  max-height: 280px;
+  overflow: visible;
+  cursor: default;
+}
+
+.lga-path {
+  stroke: var(--border-primary);
+  stroke-width: 1.5;
+  cursor: pointer;
+  transition: filter 0.1s ease, opacity 0.1s ease;
+}
+
+.lga-path:hover {
+  filter: brightness(1.15) drop-shadow(2px 2px 0px rgba(0,0,0,0.4));
+  opacity: 0.95;
+}
+
+.lga-path.selected {
+  stroke-width: 3;
+  filter: brightness(1.2) drop-shadow(3px 3px 0px rgba(0,0,0,0.6));
+}
+
+/* ── Party legend ───────────────────────────── */
+.lga-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding-top: 8px;
+  border-top: 2px solid var(--border-primary);
+}
+
+.lga-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.lga-legend-swatch {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--border-primary);
+  flex-shrink: 0;
+}

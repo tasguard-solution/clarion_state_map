@@ -1,14 +1,13 @@
-.map-view{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex: 1;
-    justify-content: start;
-    gap: 20px;
+/* src/components/hero/MapView.css */
+
+.map-view {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: start;
+  gap: 20px;
+  padding: 16px 12px;
+
+  /* Subtle separator from InfoPanel */
+  border-right: 4px solid var(--border-primary);
 }
-
-
- 
-
- 
-  

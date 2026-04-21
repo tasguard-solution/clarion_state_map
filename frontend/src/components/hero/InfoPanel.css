@@ -1,66 +1,141 @@
+/* src/components/hero/InfoPanel.css */
+
 .infoPanel {
   display: flex;
   flex-direction: column;
-  width: 20rem;
-  background: var(--navbar-bg);
-  border-radius: 12px 12px 0 0;
-  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
-  padding: 12px;
+  width: 22rem;
+  flex-shrink: 0;
+  background: transparent;
+
+  /* No radius — neubrutalism */
+  border-radius: 0;
+  box-shadow: none;
 }
-.info-state{
+
+/* ── Dark header strip — mirrors .auth-visual editorial left panel ── */
+.infoPanel-header-block {
+  background: var(--footer-bg);
+  border-bottom: 4px solid var(--border-primary);
+  padding: 20px 16px 16px;
+  min-height: 120px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  justify-content: flex-end;
+  position: relative;
 }
 
-.state-detail{
-  flex-direction: column;
-  border-bottom: 0.5px solid var(--border-primary);
+.infoPanel-header-block::after {
+  /* Orange accent bar — mirrors .editorial-accent */
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: var(--orange-button-bg);
+  margin-top: 12px;
 }
 
-.state-detail-button{
+.infoState-label {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--footer-text);
+  opacity: 0.5;
+  margin: 0 0 4px;
+}
+
+.infoName {
+  font-family: var(--heading);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--footer-text);
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.infoZone {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--footer-text);
+  opacity: 0.4;
+  text-transform: uppercase;
+  margin: 2px 0 0;
+}
+
+/* ── Body / detail section ──────────────────────── */
+.info-state {
   display: flex;
-  justify-content: center;
-  height: fit-content;
-  padding: 10px;
+  flex-direction: column;
+  gap: 0;
 }
 
+.state-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--border-primary);
+}
 
 .infoPanelInner {
-display: flex;
-flex-direction: row;
-gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
-.infoZone {
-font-size: 10px;
-font-weight: 700;
-letter-spacing: 0.12em;
-color: #888;
-text-transform: uppercase;
 
+.state-detail-button {
+  display: flex;
+  justify-content: stretch;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--border-primary);
 }
-.infoName {
-font-size: 18px;
-font-weight: 800;
-flex: 1;
+
+/* Make the CustomButton stretch full width here */
+.state-detail-button .custom-button-container {
+  width: 100%;
 }
-.infoState-label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+
+.state-detail-button .custom-button-btn {
+  width: 100%;
+  padding: 0.9rem 0;
+  font-size: 0.85rem;
+  font-weight: 800;
   text-transform: uppercase;
-  color: #888;
-  margin: 0 0 6px;
+  letter-spacing: 0.05em;
+  border-radius: 0;
+  border: 2px solid var(--border-primary);
+  box-shadow: 4px 4px 0px var(--border-primary);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
-.infoHint {
-font-size: 12px;
-color: #aaa;
-margin: 0px 0px 0px 0px;
-font-style: italic;
+
+.state-detail-button .custom-button-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--border-primary);
 }
+
+.state-detail-button .custom-button-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px var(--border-primary);
+}
+
+/* Override the shadow element inside CustomButton to stay consistent */
+.state-detail-button .custom-button-shadow {
+  display: none;
+}
+
 .state-stats-panel {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 16px;
+  gap: 0;
+}
+
+/* Hint text at the bottom of panel */
+.infoHint {
+  font-size: 11px;
+  color: #999;
+  margin: 16px;
+  font-style: italic;
+  line-height: 1.5;
 }

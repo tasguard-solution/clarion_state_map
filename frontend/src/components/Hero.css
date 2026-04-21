@@ -1,28 +1,31 @@
+/* src/components/Hero.css */
+
 #hero {
   display: flex;
   flex-direction: row;
   align-content: center;
   min-width: 100%;
+  padding: 0 10px;
 }
 
 #hero .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 40px 0px 0px;
+  margin: 24px 0px 0px;
   box-sizing: border-box;
   min-width: 100%;
-  padding: 0px 10px 0px 10px;
-  gap: 0px;
+  padding: 0;
+  gap: 0;
+
+  /* ── SignUp-style editorial frame ─────────────── */
+  border: 4px solid var(--border-primary);
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
 }
-
-
 
 #selection-overview {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
 }
-
-
-

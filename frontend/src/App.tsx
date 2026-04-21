@@ -3,6 +3,8 @@ import Layout from "./layout/Layout";
 import Home from "./pages/Home";
 import MapPage from "./pages/MapPage";
 import SignUp from "./pages/SignUp";
+import ExplorePage from "./pages/ExplorePage";
+import StateDataPage from "./pages/StateDataPage";
 import "./styles/colors.css";
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/map" element={<MapPage />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/explore/:stateId" element={<ExplorePage />} />
+        <Route path="/explore/:stateId/:category" element={<StateDataPage />} />
       </Route>
     </Routes>
   );
