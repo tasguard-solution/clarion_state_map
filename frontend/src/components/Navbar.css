@@ -1,4 +1,4 @@
-#navbar{
+#navbar {
   display: flex;
   height: 37px;
   background-color: var(--navbar-bg);
@@ -10,30 +10,37 @@
 .taskbar {
   width: 100%;
   height: 40px;
-  position: sticky; /* Usually 'top-0' implies sticky or fixed */
+  position: sticky;
+  /* Usually 'top-0' implies sticky or fixed */
   top: 0;
   display: block;
   min-width: 0;
-  
+
   /* Padding */
-  padding-left: 2px;  /* pl-0.5 */
-  padding-right: 8px; /* pr-2 */
-  
+  padding-left: 2px;
+  /* pl-0.5 */
+  padding-right: 8px;
+  /* pr-2 */
+
   /* Borders */
   border-bottom: 1px solid var(--border-primary);
-  
+
   /* The "Glass" Effect */
-  background-color: var(--navbar-bg); /* bg-accent/75 */
-  backdrop-filter: blur(8px); /* backdrop-blur */
-  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  background-color: var(--navbar-bg);
+  /* bg-accent/75 */
+  backdrop-filter: blur(8px);
+  /* backdrop-blur */
+  -webkit-backdrop-filter: blur(8px);
+  /* Safari support */
 }
 
 /* Specific Theme Override (wallpaper-keyboard-garden) */
 [data-theme="keyboard-garden"] #taskbar {
-  background-color: rgba(0, 0, 0, 0.15); /* dark:bg-black/15 */
+  background-color: rgba(0, 0, 0, 0.15);
+  /* dark:bg-black/15 */
 }
 
-.navbar-content{
+.navbar-content {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 3px;
@@ -51,60 +58,60 @@
 
 
 
-.left-menu{
-    display: flex;
-    gap: 1px;
-    padding-top: 3px;
-    padding-left: 5px;
-    align-items: center;
-    height: 100%;
-    outline: none;
+.left-menu {
+  display: flex;
+  gap: 1px;
+  padding-top: 3px;
+  padding-left: 5px;
+  align-items: center;
+  height: 100%;
+  outline: none;
 }
 
 
 
-.left-menu button{
-    padding-left: 8px;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding-right: 8px;
+.left-menu button {
+  padding-left: 8px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 8px;
 }
 
-.left-menu a{
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.left-menu a {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-    font-size:14px;
-    color: var(--text-primary);
-    padding: 4px 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  padding: 4px 8px;
 
 }
 
 .left-menu a:hover {
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: var(--navbar-bg-hover); /* Use the hover background color */
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--navbar-bg-hover);
+  /* Use the hover background color */
 
 }
 
 
 
-.left-menu button:not(:first-child){
-    display: none;
+.left-menu button:not(:first-child) {
+  display: none;
 }
 
 @media (min-width: 768px) {
-    .left-menu a:not(:first-child) {
-        display: flex;
-    }
+  .left-menu a:not(:first-child) {
+    display: flex;
+  }
 }
 
 .right-menu {
   display: flex;
-  gap:20px;
-  padding-top: 5px;
+  gap: 20px;
   height: 100%;
   outline: none;
   align-items: center;
@@ -114,8 +121,9 @@
   background-color: var(--orange-button-bg);
   border: 2px solid var(--border-primary);
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: auto;
+  height: 100%;
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,6 +143,6 @@
 }
 
 .profile-icon {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 }
