@@ -8,7 +8,6 @@ const csvData = fs.readFileSync(csvPath, 'utf8');
 const lines = csvData.split('\n').map(l => l.trim()).filter(l => l.length > 0);
 
 // State,S/N,LGA,APC,LP,PDP,NNPP
-const header = lines[0].split(',');
 
 const resultsByState = {};
 
