@@ -22,7 +22,6 @@ type LGAMapProps = {
 };
 
 export default function LGAMap({ stateId, selectedLGA, onSelect, onHover }: LGAMapProps) {
-  const [hoveredLGA, setHoveredLGA] = useState<string | null>(null);
   const [geoData, setGeoData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
@@ -50,12 +49,10 @@ export default function LGAMap({ stateId, selectedLGA, onSelect, onHover }: LGAM
   }
 
   const handleMouseEnter = (id: string) => {
-    setHoveredLGA(id);
     onHover(id);
   };
 
   const handleMouseLeave = () => {
-    setHoveredLGA(null);
     onHover(null);
   };
 
