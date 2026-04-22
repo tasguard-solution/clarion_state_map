@@ -36,7 +36,7 @@ export default function LGAMap({ stateId, selectedLGA, onSelect, onHover }: LGAM
         setLoading(false);
       })
       .catch((err) => {
-        console.error(`Failed to load geojson for ${stateId}:`, err);
+        console.error("Failed to load geojson for %s:", stateId, err);
         setLoading(false);
       });
   }, [stateId]);
