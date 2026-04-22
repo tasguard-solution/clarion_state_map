@@ -3,7 +3,7 @@
 // Colours each LGA by the winning party.
 
 import { useState, useEffect } from "react";
-import { ELECTION_DATA, PARTY_COLORS, getElectionByLGA } from "../../data/electionData";
+import { PARTY_COLORS, getElectionByLGA } from "../../data/electionData";
 import "./LGAMap.css";
 
 type LGAFeature = {
