@@ -2,7 +2,7 @@
 // Shows 2023 election results for a clicked Lagos LGA.
 // Design mirrors the hero InfoPanel: dark header + stat rows below.
 
-import { ELECTION_DATA, PARTY_COLORS, type Party, getElectionByLGA } from "../../data/electionData";
+import { PARTY_COLORS, type Party, getElectionByLGA } from "../../data/electionData";
 import "./LGAInfoPanel.css";
 
 type LGAInfoPanelProps = {
