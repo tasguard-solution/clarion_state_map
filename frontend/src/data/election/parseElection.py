@@ -19,7 +19,7 @@ def compute_winner(apc, lp, pdp, nnpp):
 
 with open(csv_path, 'r', encoding='utf-8') as f:
     reader = csv.reader(f)
-    header = next(reader)
+    next(reader)
     
     for row in reader:
         if len(row) < 7: continue
