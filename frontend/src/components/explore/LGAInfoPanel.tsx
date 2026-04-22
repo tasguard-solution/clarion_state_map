@@ -2,10 +2,11 @@
 // Shows 2023 election results for a clicked Lagos LGA.
 // Design mirrors the hero InfoPanel: dark header + stat rows below.
 
-import { ELECTION_BY_LGA, PARTY_COLORS, type Party } from "../../data/lagosElection";
+import { ELECTION_DATA, PARTY_COLORS, type Party, getElectionByLGA } from "../../data/electionData";
 import "./LGAInfoPanel.css";
 
 type LGAInfoPanelProps = {
+  stateId: string;
   lgaId: string | null;
 };
 
@@ -20,8 +21,11 @@ function formatNumber(n: number): string {
   return n.toLocaleString("en-NG");
 }
 
-export default function LGAInfoPanel({ lgaId }: LGAInfoPanelProps) {
-  const result = lgaId ? ELECTION_BY_LGA[lgaId] : null;
+export default function LGAInfoPanel({ stateId, lgaId }: LGAInfoPanelProps) {
+  const electionLookup = getElectionByLGA(stateId);
+  const result = lgaId ? electionLookup[lgaId] : null;
+
+  const stateName = stateId.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 
   return (
     <div className="lga-info-panel">
@@ -42,7 +46,7 @@ export default function LGAInfoPanel({ lgaId }: LGAInfoPanelProps) {
         ) : (
           <>
             <p className="lga-panel-label">Election Results</p>
-            <h2 className="lga-panel-name">Lagos.</h2>
+            <h2 className="lga-panel-name">{stateName}.</h2>
           </>
         )}
       </div>

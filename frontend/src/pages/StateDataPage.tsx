@@ -3,11 +3,11 @@
 // For "election" + "lagos": renders 3-column layout:
 //   Left sidebar (LGA list) | Centre (SVG LGA map) | Right (election info panel)
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import LGAMap from "../components/explore/LGAMap";
 import LGAInfoPanel from "../components/explore/LGAInfoPanel";
-import { LAGOS_ELECTION_2023 } from "../data/lagosElection";
+import { ELECTION_DATA } from "../data/electionData";
 import "./StateDataPage.css";
 
 function formatStateName(id: string): string {
@@ -25,9 +25,13 @@ export default function StateDataPage() {
   const stateName = formatStateName(stateId);
   const categoryName = formatCategory(category);
 
+  // Get election results for the current state
+  const stateResults = useMemo(() => ELECTION_DATA[stateId] || [], [stateId]);
+
   // Sort LGAs alphabetically for sidebar list
-  const lgaList = [...LAGOS_ELECTION_2023].sort((a, b) =>
-    a.lgaName.localeCompare(b.lgaName)
+  const lgaList = useMemo(() => 
+    [...stateResults].sort((a, b) => a.lgaName.localeCompare(b.lgaName)),
+    [stateResults]
   );
 
   return (
@@ -70,13 +74,14 @@ export default function StateDataPage() {
 
         {/* Centre: LGA SVG Map */}
         <LGAMap
+          stateId={stateId}
           selectedLGA={selectedLGA}
           onSelect={(id) => setSelectedLGA((prev) => (prev === id ? null : id))}
           onHover={() => {}}
         />
 
         {/* Right: Election results info panel */}
-        <LGAInfoPanel lgaId={selectedLGA} />
+        <LGAInfoPanel stateId={stateId} lgaId={selectedLGA} />
 
       </div>
     </div>

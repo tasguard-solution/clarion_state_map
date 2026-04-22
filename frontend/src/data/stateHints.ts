@@ -145,7 +145,7 @@ export const STATE_INFO: Partial<Record<StateId, StateInfo>> = {
   kano: {
     state: "Kano",
     hint: "",
-    population: 15000000,
+    population: 16200000,
     capital: "Kano",
     funFact: ""
   },
