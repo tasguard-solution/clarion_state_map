@@ -1,41 +1,59 @@
+/* src/components/hero/NewsCard.css */
+
 .news-card {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  /*border: 0.5px solid var(--border-primary);*/
-  box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.629);
-  border-radius: 10px;
-  background-color: rgb(200, 175, 120);
+  gap: 0;
   position: relative;
+  cursor: pointer;
+
+  /* Neubrutalism card — zero radius, bold border, hard offset shadow */
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-.news-card:last-child {
-  /*border-bottom: none;*/
-  /*padding-bottom: 0;*/
+.news-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.news-card:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
 }
 
 .news-card img {
   width: 100%;
-  border-radius: 8px 8px 0 0;
+  border-radius: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+  display: block;
 }
 
-.news-writeup{
-  padding: 0px 9px 5px 9px;
+.news-writeup {
+  padding: 8px 10px 10px;
 }
 
 .news-card h2 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 0 4px;
+  color: var(--footer-text);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 .news-card p {
-  font-size: 13px;
+  font-size: 11px;
   line-height: 1.5;
-  text-align: justify;
+  text-align: left;
   margin: 0;
-  color: var(--text-secondary);
+  color: rgba(227, 214, 195, 0.6);
 }
 
 .news-card-footer {
@@ -44,7 +62,6 @@
 }
 
 .news-card a {
-
 }
 
 .news-card a::after {
@@ -54,8 +71,5 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1; /* Covers the whole card */
+  z-index: 1;
 }
-
-
-

@@ -4,9 +4,13 @@
 
 import Hero from "../components/Hero";
 import "./Home.css";
+import Databar from "../components/Databar";
 
 function Home() {
-  return <Hero />;
+  return (<>
+    <Hero />
+    <Databar />
+  </>);
 }
 
 export default Home;

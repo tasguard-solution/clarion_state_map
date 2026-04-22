@@ -1,0 +1,150 @@
+/* src/components/explore/LGAInfoPanel.css */
+
+.lga-info-panel {
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  flex-shrink: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+/* Dark editorial header — mirrors InfoPanel header */
+.lga-panel-header {
+  background: var(--footer-bg);
+  border-bottom: 4px solid var(--border-primary);
+  padding: 20px 16px 16px;
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.lga-panel-header::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  background: var(--orange-button-bg);
+  margin-top: 12px;
+}
+
+.lga-panel-label {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--footer-text);
+  opacity: 0.45;
+  margin: 0 0 4px;
+}
+
+.lga-panel-name {
+  font-family: var(--heading);
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--footer-text);
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+/* Winner badge */
+.lga-winner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 2px solid rgba(255,255,255,0.2);
+  margin-top: 8px;
+  align-self: flex-start;
+}
+
+/* ── Vote bars section ────────────────────────── */
+.lga-votes-section {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid var(--border-primary);
+}
+
+.lga-vote-row {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  gap: 4px;
+}
+
+.lga-vote-row:last-child {
+  border-bottom: none;
+}
+
+.lga-vote-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lga-party-name {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lga-vote-count {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.lga-vote-pct {
+  font-size: 9px;
+  color: var(--text-secondary);
+}
+
+/* Progress bar */
+.lga-vote-bar-track {
+  height: 6px;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid var(--border-primary);
+  overflow: hidden;
+}
+
+.lga-vote-bar-fill {
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+/* Hint text */
+.lga-hint {
+  font-size: 11px;
+  color: #999;
+  margin: 16px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Total votes row */
+.lga-total-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--border-primary);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.lga-total-count {
+  font-family: var(--mono);
+  font-weight: 800;
+}

@@ -28,10 +28,12 @@ export default function InfoPanel({ feature }: InfoPanelProps) {
 
   return (
     <div className="infoPanel">
-      {feature && (
-        <div className="info-state">
-          <p className="infoState-label">State Spotlight</p>
-          <div className="state-detail">
+
+      {/* ── Dark editorial header — mirrors auth-visual ── */}
+      <div className="infoPanel-header-block">
+        {feature ? (
+          <>
+            <p className="infoState-label">State Spotlight</p>
             <div className="infoPanelInner">
               <p className="infoZone">
                 {STATE_ZONES[feature.id]?.replace(/-/g, " ").toUpperCase() ??
@@ -40,9 +42,20 @@ export default function InfoPanel({ feature }: InfoPanelProps) {
               </p>
               <h2 className="infoName">{feature.name}</h2>
             </div>
-            <div className="state-detail-button">
-              <CustomButton text={"Open " + feature.name}></CustomButton>
-            </div>
+          </>
+        ) : (
+          <>
+            <p className="infoState-label">Data Lorry</p>
+            <h2 className="infoName">Nigeria.</h2>
+          </>
+        )}
+      </div>
+
+      {/* ── Detail body ─────────────────────────────── */}
+      {feature && (
+        <div className="info-state">
+          <div className="state-detail-button">
+            <CustomButton text={"Open " + feature.name} href={`/explore/${feature.id}`}></CustomButton>
           </div>
 
           {/* State Stats Cards */}

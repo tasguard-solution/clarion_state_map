@@ -1,0 +1,170 @@
+/* src/pages/StateDataPage.css */
+
+.state-data-page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px);
+  background: var(--bg);
+}
+
+/* ── Compact editorial header ─────────────────── */
+.sdp-header {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 1.5rem 3rem;
+  border-bottom: 4px solid var(--border-primary);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sdp-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sdp-breadcrumb {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--footer-text);
+  opacity: 0.45;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: opacity 0.15s;
+}
+
+.sdp-breadcrumb:hover { opacity: 0.8; }
+
+.sdp-title {
+  font-family: var(--heading);
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0;
+  line-height: 1;
+  color: var(--footer-text);
+}
+
+.sdp-title span {
+  color: var(--orange-button-bg);
+}
+
+.sdp-category-tag {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border: 2px solid var(--orange-button-bg);
+  color: var(--orange-button-bg);
+  align-self: flex-end;
+}
+
+/* ── Three-column explorer body ───────────────── */
+.sdp-body {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: 24px 10px 0;
+  border: 4px solid var(--border-primary);
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  min-height: 560px;
+}
+
+/* ── Left: LGA list sidebar (mirrors NewsReport) ─ */
+.sdp-lga-sidebar {
+  min-width: 200px;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  background: var(--footer-bg);
+  border-right: 4px solid var(--border-primary);
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.sdp-sidebar-heading {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--footer-text);
+  opacity: 0.45;
+  margin: 0 0 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sdp-lga-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sdp-lga-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.1s ease;
+  background: rgba(255,255,255,0.03);
+}
+
+.sdp-lga-item:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.15);
+}
+
+.sdp-lga-item.active {
+  background: var(--orange-button-bg);
+  border-color: var(--border-primary);
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+}
+
+.sdp-lga-item.active .sdp-lga-item-name,
+.sdp-lga-item.active .sdp-lga-item-winner {
+  color: #000;
+}
+
+.sdp-lga-item-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--footer-text);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sdp-lga-item-winner {
+  font-size: 9px;
+  font-weight: 800;
+  color: var(--footer-text);
+  opacity: 0.6;
+}
+
+/* ── Responsive ─────────────────────────────────── */
+@media (max-width: 900px) {
+  .sdp-body {
+    flex-direction: column;
+  }
+  .sdp-lga-sidebar {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 4px solid var(--border-primary);
+    max-height: 180px;
+  }
+  .sdp-lga-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
