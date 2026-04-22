@@ -28,7 +28,7 @@ for (let i = 1; i < lines.length; i++) {
   const parts = lines[i].split(',');
   if (parts.length < 7) continue;
 
-  let [state, sn, lgaStr, apcStr, lpStr, pdpStr, nnppStr] = parts;
+  let [state, , lgaStr, apcStr, lpStr, pdpStr, nnppStr] = parts;
   let stateId = formatId(state);
   
   if (stateId === "fct") stateId = "federal-capital-territory";
