@@ -14,7 +14,7 @@
   padding: 1.5rem 3rem;
   border-bottom: 4px solid var(--border-primary);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
@@ -23,7 +23,50 @@
 .sdp-header-left {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
+}
+
+.sdp-title-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.state-dropdown {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+  font-family: var(--heading);
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.state-dropdown option {
+  background: var(--footer-bg);
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+}
+
+.sdp-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.sdp-year-badge {
+  font-family: var(--heading);
+  font-size: 1.2rem;
+  color: var(--orange-button-bg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .sdp-breadcrumb {
@@ -65,7 +108,6 @@
   padding: 3px 10px;
   border: 2px solid var(--orange-button-bg);
   color: var(--orange-button-bg);
-  align-self: flex-end;
 }
 
 /* ── Three-column explorer body ───────────────── */
@@ -73,23 +115,132 @@
   display: flex;
   flex-direction: row;
   flex: 1;
-  margin: 24px 10px 0;
+  margin: 24px 10px 40px;
   border: 4px solid var(--border-primary);
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   min-height: 560px;
 }
 
+/* Map with Navigation Arrows */
+.map-column {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fdfaf5;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: #000;
+  color: #fff;
+  border: 2px solid var(--border-primary);
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px 0px var(--orange-button-bg);
+  transition: all 0.1s;
+}
+
+.nav-arrow:hover:not(:disabled) {
+  background: var(--orange-button-bg);
+  color: #000;
+  transform: translateY(-54%);
+}
+
+.nav-arrow:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.nav-arrow.left { left: 20px; }
+.nav-arrow.right { right: 20px; }
+
+/* Archive Vibe Style */
+.sdp-archive-vibe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.archive-stat-card {
+  padding: 20px;
+  background: var(--orange-button-bg);
+  border: 2px solid var(--border-primary);
+  box-shadow: 4px 4px 0 #000;
+}
+
+.archive-stat-label {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  opacity: 0.7;
+}
+
+.archive-stat-value {
+  font-family: var(--heading);
+  font-size: 2.8rem;
+  margin: 4px 0;
+}
+
+.archive-stat-note {
+  font-size: 11px;
+  line-height: 1.4;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.archive-party-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.archive-party-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.party-name {
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.party-votes {
+  opacity: 0.6;
+  font-size: 11px;
+}
+
 /* ── Left: LGA list sidebar (mirrors NewsReport) ─ */
 .sdp-lga-sidebar {
   min-width: 200px;
-  max-width: 240px;
+  max-width: 260px;
   display: flex;
   flex-direction: column;
   background: var(--footer-bg);
   border-right: 4px solid var(--border-primary);
   padding: 16px;
   overflow-y: auto;
+}
+
+/* Rest of sidebar stays same */
+@media (max-width: 900px) {
+  .nav-arrow { width: 32px; height: 32px; font-size: 14px; }
+  .sdp-archive-vibe { flex-direction: row; flex-wrap: wrap; }
 }
 
 .sdp-sidebar-heading {

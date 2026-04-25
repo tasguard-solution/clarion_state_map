@@ -17,6 +17,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/explore/:stateId" element={<ExplorePage />} />
         <Route path="/explore/:stateId/:category" element={<StateDataPage />} />
+        <Route path="/explore/:stateId/:category/:year" element={<StateDataPage />} />
       </Route>
     </Routes>
   );
