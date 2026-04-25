@@ -8,6 +8,13 @@ type StateCardProps = {
   unit?: string;
 };
 
+function formatNumber(num: number): string {
+  if (num >= 1_000_000_000_000) return (num / 1_000_000_000_000).toFixed(2) + "T";
+  if (num >= 1_000_000_000) return (num / 1_000_000_000).toFixed(1) + "B";
+  if (num >= 1_000_000) return (num / 1_000_000).toFixed(1) + "M";
+  return num.toLocaleString();
+}
+
 function StateCard({ article, displayType, label, unit }: StateCardProps) {
   let value: string | number | undefined;
   switch (displayType) {
@@ -27,8 +34,21 @@ function StateCard({ article, displayType, label, unit }: StateCardProps) {
       value = undefined;
   }
 
-  const displayValue =
-    value !== undefined ? `${value} ${unit || ""}` : "No data";
+  let displayValue = "No data";
+  if (value !== undefined) {
+    if (typeof value === "number") {
+      const formatted = formatNumber(value);
+      if (unit === "USD") {
+        displayValue = `$${formatted}`;
+      } else if (unit === "NGN") {
+        displayValue = `₦${formatted}`;
+      } else {
+        displayValue = `${formatted} ${unit || ""}`;
+      }
+    } else {
+      displayValue = `${value} ${unit || ""}`;
+    }
+  }
   const hasData = value !== undefined;
 
   return (
