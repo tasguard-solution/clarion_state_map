@@ -22,160 +22,183 @@ export const STATE_INFO: Partial<Record<StateId, StateInfo>> = {
     population: 3500000,
     capital: "Umuahia",
     funFact: "",
+    gdp: 3530000000000,
   },
   adamawa: {
     state: "Adamawa",
     hint: "",
     population: 3900000,
     capital: "Yola",
-    funFact: ""
+    funFact: "",
+    gdp: 2660000000000,
   },
   "akwa-ibom": {
     state: "Akwa Ibom",
     hint: "",
     population: 4800000,
     capital: "Uyo",
-    funFact: ""
+    funFact: "",
+    gdp: 7770000000000,
   },
   anambra: {
     state: "Anambra",
     hint: "",
     population: 9800000,
     capital: "Awka",
-    funFact: ""
+    funFact: "",
+    gdp: 5140000000000,
   },
   bauchi: {
     state: "Bauchi",
     hint: "",
     population: 6500000,
     capital: "Bauchi",
-    funFact: ""
+    funFact: "",
+    gdp: 2630000000000,
   },
   bayelsa: {
     state: "Bayelsa",
     hint: "",
     population: 2500000,
     capital: "Yenagoa",
-    funFact: ""
+    funFact: "",
+    gdp: 4630000000000,
   },
   benue: {
     state: "Benue",
     hint: "",
     population: 5300000,
     capital: "Makurdi",
-    funFact: ""
+    funFact: "",
+    gdp: 4270000000000,
   },
   borno: {
     state: "Borno",
     hint: "",
     population: 6500000,
     capital: "Maiduguri",
-    funFact: ""
+    funFact: "",
+    gdp: 1960000000000,
   },
   "cross-river": {
     state: "Cross River",
     hint: "",
     population: 4500000,
     capital: "Calabar",
-    funFact: ""
+    funFact: "",
+    gdp: 4070000000000,
   },
   delta: {
     state: "Delta",
     hint: "",
     population: 5500000,
     capital: "Asaba",
-    funFact: ""
+    funFact: "",
+    gdp: 6350000000000,
   },
   ebonyi: {
     state: "Ebonyi",
     hint: "",
     population: 2500000,
     capital: "Abakaliki",
-    funFact: ""
+    funFact: "",
+    gdp: 2240000000000,
   },
   edo: {
     state: "Edo",
     hint: "",
     population: 5000000,
     capital: "Benin City",
-    funFact: ""
+    funFact: "",
+    gdp: 3990000000000,
   },
   ekiti: {
     state: "Ekiti",
     hint: "",
     population: 3500000,
     capital: "Ado-Ekiti",
-    funFact: ""
+    funFact: "",
+    gdp: 2350000000000,
   },
   enugu: {
     state: "Enugu",
     hint: "",
     population: 4500000,
     capital: "Enugu",
-    funFact: ""
+    funFact: "",
+    gdp: 1450000000000,
   },
   gombe: {
     state: "Gombe",
     hint: "",
     population: 3500000,
     capital: "Gombe",
-    funFact: ""
+    funFact: "",
+    gdp: 2100000000000,
   },
   imo: {
     state: "Imo",
     hint: "",
     population: 5500000,
     capital: "Owerri",
-    funFact: ""
+    funFact: "",
+    gdp: 7680000000000,
   },
   jigawa: {
     state: "Jigawa",
     hint: "",
     population: 5500000,
     capital: "Dutse",
-    funFact: ""
+    funFact: "",
+    gdp: 2160000000000,
   },
   kaduna: {
     state: "Kaduna",
     hint: "",
     population: 8500000,
     capital: "Kaduna",
-    funFact: ""
+    funFact: "",
+    gdp: 4310000000000,
   },
   kano: {
     state: "Kano",
     hint: "",
     population: 16200000,
     capital: "Kano",
-    funFact: ""
+    funFact: "",
+    gdp: 4200000000000,
   },
   katsina: {
     state: "Katsina",
     hint: "",
     population: 8500000,
     capital: "Katsina",
-    funFact: ""
+    funFact: "",
+    gdp: 3320000000000,
   },
   kebbi: {
     state: "Kebbi",
     hint: "",
     population: 4500000,
     capital: "Birnin Kebbi",
-    funFact: ""
+    funFact: "",
+    gdp: 1800000000000,
   },
   kogi: {
     state: "Kogi",
     hint: "",
     population: 4500000,
     capital: "Lokoja",
-    funFact: ""
+    funFact: "",
+    gdp: 3690000000000,
   },
   kwara: {
     state: "Kwara",
     hint: "",
     population: 3500000,
     capital: "Ilorin",
-    funFact: ""
+    funFact: "",
+    gdp: 1380000000000,
   },
   lagos: {
     state: "Lagos",
@@ -183,91 +206,104 @@ export const STATE_INFO: Partial<Record<StateId, StateInfo>> = {
     population: 15000000,
     capital: "Ikeja",
     funFact: "Eko for show!",
-    imageUrl: "src/assets/state-images/lagos/dami-akinbode-mxfzQRCBQ5M-unsplash.jpg"
+    imageUrl: "src/assets/state-images/lagos/dami-akinbode-mxfzQRCBQ5M-unsplash.jpg",
+    gdp: 61170000000000,
   },
   nassarawa: {
     state: "Nassarawa",
     hint: "",
     population: 2500000,
     capital: "Lafia",
-    funFact: ""
+    funFact: "",
+    gdp: 1860000000000,
   },
   niger: {
     state: "Niger",
     hint: "",
     population: 5500000,
     capital: "Minna",
-    funFact: ""
+    funFact: "",
+    gdp: 4580000000000,
   },
   ogun: {
     state: "Ogun",
     hint: "",
     population: 5500000,
     capital: "Abeokuta",
-    funFact: ""
+    funFact: "",
+    gdp: 5030000000000,
   },
   ondo: {
     state: "Ondo",
     hint: "",
     population: 4500000,
     capital: "Akure",
-    funFact: ""
+    funFact: "",
+    gdp: 5100000000000,
   },
   osun: {
     state: "Osun",
     hint: "",
     population: 4500000,
     capital: "Oshogbo",
-    funFact: ""
+    funFact: "",
+    gdp: 2300000000000,
   },
   oyo: {
     state: "Oyo",
     hint: "",
     population: 8500000,
     capital: "Ibadan",
-    funFact: ""
+    funFact: "",
+    gdp: 3680000000000,
   },
   plateau: {
     state: "Plateau",
     hint: "",
     population: 4500000,
     capital: "Jos",
-    funFact: ""
+    funFact: "",
+    gdp: 1500000000000,
   },
   rivers: {
     state: "Rivers",
     hint: "",
     population: 9800000,
     capital: "PH",
-    funFact: ""
+    funFact: "",
+    gdp: 7960000000000,
   },
   sokoto: {
     state: "Sokoto",
     hint: "",
     population: 4500000,
     capital: "Sokoto",
-    funFact: ""
+    funFact: "",
+    gdp: 2850000000000,
   },
   taraba: {
     state: "Taraba",
     hint: "",
     population: 3500000,
     capital: "Jalingo",
-    funFact: ""
+    funFact: "",
+    gdp: 2040000000000,
   },
   yobe: {
     state: "Yobe",
     hint: "",
     population: 2500000,
     capital: "Damaturu",
-    funFact: ""
+    funFact: "",
+    gdp: 1090000000000,
   },
   zamfara: {
     state: "Zamfara",
     hint: "",
     population: 4500000,
     capital: "Gusau",
-    funFact: ""
+    funFact: "",
+    gdp: 1730000000000,
   },
   "federal-capital-territory": {
     state: "FCT",

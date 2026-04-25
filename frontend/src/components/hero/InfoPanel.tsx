@@ -11,7 +11,7 @@ type InfoPanelProps = {
 
 const STAT_TYPES = [
   { key: "population", label: "Population", unit: "people" },
-  { key: "gdp", label: "GDP", unit: "USD" },
+  { key: "gdp", label: "GDP", unit: "NGN" },
   { key: "fertility", label: "Fertility", unit: "children/woman" },
 ] as const;
 
