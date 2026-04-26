@@ -22,7 +22,6 @@ export default function StateDataPage() {
 
   const [selectedLGA, setSelectedLGA] = useState<string | null>(null);
 
-  const stateName = formatStateName(stateId);
   const categoryName = formatCategory(category);
 
   // Get election results for the current state (2023)
