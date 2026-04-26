@@ -1,9 +1,6 @@
-// src/components/explore/LGAMap.tsx
-// Renders the SVG LGA map for a given state using the geo/[state].json data.
-// Colours each LGA by the winning party.
-
 import { useState, useEffect } from "react";
-import { PARTY_COLORS, getElectionByLGA } from "../../data/electionData";
+import { PARTY_COLORS, getElectionByLGA, type Party } from "../../data/electionData";
+import { HISTORICAL_DATA } from "../../data/historicalData";
 import "./LGAMap.css";
 
 type LGAFeature = {
@@ -16,19 +13,18 @@ type LGAFeature = {
 
 type LGAMapProps = {
   stateId: string;
+  year: string;
   selectedLGA: string | null;
   onSelect: (id: string) => void;
   onHover: (id: string | null) => void;
 };
 
-export default function LGAMap({ stateId, selectedLGA, onSelect, onHover }: LGAMapProps) {
+export default function LGAMap({ stateId, year, selectedLGA, onSelect, onHover }: LGAMapProps) {
   const [geoData, setGeoData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
-    // Dynamic import for the specific state GeoJSON
-    // Vite handles this by looking in the src/data/geo directory
     import(`../../data/geo/${stateId}.json`)
       .then((m) => {
         setGeoData(m.default);
@@ -40,16 +36,25 @@ export default function LGAMap({ stateId, selectedLGA, onSelect, onHover }: LGAM
       });
   }, [stateId]);
 
-  // Party colour for each LGA based on 2023 election winner
+  // Archive winner for the state
+  const archiveWinner = HISTORICAL_DATA[year]?.[stateId]?.winner;
+
   function getFill(lgaId: string): string {
-    const electionLookup = getElectionByLGA(stateId);
-    const result = electionLookup[lgaId];
-    if (!result) return "#ccc";
-    return PARTY_COLORS[result.winner];
+    if (year === "2023") {
+      const electionLookup = getElectionByLGA(stateId);
+      const result = electionLookup[lgaId];
+      if (!result) return "#ccc";
+      return PARTY_COLORS[result.winner] || "#999";
+    }
+
+    // Archive mode: color by state winner
+    if (!archiveWinner) return "#eee";
+    return PARTY_COLORS[archiveWinner as Party] || "#666";
   }
 
   const handleMouseEnter = (id: string) => {
-    onHover(id);
+    // Only hover info if in 2023
+    if (year === "2023") onHover(id);
   };
 
   const handleMouseLeave = () => {
@@ -66,12 +71,11 @@ export default function LGAMap({ stateId, selectedLGA, onSelect, onHover }: LGAM
 
   const features = geoData.lgas as LGAFeature[];
   const viewBox = geoData.viewbox;
-
   const stateName = stateId.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 
   return (
     <div className="lga-map-wrapper">
-      <p className="lga-map-label">{stateName} — 2023 Presidential Election</p>
+      <p className="lga-map-label">{stateName} — {year} Presidential Election</p>
 
       <svg
         className="lga-map-svg"
@@ -82,9 +86,9 @@ export default function LGAMap({ stateId, selectedLGA, onSelect, onHover }: LGAM
           <path
             key={lga.id}
             d={lga.d}
-            className={`lga-path${selectedLGA === lga.id ? " selected" : ""}`}
+            className={`lga-path${selectedLGA === lga.id ? " selected" : ""}${year !== "2023" ? " archive-path" : ""}`}
             fill={getFill(lga.id)}
-            onClick={() => onSelect(lga.id)}
+            onClick={() => year === "2023" && onSelect(lga.id)}
             onMouseEnter={() => handleMouseEnter(lga.id)}
             onMouseLeave={handleMouseLeave}
           >
@@ -93,17 +97,23 @@ export default function LGAMap({ stateId, selectedLGA, onSelect, onHover }: LGAM
         ))}
       </svg>
 
-      {/* Party legend */}
+      {/* Party legend - only relevant for 2023 or winners */}
       <div className="lga-legend">
-        {(["APC", "LP", "PDP", "NNPP"] as const).map((party) => (
-          <div key={party} className="lga-legend-item">
-            <div
-              className="lga-legend-swatch"
-              style={{ background: PARTY_COLORS[party] }}
-            />
-            {party}
-          </div>
-        ))}
+        {year === "2023" ? (
+          (["APC", "LP", "PDP", "NNPP"] as const).map((party) => (
+            <div key={party} className="lga-legend-item">
+              <div className="lga-legend-swatch" style={{ background: PARTY_COLORS[party] }} />
+              {party}
+            </div>
+          ))
+        ) : (
+          archiveWinner && (
+            <div className="lga-legend-item">
+              <div className="lga-legend-swatch" style={{ background: PARTY_COLORS[archiveWinner as Party] || "#666" }} />
+              {archiveWinner} (State Winner)
+            </div>
+          )
+        )}
       </div>
     </div>
   );

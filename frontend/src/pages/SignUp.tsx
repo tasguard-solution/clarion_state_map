@@ -3,6 +3,7 @@ import { supabase } from "../lib/supabase";
 import { useNavigate } from "react-router-dom";
 import "./SignUp.css";
 
+
 const SignUp: React.FC = () => {
     const [isLogin, setIsLogin] = useState(false);
     const [email, setEmail] = useState("");
