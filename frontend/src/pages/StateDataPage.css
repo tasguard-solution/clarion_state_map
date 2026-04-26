@@ -203,12 +203,13 @@
   flex: 1;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .nav-arrow {
   position: absolute;
-  top: 50%;
+  top: 0%;
+  margin-top: 200px;
   transform: translateY(-50%);
   width: 48px;
   height: 48px;
