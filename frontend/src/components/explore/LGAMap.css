@@ -22,7 +22,7 @@
 
 .lga-map-svg {
   width: 100%;
-  max-height: 280px;
+  max-height: 550px;
   overflow: visible;
   cursor: default;
 }
@@ -35,13 +35,13 @@
 }
 
 .lga-path:hover {
-  filter: brightness(1.15) drop-shadow(2px 2px 0px rgba(0,0,0,0.4));
+  filter: brightness(1.15) drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.4));
   opacity: 0.95;
 }
 
 .lga-path.selected {
   stroke-width: 3;
-  filter: brightness(1.2) drop-shadow(3px 3px 0px rgba(0,0,0,0.6));
+  filter: brightness(1.2) drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.6));
 }
 
 /* ── Party legend ───────────────────────────── */
