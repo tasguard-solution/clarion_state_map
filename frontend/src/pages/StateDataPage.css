@@ -35,7 +35,7 @@
 .state-dropdown {
   background: transparent;
   color: #fff;
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   font-family: var(--heading);
   font-size: 2.2rem;
   font-weight: 900;
@@ -45,7 +45,6 @@
   outline: none;
   padding: 0;
   margin: 0;
-  -webkit-appearance: none;
 }
 
 .state-dropdown option {
@@ -83,7 +82,9 @@
   transition: opacity 0.15s;
 }
 
-.sdp-breadcrumb:hover { opacity: 0.8; }
+.sdp-breadcrumb:hover {
+  opacity: 0.8;
+}
 
 .sdp-title {
   font-family: var(--heading);
@@ -128,7 +129,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  background: #fdfaf5;
 }
 
 .nav-arrow {
@@ -163,8 +163,13 @@
   box-shadow: none;
 }
 
-.nav-arrow.left { left: 20px; }
-.nav-arrow.right { right: 20px; }
+.nav-arrow.left {
+  left: 20px;
+}
+
+.nav-arrow.right {
+  right: 20px;
+}
 
 /* Archive Vibe Style */
 .sdp-archive-vibe {
@@ -211,8 +216,8 @@
   display: flex;
   justify-content: space-between;
   padding: 8px 12px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .party-name {
@@ -239,8 +244,16 @@
 
 /* Rest of sidebar stays same */
 @media (max-width: 900px) {
-  .nav-arrow { width: 32px; height: 32px; font-size: 14px; }
-  .sdp-archive-vibe { flex-direction: row; flex-wrap: wrap; }
+  .nav-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .sdp-archive-vibe {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .sdp-sidebar-heading {
@@ -252,7 +265,7 @@
   opacity: 0.45;
   margin: 0 0 12px;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .sdp-lga-list {
@@ -269,18 +282,18 @@
   cursor: pointer;
   border: 1px solid transparent;
   transition: all 0.1s ease;
-  background: rgba(255,255,255,0.03);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .sdp-lga-item:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .sdp-lga-item.active {
   background: var(--orange-button-bg);
   border-color: var(--border-primary);
-  box-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
 
 .sdp-lga-item.active .sdp-lga-item-name,
@@ -308,12 +321,14 @@
   .sdp-body {
     flex-direction: column;
   }
+
   .sdp-lga-sidebar {
     max-width: 100%;
     border-right: none;
     border-bottom: 4px solid var(--border-primary);
     max-height: 180px;
   }
+
   .sdp-lga-list {
     flex-direction: row;
     flex-wrap: wrap;

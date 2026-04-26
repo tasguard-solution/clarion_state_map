@@ -19,8 +19,9 @@ def format_id(name):
 
 # Standardise state IDs to match the app's current geo data
 def sanitize_state_id(sid):
-    if sid == 'fct': return 'federal-capital-territory'
+    if sid == 'fct' or sid == 'abuja': return 'federal-capital-territory'
     if sid == 'nasarawa': return 'nassarawa'
+    if sid == 'sokto': return 'sokoto'
     return sid
 
 for year in pres_years:
@@ -32,6 +33,13 @@ for year in pres_years:
         continue
 
     historical_data[year] = {}
+
+    def clean_num(val):
+        if not val or val == '-': return 0
+        try:
+            return int(val.replace(',', ''))
+        except ValueError:
+            return 0
 
     with open(filepath, 'r', encoding='utf-8') as f:
         # Some CSVs might have extra spaces or weird headers
@@ -51,17 +59,21 @@ for year in pres_years:
             winner = clean_row.get('winner', 'Unknown')
             
             # Identify party votes (exclude non-party columns)
-            exclude = ['state', 'totvotes', 'regvoters', 'winner', 'totalvotes', 'otherparties', 'sn']
+            exclude = ['state', 'totvotes', 'regvoters', 'winner', 'totalvotes', 'otherparties', 'sn', 'validvotes']
             party_votes = {}
             for k, v in clean_row.items():
-                if k not in exclude and v.isdigit():
-                    party_votes[k.upper()] = int(v)
+                if k not in exclude:
+                    num = clean_num(v)
+                    if num > 0:
+                        party_votes[k.upper()] = num
+            
+            total_val = clean_row.get('totvotes') or clean_row.get('totalvotes') or clean_row.get('validvotes') or 0
             
             historical_data[year][state_id] = {
                 "stateName": state_name,
                 "winner": winner.upper(),
                 "votes": party_votes,
-                "total": int(clean_row.get('totvotes', clean_row.get('totalvotes', 0)) or 0)
+                "total": clean_num(total_val)
             }
 
 ts_content = f"""// Auto-generated historical election data

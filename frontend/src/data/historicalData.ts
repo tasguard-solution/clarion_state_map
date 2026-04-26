@@ -296,7 +296,7 @@ export const HISTORICAL_DATA: Record<string, Record<string, HistoricalStateResul
       },
       "total": 1565603
     },
-    "sokto": {
+    "sokoto": {
       "stateName": "Sokto",
       "winner": "AD-APP",
       "votes": {
@@ -332,7 +332,7 @@ export const HISTORICAL_DATA: Record<string, Record<string, HistoricalStateResul
       },
       "total": 380079
     },
-    "abuja": {
+    "federal-capital-territory": {
       "stateName": "Abuja",
       "winner": "PDP",
       "votes": {
@@ -346,229 +346,372 @@ export const HISTORICAL_DATA: Record<string, Record<string, HistoricalStateResul
     "abia": {
       "stateName": "Abia",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 84305,
+        "PDP": 386748,
+        "APGA": 260899
+      },
+      "total": 748034
     },
     "adamawa": {
       "stateName": "Adamawa",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 285151,
+        "PDP": 660780,
+        "APGA": 2352
+      },
+      "total": 955847
     },
     "akwa-ibom": {
       "stateName": "Akwa Ibom",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 162542,
+        "PDP": 1084574,
+        "APGA": 1077
+      },
+      "total": 1292395
     },
     "anambra": {
       "stateName": "Anambra",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 79476,
+        "PDP": 466866,
+        "APGA": 279378
+      },
+      "total": 862193
     },
     "bauchi": {
       "stateName": "Bauchi",
       "winner": "ANPP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 1043442,
+        "PDP": 617291,
+        "APGA": 1678
+      },
+      "total": 1680542
     },
     "bayelsa": {
       "stateName": "Bayelsa",
       "winner": "PDP",
       "votes": {
+        "ANPP": 18344,
+        "PDP": 708312,
         "APGA": 3
       },
-      "total": 0
+      "total": 738165
     },
     "benue": {
       "stateName": "Benue",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 494804,
+        "PDP": 662422,
+        "APGA": 6731
+      },
+      "total": 1213843
     },
     "bornu": {
       "stateName": "Bornu",
       "winner": "ANPP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 727595,
+        "PDP": 380875,
+        "APGA": 3549
+      },
+      "total": 1120152
     },
     "cross-river": {
       "stateName": "Cross River",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 11624,
+        "PDP": 1207675,
+        "APGA": 2112
+      },
+      "total": 1233321
     },
     "delta": {
       "stateName": "Delta",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 27492,
+        "PDP": 1072527,
+        "APGA": 15062
+      },
+      "total": 1142622
     },
     "ebonyi": {
       "stateName": "Ebonyi",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 16308,
+        "PDP": 752823,
+        "APGA": 20525
+      },
+      "total": 796626
     },
     "edo": {
       "stateName": "Edo",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 109401,
+        "PDP": 979775,
+        "APGA": 2247
+      },
+      "total": 1106812
     },
     "ekiti": {
       "stateName": "Ekiti",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 7500,
+        "PDP": 301185,
+        "APGA": 1300
+      },
+      "total": 325881
     },
     "enugu": {
       "stateName": "Enugu",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 18987,
+        "PDP": 897721,
+        "APGA": 177050
+      },
+      "total": 1126945
     },
     "federal-capital-territory": {
       "stateName": "FCT",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 99220,
+        "PDP": 130243,
+        "APGA": 22481
+      },
+      "total": 261163
     },
     "gombe": {
       "stateName": "Gombe",
       "winner": "ANPP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 516081,
+        "PDP": 452328,
+        "APGA": 1601
+      },
+      "total": 976136
     },
     "imo": {
       "stateName": "Imo",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 53983,
+        "PDP": 656861,
+        "APGA": 281114
+      },
+      "total": 1016481
     },
     "jigawa": {
       "stateName": "Jigawa",
       "winner": "ANPP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 885505,
+        "PDP": 202502,
+        "APGA": 2136
+      },
+      "total": 1101909
     },
     "kaduna": {
       "stateName": "Kaduna",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 870454,
+        "PDP": 1025347,
+        "APGA": 7800
+      },
+      "total": 1918365
     },
     "kano": {
       "stateName": "Kano",
       "winner": "ANPP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 1628085,
+        "PDP": 492755,
+        "APGA": 10229
+      },
+      "total": 2172182
     },
     "katsina": {
       "stateName": "Katsina",
       "winner": "ANPP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 1259789,
+        "PDP": 380914,
+        "APGA": 2928
+      },
+      "total": 1653161
     },
     "kebbi": {
       "stateName": "Kebbi",
       "winner": "ANPP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 529512,
+        "PDP": 272564,
+        "APGA": 3888
+      },
+      "total": 815219
     },
     "kogi": {
       "stateName": "Kogi",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 314494,
+        "PDP": 528778,
+        "APGA": 2275
+      },
+      "total": 863989
     },
     "kwara": {
       "stateName": "Kwara",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 170325,
+        "PDP": 390800,
+        "APGA": 2293
+      },
+      "total": 574369
     },
     "lagos": {
       "stateName": "Lagos",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 116510,
+        "PDP": 1129521,
+        "APGA": 134764
+      },
+      "total": 1628748
     },
     "nassarawa": {
       "stateName": "Nasarawa",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 244005,
+        "PDP": 470936,
+        "APGA": 1488
+      },
+      "total": 729266
     },
     "niger": {
       "stateName": "Niger",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 390103,
+        "PDP": 486621,
+        "APGA": 11849
+      },
+      "total": 983206
     },
     "ogun": {
       "stateName": "Ogun",
       "winner": "PDP",
       "votes": {
         "ANPP": 680,
+        "PDP": 1360170,
         "APGA": 27
       },
-      "total": 0
+      "total": 1361251
     },
     "ondo": {
       "stateName": "Ondo",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 31994,
+        "PDP": 840988,
+        "APGA": 4180
+      },
+      "total": 888863
     },
     "osun": {
       "stateName": "Osun",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 14369,
+        "PDP": 582089,
+        "APGA": 1424
+      },
+      "total": 611593
     },
     "oyo": {
       "stateName": "Oyo",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 25112,
+        "PDP": 828725,
+        "APGA": 4519
+      },
+      "total": 882571
     },
     "plateau": {
       "stateName": "Plateau",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 324566,
+        "PDP": 706432,
+        "APGA": 6362
+      },
+      "total": 1050370
     },
     "rivers": {
       "stateName": "Rivers",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 42346,
+        "PDP": 2003521,
+        "APGA": 5964
+      },
+      "total": 2160133
     },
     "sokoto": {
       "stateName": "Sokoto",
       "winner": "ANPP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 681153,
+        "PDP": 232258,
+        "APGA": 6869
+      },
+      "total": 929085
     },
     "taraba": {
       "stateName": "Taraba",
       "winner": "PDP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 198023,
+        "PDP": 694527,
+        "APGA": 1179
+      },
+      "total": 906069
     },
     "yobe": {
       "stateName": "Yobe",
       "winner": "ANPP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 383583,
+        "PDP": 206984,
+        "APGA": 3522
+      },
+      "total": 599131
     },
     "zamfara": {
       "stateName": "Zamfara",
       "winner": "ANPP",
-      "votes": {},
-      "total": 0
+      "votes": {
+        "ANPP": 843159,
+        "PDP": 200702,
+        "APGA": 4590
+      },
+      "total": 1053851
     }
   },
   "2011": {
@@ -1115,7 +1258,7 @@ export const HISTORICAL_DATA: Record<string, Record<string, HistoricalStateResul
       },
       "total": 941879
     },
-    "abuja": {
+    "federal-capital-territory": {
       "stateName": "Abuja",
       "winner": "PDP",
       "votes": {
