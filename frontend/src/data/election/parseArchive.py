@@ -3,8 +3,9 @@ import json
 import re
 import os
 
-archive_dir = 'archive'
-output_path = '../historicalData.ts'
+base_dir = os.path.dirname(os.path.abspath(__file__))
+archive_dir = os.path.join(base_dir, 'archive')
+output_path = os.path.join(base_dir, '../historicalData.ts')
 
 # Years to process (skipping 2007)
 pres_years = ['1999', '2003', '2011', '2015', '2019']

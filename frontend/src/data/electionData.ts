@@ -14,9 +14,9 @@ export type LGAElectionResult = {
 };
 
 export const PARTY_COLORS: Record<Party, string> = {
-  APC:  "#3B8BD4",
-  LP:   "#22c553",
-  PDP:  "#ef4444",
+  APC: "#3B8BD4",
+  LP: "#22c553",
+  PDP: "#ef4444",
   NNPP: "#f97316",
 };
 
@@ -24,7 +24,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "abia": [
     {
       "lgaId": "aba-north",
-      "lgaName": "ABA NORTH",
+      "lgaName": "Aba North",
       "apc": 190,
       "lp": 35898,
       "pdp": 428,
@@ -34,7 +34,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "aba-south",
-      "lgaName": "ABA SOUTH",
+      "lgaName": "Aba South",
       "apc": 215,
       "lp": 36717,
       "pdp": 580,
@@ -44,7 +44,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "arochukwu",
-      "lgaName": "AROCHUKWU",
+      "lgaName": "Arochukwu",
       "apc": 601,
       "lp": 14287,
       "pdp": 526,
@@ -54,7 +54,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bende",
-      "lgaName": "BENDE",
+      "lgaName": "Bende",
       "apc": 1545,
       "lp": 18446,
       "pdp": 973,
@@ -64,7 +64,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikwuano",
-      "lgaName": "IKWUANO",
+      "lgaName": "Ikwuano",
       "apc": 407,
       "lp": 14995,
       "pdp": 1065,
@@ -74,7 +74,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "isiala-ngwa-north",
-      "lgaName": "ISIALA NGWA NORTH",
+      "lgaName": "Isiala-Ngwa North",
       "apc": 742,
       "lp": 14336,
       "pdp": 5964,
@@ -84,7 +84,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "isiala-ngwa-south",
-      "lgaName": "ISIALA NGWA SOUTH",
+      "lgaName": "Isiala-Ngwa South",
       "apc": 772,
       "lp": 14125,
       "pdp": 2691,
@@ -93,8 +93,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "LP"
     },
     {
-      "lgaId": "isuikwuato",
-      "lgaName": "ISUIKWUATO",
+      "lgaId": "isuikwato",
+      "lgaName": "Isuikwato",
       "apc": 472,
       "lp": 16038,
       "pdp": 607,
@@ -103,8 +103,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "LP"
     },
     {
-      "lgaId": "obingwa",
-      "lgaName": "OBINGWA",
+      "lgaId": "obi-ngwa",
+      "lgaName": "Obi Ngwa",
       "apc": 564,
       "lp": 23687,
       "pdp": 2747,
@@ -114,7 +114,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ohafia",
-      "lgaName": "OHAFIA",
+      "lgaName": "Ohafia",
       "apc": 320,
       "lp": 8327,
       "pdp": 432,
@@ -123,8 +123,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "LP"
     },
     {
-      "lgaId": "osisioma",
-      "lgaName": "OSISIOMA",
+      "lgaId": "osisioma-ngwa",
+      "lgaName": "Osisioma Ngwa",
       "apc": 158,
       "lp": 19680,
       "pdp": 610,
@@ -134,7 +134,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ugwunagbo",
-      "lgaName": "UGWUNAGBO",
+      "lgaName": "Ugwunagbo",
       "apc": 195,
       "lp": 7066,
       "pdp": 930,
@@ -144,7 +144,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ukwa-east",
-      "lgaName": "UKWA EAST",
+      "lgaName": "Ukwa East",
       "apc": 264,
       "lp": 5819,
       "pdp": 1200,
@@ -154,7 +154,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ukwa-west",
-      "lgaName": "UKWA  WEST",
+      "lgaName": "Ukwa West",
       "apc": 591,
       "lp": 9557,
       "pdp": 918,
@@ -164,7 +164,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "umuahia-north",
-      "lgaName": "UMUAHIA NORTH",
+      "lgaName": "Umuahia North",
       "apc": 795,
       "lp": 51318,
       "pdp": 1529,
@@ -174,7 +174,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "umuahia-south",
-      "lgaName": "UMUAHIA  SOUTH",
+      "lgaName": "Umuahia South",
       "apc": 475,
       "lp": 25017,
       "pdp": 1156,
@@ -184,7 +184,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "umu-nneochi",
-      "lgaName": "UMU - NNEOCHI",
+      "lgaName": "Umu Nneochi",
       "apc": 608,
       "lp": 11782,
       "pdp": 320,
@@ -196,7 +196,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "akwa-ibom": [
     {
       "lgaId": "abak",
-      "lgaName": "ABAK",
+      "lgaName": "Abak",
       "apc": 15058,
       "lp": 5057,
       "pdp": 7017,
@@ -206,7 +206,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "eastern-obolo",
-      "lgaName": "EASTERN OBOLO",
+      "lgaName": "Eastern Obolo",
       "apc": 1674,
       "lp": 1345,
       "pdp": 2345,
@@ -216,7 +216,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "eket",
-      "lgaName": "EKET",
+      "lgaName": "Eket",
       "apc": 4675,
       "lp": 13238,
       "pdp": 9757,
@@ -225,8 +225,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "LP"
     },
     {
-      "lgaId": "esit-eket-uquo",
-      "lgaName": "ESIT EKET (UQUO)",
+      "lgaId": "esit-eket",
+      "lgaName": "Esit Eket",
       "apc": 3819,
       "lp": 2545,
       "pdp": 4484,
@@ -236,7 +236,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "essien-udim",
-      "lgaName": "ESSIEN UDIM",
+      "lgaName": "Essien Udim",
       "apc": 19991,
       "lp": 2823,
       "pdp": 7362,
@@ -246,7 +246,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "etim-ekpo",
-      "lgaName": "ETIM EKPO",
+      "lgaName": "Etim Ekpo",
       "apc": 5182,
       "lp": 1711,
       "pdp": 4733,
@@ -256,7 +256,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "etinan",
-      "lgaName": "ETINAN",
+      "lgaName": "Etinan",
       "apc": 4505,
       "lp": 4180,
       "pdp": 10455,
@@ -266,7 +266,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibeno",
-      "lgaName": "IBENO",
+      "lgaName": "Ibeno",
       "apc": 878,
       "lp": 2403,
       "pdp": 3227,
@@ -276,7 +276,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibesikpo-asutan",
-      "lgaName": "IBESIKPO ASUTAN",
+      "lgaName": "Ibesikpo Asutan",
       "apc": 6480,
       "lp": 3698,
       "pdp": 9326,
@@ -286,7 +286,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibiono-ibom",
-      "lgaName": "IBIONO IBOM",
+      "lgaName": "Ibiono Ibom",
       "apc": 3407,
       "lp": 7752,
       "pdp": 5274,
@@ -296,7 +296,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ika",
-      "lgaName": "IKA",
+      "lgaName": "Ika",
       "apc": 5511,
       "lp": 1054,
       "pdp": 3750,
@@ -306,7 +306,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikono",
-      "lgaName": "IKONO",
+      "lgaName": "Ikono",
       "apc": 6620,
       "lp": 5198,
       "pdp": 6731,
@@ -316,7 +316,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikot-abasi",
-      "lgaName": "IKOT ABASI",
+      "lgaName": "Ikot Abasi",
       "apc": 2875,
       "lp": 4616,
       "pdp": 6900,
@@ -326,7 +326,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikot-ekpene",
-      "lgaName": "IKOT EKPENE",
+      "lgaName": "Ikot Ekpene",
       "apc": 11803,
       "lp": 5985,
       "pdp": 6624,
@@ -336,7 +336,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ini",
-      "lgaName": "INI",
+      "lgaName": "Ini",
       "apc": 3943,
       "lp": 2894,
       "pdp": 7740,
@@ -346,7 +346,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "itu",
-      "lgaName": "ITU",
+      "lgaName": "Itu",
       "apc": 4094,
       "lp": 5882,
       "pdp": 7326,
@@ -356,7 +356,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mbo",
-      "lgaName": "MBO",
+      "lgaName": "Mbo",
       "apc": 3204,
       "lp": 1456,
       "pdp": 3922,
@@ -366,7 +366,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mkpat-enin",
-      "lgaName": "MKPAT ENIN",
+      "lgaName": "Mkpat Enin",
       "apc": 2152,
       "lp": 4105,
       "pdp": 9441,
@@ -376,7 +376,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nsit-atai",
-      "lgaName": "NSIT ATAI",
+      "lgaName": "Nsit Atai",
       "apc": 2853,
       "lp": 1067,
       "pdp": 8371,
@@ -386,7 +386,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nsit-ibom",
-      "lgaName": "NSIT IBOM",
+      "lgaName": "Nsit Ibom",
       "apc": 5875,
       "lp": 2015,
       "pdp": 8176,
@@ -396,7 +396,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nsit-ubium",
-      "lgaName": "NSIT UBIUM",
+      "lgaName": "Nsit Ubium",
       "apc": 2792,
       "lp": 2329,
       "pdp": 11308,
@@ -406,7 +406,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "obot-akara",
-      "lgaName": "OBOT AKARA",
+      "lgaName": "Obot Akara",
       "apc": 4477,
       "lp": 2542,
       "pdp": 8029,
@@ -416,7 +416,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "okobo",
-      "lgaName": "OKOBO",
+      "lgaName": "Okobo",
       "apc": 3168,
       "lp": 2490,
       "pdp": 5273,
@@ -426,7 +426,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "onna",
-      "lgaName": "ONNA",
+      "lgaName": "Onna",
       "apc": 1396,
       "lp": 4745,
       "pdp": 8741,
@@ -436,7 +436,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oron",
-      "lgaName": "ORON",
+      "lgaName": "Oron",
       "apc": 2443,
       "lp": 3033,
       "pdp": 3295,
@@ -446,7 +446,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oruk-anam",
-      "lgaName": "ORUK ANAM",
+      "lgaName": "Oruk Anam",
       "apc": 7039,
       "lp": 2617,
       "pdp": 8962,
@@ -456,7 +456,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "udung-uko",
-      "lgaName": "UDUNG UKO",
+      "lgaName": "Udung Uko",
       "apc": 1555,
       "lp": 1068,
       "pdp": 2701,
@@ -466,7 +466,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ukanafun",
-      "lgaName": "UKANAFUN",
+      "lgaName": "Ukanafun",
       "apc": 6152,
       "lp": 2067,
       "pdp": 7751,
@@ -476,7 +476,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "uruan",
-      "lgaName": "URUAN",
+      "lgaName": "Uruan",
       "apc": 4987,
       "lp": 3024,
       "pdp": 9327,
@@ -486,7 +486,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "urue-offong-oruko",
-      "lgaName": "URUE OFFONG/ORUKO",
+      "lgaName": "Urue-Offong/Oruko",
       "apc": 3697,
       "lp": 2010,
       "pdp": 3419,
@@ -496,7 +496,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "uyo",
-      "lgaName": "UYO",
+      "lgaName": "Uyo",
       "apc": 7765,
       "lp": 27534,
       "pdp": 12245,
@@ -508,7 +508,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "benue": [
     {
       "lgaId": "ado",
-      "lgaName": "ADO",
+      "lgaName": "Ado",
       "apc": 2271,
       "lp": 9987,
       "pdp": 1107,
@@ -518,7 +518,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "agatu",
-      "lgaName": "AGATU",
+      "lgaName": "Agatu",
       "apc": 3988,
       "lp": 6302,
       "pdp": 4221,
@@ -528,7 +528,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "apa",
-      "lgaName": "APA",
+      "lgaName": "Apa",
       "apc": 3430,
       "lp": 7421,
       "pdp": 3682,
@@ -538,7 +538,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "buruku",
-      "lgaName": "BURUKU",
+      "lgaName": "Buruku",
       "apc": 20248,
       "lp": 13466,
       "pdp": 6909,
@@ -548,7 +548,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gboko",
-      "lgaName": "GBOKO",
+      "lgaName": "Gboko",
       "apc": 35149,
       "lp": 18615,
       "pdp": 13901,
@@ -558,7 +558,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "guma",
-      "lgaName": "GUMA",
+      "lgaName": "Guma",
       "apc": 10481,
       "lp": 21796,
       "pdp": 999,
@@ -568,7 +568,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gwer-east",
-      "lgaName": "GWER EAST",
+      "lgaName": "Gwer East",
       "apc": 15900,
       "lp": 9800,
       "pdp": 7370,
@@ -578,7 +578,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gwer-west",
-      "lgaName": "GWER WEST",
+      "lgaName": "Gwer West",
       "apc": 7332,
       "lp": 17417,
       "pdp": 838,
@@ -588,7 +588,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "katsina-ala",
-      "lgaName": "KATSINA-ALA",
+      "lgaName": "Katsina-Ala",
       "apc": 18632,
       "lp": 7876,
       "pdp": 8060,
@@ -598,7 +598,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "konshisha",
-      "lgaName": "KONSHISHA",
+      "lgaName": "Konshisha",
       "apc": 10742,
       "lp": 26261,
       "pdp": 3524,
@@ -608,7 +608,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kwande",
-      "lgaName": "KWANDE",
+      "lgaName": "Kwande",
       "apc": 23027,
       "lp": 11945,
       "pdp": 7813,
@@ -618,7 +618,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "logo",
-      "lgaName": "LOGO",
+      "lgaName": "Logo",
       "apc": 8121,
       "lp": 13836,
       "pdp": 9377,
@@ -628,7 +628,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "makurdi",
-      "lgaName": "MAKURDI",
+      "lgaName": "Makurdi",
       "apc": 28692,
       "lp": 48228,
       "pdp": 5134,
@@ -638,7 +638,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "obi",
-      "lgaName": "OBI",
+      "lgaName": "Obi",
       "apc": 4450,
       "lp": 7949,
       "pdp": 4340,
@@ -648,7 +648,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ogbadibo",
-      "lgaName": "OGBADIBO",
+      "lgaName": "Ogbadibo",
       "apc": 3129,
       "lp": 10154,
       "pdp": 3460,
@@ -658,7 +658,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ohimini",
-      "lgaName": "OHIMINI",
+      "lgaName": "Ohimini",
       "apc": 3239,
       "lp": 6545,
       "pdp": 4972,
@@ -668,7 +668,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oju",
-      "lgaName": "OJU",
+      "lgaName": "Oju",
       "apc": 8412,
       "lp": 13192,
       "pdp": 4920,
@@ -678,7 +678,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "okpokwu",
-      "lgaName": "OKPOKWU",
+      "lgaName": "Okpokwu",
       "apc": 3409,
       "lp": 10470,
       "pdp": 4641,
@@ -687,8 +687,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "LP"
     },
     {
-      "lgaId": "otukpo",
-      "lgaName": "OTUKPO",
+      "lgaId": "oturkpo",
+      "lgaName": "Oturkpo",
       "apc": 8471,
       "lp": 23762,
       "pdp": 6760,
@@ -698,7 +698,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tarka",
-      "lgaName": "TARKA",
+      "lgaName": "Tarka",
       "apc": 13640,
       "lp": 2038,
       "pdp": 2642,
@@ -708,7 +708,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ukum",
-      "lgaName": "UKUM",
+      "lgaName": "Ukum",
       "apc": 20719,
       "lp": 8036,
       "pdp": 9892,
@@ -718,7 +718,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ushongo",
-      "lgaName": "USHONGO",
+      "lgaName": "Ushongo",
       "apc": 20060,
       "lp": 7324,
       "pdp": 7264,
@@ -728,7 +728,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "vandeikya",
-      "lgaName": "VANDEIKYA",
+      "lgaName": "Vandeikya",
       "apc": 36926,
       "lp": 5952,
       "pdp": 8255,
@@ -740,7 +740,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "ebonyi": [
     {
       "lgaId": "abakaliki",
-      "lgaName": "ABAKALIKI",
+      "lgaName": "Abakaliki",
       "apc": 3365,
       "lp": 36894,
       "pdp": 974,
@@ -750,7 +750,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "afikpo-north",
-      "lgaName": "AFIKPO NORTH",
+      "lgaName": "Afikpo North",
       "apc": 1405,
       "lp": 25480,
       "pdp": 1155,
@@ -760,7 +760,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "afikpo-south",
-      "lgaName": "AFIKPO  SOUTH",
+      "lgaName": "Afikpo South",
       "apc": 2386,
       "lp": 10895,
       "pdp": 1227,
@@ -770,7 +770,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ebonyi",
-      "lgaName": "EBONYI",
+      "lgaName": "Ebonyi",
       "apc": 2677,
       "lp": 27551,
       "pdp": 717,
@@ -780,7 +780,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ezza-north",
-      "lgaName": "EZZA NORTH",
+      "lgaName": "Ezza North",
       "apc": 875,
       "lp": 17959,
       "pdp": 392,
@@ -790,7 +790,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ezza-south",
-      "lgaName": "EZZA SOUTH",
+      "lgaName": "Ezza South",
       "apc": 2471,
       "lp": 16506,
       "pdp": 1823,
@@ -800,7 +800,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikwo",
-      "lgaName": "IKWO",
+      "lgaName": "Ikwo",
       "apc": 9272,
       "lp": 21810,
       "pdp": 2018,
@@ -810,7 +810,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ishielu",
-      "lgaName": "ISHIELU",
+      "lgaName": "Ishielu",
       "apc": 1261,
       "lp": 16186,
       "pdp": 574,
@@ -820,7 +820,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ivo",
-      "lgaName": "IVO",
+      "lgaName": "Ivo",
       "apc": 1870,
       "lp": 7488,
       "pdp": 780,
@@ -830,7 +830,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "izzi",
-      "lgaName": "IZZI",
+      "lgaName": "Izzi",
       "apc": 11779,
       "lp": 28931,
       "pdp": 789,
@@ -840,7 +840,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ohaozara",
-      "lgaName": "OHAOZARA",
+      "lgaName": "Ohaozara",
       "apc": 1615,
       "lp": 13731,
       "pdp": 342,
@@ -850,7 +850,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ohaukwu",
-      "lgaName": "OHAUKWU",
+      "lgaName": "Ohaukwu",
       "apc": 2217,
       "lp": 19789,
       "pdp": 1581,
@@ -860,7 +860,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "onicha",
-      "lgaName": "ONICHA",
+      "lgaName": "Onicha",
       "apc": 1215,
       "lp": 16518,
       "pdp": 1131,
@@ -872,7 +872,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "kogi": [
     {
       "lgaId": "adavi",
-      "lgaName": "ADAVI",
+      "lgaName": "Adavi",
       "apc": 10340,
       "lp": 897,
       "pdp": 10612,
@@ -882,7 +882,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ajaokuta",
-      "lgaName": "AJAOKUTA",
+      "lgaName": "Ajaokuta",
       "apc": 12030,
       "lp": 3395,
       "pdp": 8266,
@@ -892,7 +892,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ankpa",
-      "lgaName": "ANKPA",
+      "lgaName": "Ankpa",
       "apc": 18976,
       "lp": 5918,
       "pdp": 14170,
@@ -902,7 +902,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bassa",
-      "lgaName": "BASSA",
+      "lgaName": "Bassa",
       "apc": 7262,
       "lp": 4068,
       "pdp": 7288,
@@ -912,7 +912,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dekina",
-      "lgaName": "DEKINA",
+      "lgaName": "Dekina",
       "apc": 22157,
       "lp": 1661,
       "pdp": 10704,
@@ -922,7 +922,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibaji",
-      "lgaName": "IBAJI",
+      "lgaName": "Ibaji",
       "apc": 5992,
       "lp": 5933,
       "pdp": 6219,
@@ -932,7 +932,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "idah",
-      "lgaName": "IDAH",
+      "lgaName": "Idah",
       "apc": 9869,
       "lp": 2618,
       "pdp": 5459,
@@ -942,7 +942,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "igalamela-odolu",
-      "lgaName": "IGALAMELA/ODOLU",
+      "lgaName": "Igalamela-Odolu",
       "apc": 9982,
       "lp": 2431,
       "pdp": 4006,
@@ -952,7 +952,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ijumu",
-      "lgaName": "IJUMU",
+      "lgaName": "Ijumu",
       "apc": 11237,
       "lp": 920,
       "pdp": 4503,
@@ -962,7 +962,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kabba-bunu",
-      "lgaName": "KABBA/BUNU",
+      "lgaName": "Kabba/Bunu",
       "apc": 12534,
       "lp": 2329,
       "pdp": 5958,
@@ -971,8 +971,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "kogi-k-k",
-      "lgaName": "KOGI . K. K.",
+      "lgaId": "kogi",
+      "lgaName": "Kogi",
       "apc": 13472,
       "lp": 1040,
       "pdp": 8825,
@@ -982,7 +982,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "lokoja",
-      "lgaName": "LOKOJA",
+      "lgaName": "Lokoja",
       "apc": 15642,
       "lp": 7605,
       "pdp": 11156,
@@ -991,8 +991,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "mopa-moro",
-      "lgaName": "MOPA MORO",
+      "lgaId": "mopa-muro",
+      "lgaName": "Mopa-Muro",
       "apc": 4935,
       "lp": 718,
       "pdp": 2319,
@@ -1002,7 +1002,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ofu",
-      "lgaName": "OFU",
+      "lgaName": "Ofu",
       "apc": 16078,
       "lp": 1744,
       "pdp": 6593,
@@ -1011,8 +1011,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "ogori-mangogo",
-      "lgaName": "OGORI MANGOGO",
+      "lgaId": "ogori-mangongo",
+      "lgaName": "Ogori/Mangongo",
       "apc": 2008,
       "lp": 784,
       "pdp": 2075,
@@ -1022,7 +1022,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "okehi",
-      "lgaName": "OKEHI",
+      "lgaName": "Okehi",
       "apc": 9443,
       "lp": 1099,
       "pdp": 11459,
@@ -1032,7 +1032,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "okene",
-      "lgaName": "OKENE",
+      "lgaName": "Okene",
       "apc": 22038,
       "lp": 964,
       "pdp": 6403,
@@ -1042,7 +1042,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "olamaboro",
-      "lgaName": "OLAMABORO",
+      "lgaName": "Olamaboro",
       "apc": 10672,
       "lp": 7206,
       "pdp": 5692,
@@ -1052,7 +1052,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "omala",
-      "lgaName": "OMALA",
+      "lgaName": "Omala",
       "apc": 6374,
       "lp": 2706,
       "pdp": 6420,
@@ -1062,7 +1062,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yagba-east",
-      "lgaName": "YAGBA EAST",
+      "lgaName": "Yagba East",
       "apc": 10888,
       "lp": 954,
       "pdp": 2711,
@@ -1072,7 +1072,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yagba-west",
-      "lgaName": "YAGBA WEST",
+      "lgaName": "Yagba West",
       "apc": 8822,
       "lp": 1227,
       "pdp": 4266,
@@ -1084,7 +1084,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "anambra": [
     {
       "lgaId": "aguata",
-      "lgaName": "AGUATA",
+      "lgaName": "Aguata",
       "apc": 301,
       "lp": 37478,
       "pdp": 522,
@@ -1094,7 +1094,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ayamelum",
-      "lgaName": "AYAMELUM",
+      "lgaName": "Ayamelum",
       "apc": 145,
       "lp": 17032,
       "pdp": 405,
@@ -1104,7 +1104,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "anambra-east",
-      "lgaName": "ANAMBRA EAST",
+      "lgaName": "Anambra East",
       "apc": 433,
       "lp": 20755,
       "pdp": 350,
@@ -1114,7 +1114,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "anambra-west",
-      "lgaName": "ANAMBRA WEST",
+      "lgaName": "Anambra West",
       "apc": 360,
       "lp": 12400,
       "pdp": 226,
@@ -1124,7 +1124,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "anaocha",
-      "lgaName": "ANAOCHA",
+      "lgaName": "Anaocha",
       "apc": 178,
       "lp": 33695,
       "pdp": 584,
@@ -1134,7 +1134,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "awka-north",
-      "lgaName": "AWKA NORTH",
+      "lgaName": "Awka North",
       "apc": 118,
       "lp": 15561,
       "pdp": 454,
@@ -1144,7 +1144,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "awka-south",
-      "lgaName": "AWKA SOUTH",
+      "lgaName": "Awka South",
       "apc": 305,
       "lp": 56498,
       "pdp": 963,
@@ -1154,7 +1154,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dunukofia",
-      "lgaName": "DUNUKOFIA",
+      "lgaName": "Dunukofia",
       "apc": 222,
       "lp": 18715,
       "pdp": 428,
@@ -1164,7 +1164,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ekwusigo",
-      "lgaName": "EKWUSIGO",
+      "lgaName": "Ekwusigo",
       "apc": 159,
       "lp": 21498,
       "pdp": 362,
@@ -1174,7 +1174,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "idemili-north",
-      "lgaName": "IDEMILI NORTH",
+      "lgaName": "Idemili North",
       "apc": 633,
       "lp": 43835,
       "pdp": 623,
@@ -1184,7 +1184,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "idemili-south",
-      "lgaName": "IDEMILI-SOUTH",
+      "lgaName": "Idemili South",
       "apc": 587,
       "lp": 25994,
       "pdp": 304,
@@ -1193,8 +1193,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "LP"
     },
     {
-      "lgaId": "ihala",
-      "lgaName": "IHALA",
+      "lgaId": "ihiala",
+      "lgaName": "Ihiala",
       "apc": 27,
       "lp": 11571,
       "pdp": 33,
@@ -1204,7 +1204,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "njikoka",
-      "lgaName": "NJIKOKA",
+      "lgaName": "Njikoka",
       "apc": 224,
       "lp": 31368,
       "pdp": 479,
@@ -1214,7 +1214,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nnewi-north",
-      "lgaName": "NNEWI NORTH",
+      "lgaName": "Nnewi North",
       "apc": 96,
       "lp": 38184,
       "pdp": 243,
@@ -1224,7 +1224,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nnewi-south",
-      "lgaName": "NNEWI SOUTH",
+      "lgaName": "Nnewi South",
       "apc": 187,
       "lp": 16767,
       "pdp": 201,
@@ -1234,7 +1234,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ogbaru",
-      "lgaName": "OGBARU",
+      "lgaName": "Ogbaru",
       "apc": 206,
       "lp": 28259,
       "pdp": 441,
@@ -1244,7 +1244,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "onitsha-north",
-      "lgaName": "ONITSHA-NORTH",
+      "lgaName": "Onitsha North",
       "apc": 211,
       "lp": 49334,
       "pdp": 510,
@@ -1254,7 +1254,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "onitsha-south",
-      "lgaName": "ONITSHA -SOUTH",
+      "lgaName": "Onitsha South",
       "apc": 201,
       "lp": 38403,
       "pdp": 287,
@@ -1264,7 +1264,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "orumba-north",
-      "lgaName": "ORUMBA NORTH",
+      "lgaName": "Orumba North",
       "apc": 114,
       "lp": 21842,
       "pdp": 226,
@@ -1274,7 +1274,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "orumba-south",
-      "lgaName": "ORUMBA  SOUTH",
+      "lgaName": "Orumba South",
       "apc": 92,
       "lp": 19482,
       "pdp": 253,
@@ -1284,7 +1284,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oyi",
-      "lgaName": "OYI",
+      "lgaName": "Oyi",
       "apc": 312,
       "lp": 25950,
       "pdp": 1142,
@@ -1296,7 +1296,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "kaduna": [
     {
       "lgaId": "birnin-gwari",
-      "lgaName": "BIRNIN GWARI",
+      "lgaName": "Birnin Gwari",
       "apc": 17080,
       "lp": 235,
       "pdp": 8774,
@@ -1306,7 +1306,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "chikun",
-      "lgaName": "CHIKUN",
+      "lgaName": "Chikun",
       "apc": 9367,
       "lp": 69117,
       "pdp": 32659,
@@ -1316,7 +1316,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "giwa",
-      "lgaName": "GIWA",
+      "lgaName": "Giwa",
       "apc": 19922,
       "lp": 565,
       "pdp": 22302,
@@ -1326,7 +1326,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "igabi",
-      "lgaName": "IGABI",
+      "lgaName": "Igabi",
       "apc": 37259,
       "lp": 4839,
       "pdp": 45962,
@@ -1336,7 +1336,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikara",
-      "lgaName": "IKARA",
+      "lgaName": "Ikara",
       "apc": 17297,
       "lp": 994,
       "pdp": 24540,
@@ -1346,7 +1346,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jaba",
-      "lgaName": "JABA",
+      "lgaName": "Jaba",
       "apc": 3131,
       "lp": 9967,
       "pdp": 8798,
@@ -1356,7 +1356,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jema-a",
-      "lgaName": "JEMA'A",
+      "lgaName": "Jema'a",
       "apc": 10928,
       "lp": 26560,
       "pdp": 16452,
@@ -1366,7 +1366,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kachia",
-      "lgaName": "KACHIA",
+      "lgaName": "Kachia",
       "apc": 12053,
       "lp": 17381,
       "pdp": 16049,
@@ -1376,7 +1376,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kaduna-north",
-      "lgaName": "KADUNA NORTH",
+      "lgaName": "Kaduna North",
       "apc": 39693,
       "lp": 10330,
       "pdp": 40670,
@@ -1386,7 +1386,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kaduna-south",
-      "lgaName": "KADUNA SOUTH",
+      "lgaName": "Kaduna South",
       "apc": 29596,
       "lp": 22577,
       "pdp": 42996,
@@ -1396,7 +1396,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kagarko",
-      "lgaName": "KAGARKO",
+      "lgaName": "Kagarko",
       "apc": 9698,
       "lp": 12502,
       "pdp": 14027,
@@ -1406,7 +1406,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kajuru",
-      "lgaName": "KAJURU",
+      "lgaName": "Kajuru",
       "apc": 3940,
       "lp": 14875,
       "pdp": 9253,
@@ -1416,7 +1416,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kaura",
-      "lgaName": "KAURA",
+      "lgaName": "Kaura",
       "apc": 1847,
       "lp": 25744,
       "pdp": 7847,
@@ -1426,7 +1426,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kauru",
-      "lgaName": "KAURU",
+      "lgaName": "Kauru",
       "apc": 15870,
       "lp": 11293,
       "pdp": 19018,
@@ -1436,7 +1436,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kubau",
-      "lgaName": "KUBAU",
+      "lgaName": "Kubau",
       "apc": 20139,
       "lp": 1701,
       "pdp": 23686,
@@ -1446,7 +1446,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kudan",
-      "lgaName": "KUDAN",
+      "lgaName": "Kudan",
       "apc": 11630,
       "lp": 888,
       "pdp": 19340,
@@ -1456,7 +1456,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "lere",
-      "lgaName": "LERE",
+      "lgaName": "Lere",
       "apc": 24695,
       "lp": 15568,
       "pdp": 34149,
@@ -1466,7 +1466,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "makarfi",
-      "lgaName": "MAKARFI",
+      "lgaName": "Makarfi",
       "apc": 13767,
       "lp": 759,
       "pdp": 22098,
@@ -1476,7 +1476,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sabon-gari",
-      "lgaName": "SABON GARI",
+      "lgaName": "Sabon Gari",
       "apc": 25714,
       "lp": 12834,
       "pdp": 30713,
@@ -1486,7 +1486,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sanga",
-      "lgaName": "SANGA",
+      "lgaName": "Sanga",
       "apc": 9393,
       "lp": 9088,
       "pdp": 9233,
@@ -1496,7 +1496,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "soba",
-      "lgaName": "SOBA",
+      "lgaName": "Soba",
       "apc": 18965,
       "lp": 354,
       "pdp": 23364,
@@ -1505,8 +1505,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "zangon-kataf",
-      "lgaName": "ZANGON KATAF",
+      "lgaId": "zango-kataf",
+      "lgaName": "Zango Kataf",
       "apc": 5877,
       "lp": 22689,
       "pdp": 20170,
@@ -1516,7 +1516,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "zaria",
-      "lgaName": "ZARIA",
+      "lgaName": "Zaria",
       "apc": 41432,
       "lp": 3634,
       "pdp": 62260,
@@ -1528,7 +1528,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "katsina": [
     {
       "lgaId": "bakori",
-      "lgaName": "BAKORI",
+      "lgaName": "Bakori",
       "apc": 15036,
       "lp": 594,
       "pdp": 20070,
@@ -1538,7 +1538,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "batagarawa",
-      "lgaName": "BATAGARAWA",
+      "lgaName": "Batagarawa",
       "apc": 13950,
       "lp": 131,
       "pdp": 16987,
@@ -1548,7 +1548,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "batsari",
-      "lgaName": "BATSARI",
+      "lgaName": "Batsari",
       "apc": 7017,
       "lp": 21,
       "pdp": 8889,
@@ -1558,7 +1558,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "baure",
-      "lgaName": "BAURE",
+      "lgaName": "Baure",
       "apc": 21661,
       "lp": 17,
       "pdp": 16820,
@@ -1568,7 +1568,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bindawa",
-      "lgaName": "BINDAWA",
+      "lgaName": "Bindawa",
       "apc": 16578,
       "lp": 16,
       "pdp": 12582,
@@ -1578,7 +1578,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "charanchi",
-      "lgaName": "CHARANCHI",
+      "lgaName": "Charanchi",
       "apc": 12779,
       "lp": 10,
       "pdp": 8020,
@@ -1588,7 +1588,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dandume",
-      "lgaName": "DANDUME",
+      "lgaName": "Dandume",
       "apc": 15062,
       "lp": 44,
       "pdp": 10718,
@@ -1598,7 +1598,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "danja",
-      "lgaName": "DANJA",
+      "lgaName": "Danja",
       "apc": 16202,
       "lp": 44,
       "pdp": 14004,
@@ -1608,7 +1608,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dan-musa",
-      "lgaName": "DAN MUSA",
+      "lgaName": "Dan Musa",
       "apc": 11259,
       "lp": 1,
       "pdp": 7294,
@@ -1618,7 +1618,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "daura",
-      "lgaName": "DAURA",
+      "lgaName": "Daura",
       "apc": 16889,
       "lp": 78,
       "pdp": 12913,
@@ -1628,7 +1628,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dutsi",
-      "lgaName": "DUTSI",
+      "lgaName": "Dutsi",
       "apc": 9258,
       "lp": 5,
       "pdp": 8074,
@@ -1638,7 +1638,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dutsin-ma",
-      "lgaName": "DUTSIN-MA",
+      "lgaName": "Dutsin-Ma",
       "apc": 13233,
       "lp": 159,
       "pdp": 17917,
@@ -1648,7 +1648,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "faskari",
-      "lgaName": "FASKARI",
+      "lgaName": "Faskari",
       "apc": 17180,
       "lp": 57,
       "pdp": 15667,
@@ -1658,7 +1658,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "funtua",
-      "lgaName": "FUNTUA",
+      "lgaName": "Funtua",
       "apc": 19453,
       "lp": 198,
       "pdp": 18711,
@@ -1668,7 +1668,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ingawa",
-      "lgaName": "INGAWA",
+      "lgaName": "Ingawa",
       "apc": 12315,
       "lp": 47,
       "pdp": 12152,
@@ -1678,7 +1678,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jibia",
-      "lgaName": "JIBIA",
+      "lgaName": "Jibia",
       "apc": 10690,
       "lp": 59,
       "pdp": 13761,
@@ -1688,7 +1688,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kafur",
-      "lgaName": "KAFUR",
+      "lgaName": "Kafur",
       "apc": 23517,
       "lp": 2285,
       "pdp": 13167,
@@ -1698,7 +1698,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kaita",
-      "lgaName": "KAITA",
+      "lgaName": "Kaita",
       "apc": 14595,
       "lp": 22,
       "pdp": 11793,
@@ -1708,7 +1708,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kankara",
-      "lgaName": "KANKARA",
+      "lgaName": "Kankara",
       "apc": 14456,
       "lp": 55,
       "pdp": 22035,
@@ -1718,7 +1718,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kankia",
-      "lgaName": "KANKIA",
+      "lgaName": "Kankia",
       "apc": 10658,
       "lp": 46,
       "pdp": 17426,
@@ -1728,7 +1728,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "katsina",
-      "lgaName": "KATSINA",
+      "lgaName": "Katsina",
       "apc": 15953,
       "lp": 1937,
       "pdp": 45390,
@@ -1738,7 +1738,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kurfi",
-      "lgaName": "KURFI",
+      "lgaName": "Kurfi",
       "apc": 11203,
       "lp": 25,
       "pdp": 12528,
@@ -1748,7 +1748,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kusada",
-      "lgaName": "KUSADA",
+      "lgaName": "Kusada",
       "apc": 7442,
       "lp": 6,
       "pdp": 10990,
@@ -1758,7 +1758,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mai-adua",
-      "lgaName": "MAI'ADUA",
+      "lgaName": "Mai'adua",
       "apc": 19098,
       "lp": 21,
       "pdp": 14096,
@@ -1767,8 +1767,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "malufashi",
-      "lgaName": "MALUFASHI",
+      "lgaId": "malumfashi",
+      "lgaName": "Malumfashi",
       "apc": 21008,
       "lp": 352,
       "pdp": 19892,
@@ -1778,7 +1778,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mani",
-      "lgaName": "MANI",
+      "lgaName": "Mani",
       "apc": 14334,
       "lp": 31,
       "pdp": 18998,
@@ -1788,7 +1788,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mashi",
-      "lgaName": "MASHI",
+      "lgaName": "Mashi",
       "apc": 12868,
       "lp": 38,
       "pdp": 16085,
@@ -1798,7 +1798,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "matazu",
-      "lgaName": "MATAZU",
+      "lgaName": "Matazu",
       "apc": 12008,
       "lp": 15,
       "pdp": 9644,
@@ -1808,7 +1808,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "musawa",
-      "lgaName": "MUSAWA",
+      "lgaName": "Musawa",
       "apc": 14360,
       "lp": 11,
       "pdp": 10603,
@@ -1818,7 +1818,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "rimi",
-      "lgaName": "RIMI",
+      "lgaName": "Rimi",
       "apc": 16759,
       "lp": 19,
       "pdp": 15318,
@@ -1828,7 +1828,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sabuwa",
-      "lgaName": "SABUWA",
+      "lgaName": "Sabuwa",
       "apc": 10207,
       "lp": 2,
       "pdp": 7287,
@@ -1838,7 +1838,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "safana",
-      "lgaName": "SAFANA",
+      "lgaName": "Safana",
       "apc": 7683,
       "lp": 11,
       "pdp": 7989,
@@ -1848,7 +1848,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sandamu",
-      "lgaName": "SANDAMU",
+      "lgaName": "Sandamu",
       "apc": 13681,
       "lp": 14,
       "pdp": 10434,
@@ -1858,7 +1858,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "zango",
-      "lgaName": "ZANGO",
+      "lgaName": "Zango",
       "apc": 13891,
       "lp": 5,
       "pdp": 10791,
@@ -1869,8 +1869,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   ],
   "kebbi": [
     {
-      "lgaId": "aliero",
-      "lgaName": "ALIERO",
+      "lgaId": "aleiro",
+      "lgaName": "Aleiro",
       "apc": 6898,
       "lp": 71,
       "pdp": 13619,
@@ -1879,8 +1879,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "arewa",
-      "lgaName": "AREWA",
+      "lgaId": "arewa-dandi",
+      "lgaName": "Arewa Dandi",
       "apc": 16938,
       "lp": 24,
       "pdp": 17297,
@@ -1890,7 +1890,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "argungu",
-      "lgaName": "ARGUNGU",
+      "lgaName": "Argungu",
       "apc": 12557,
       "lp": 124,
       "pdp": 26725,
@@ -1900,7 +1900,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "augie",
-      "lgaName": "AUGIE",
+      "lgaName": "Augie",
       "apc": 11135,
       "lp": 17,
       "pdp": 12057,
@@ -1910,7 +1910,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bagudo",
-      "lgaName": "BAGUDO",
+      "lgaName": "Bagudo",
       "apc": 18485,
       "lp": 33,
       "pdp": 13142,
@@ -1920,7 +1920,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "birnin-kebbi",
-      "lgaName": "BIRNIN KEBBI",
+      "lgaName": "Birnin Kebbi",
       "apc": 25201,
       "lp": 2008,
       "pdp": 33897,
@@ -1930,7 +1930,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bunza",
-      "lgaName": "BUNZA",
+      "lgaName": "Bunza",
       "apc": 8397,
       "lp": 19,
       "pdp": 14047,
@@ -1940,7 +1940,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dandi",
-      "lgaName": "DANDI",
+      "lgaName": "Dandi",
       "apc": 13303,
       "lp": 74,
       "pdp": 13202,
@@ -1950,7 +1950,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "fakai",
-      "lgaName": "FAKAI",
+      "lgaName": "Fakai",
       "apc": 8140,
       "lp": 450,
       "pdp": 6072,
@@ -1960,7 +1960,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gwandu",
-      "lgaName": "GWANDU",
+      "lgaName": "Gwandu",
       "apc": 11675,
       "lp": 9,
       "pdp": 15212,
@@ -1970,7 +1970,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jega",
-      "lgaName": "JEGA",
+      "lgaName": "Jega",
       "apc": 13496,
       "lp": 154,
       "pdp": 20381,
@@ -1980,7 +1980,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kalgo",
-      "lgaName": "KALGO",
+      "lgaName": "Kalgo",
       "apc": 6941,
       "lp": 44,
       "pdp": 10552,
@@ -1990,7 +1990,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "koko-besse",
-      "lgaName": "KOKO/BESSE",
+      "lgaName": "Koko/Besse",
       "apc": 8339,
       "lp": 119,
       "pdp": 8574,
@@ -2000,7 +2000,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "maiyama",
-      "lgaName": "MAIYAMA",
+      "lgaName": "Maiyama",
       "apc": 11348,
       "lp": 8,
       "pdp": 11637,
@@ -2010,7 +2010,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ngaski",
-      "lgaName": "NGASKI",
+      "lgaName": "Ngaski",
       "apc": 9815,
       "lp": 167,
       "pdp": 11352,
@@ -2020,7 +2020,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sakaba",
-      "lgaName": "SAKABA",
+      "lgaName": "Sakaba",
       "apc": 7909,
       "lp": 936,
       "pdp": 3731,
@@ -2030,7 +2030,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "shanga",
-      "lgaName": "SHANGA",
+      "lgaName": "Shanga",
       "apc": 9088,
       "lp": 52,
       "pdp": 9621,
@@ -2040,7 +2040,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "suru",
-      "lgaName": "SURU",
+      "lgaName": "Suru",
       "apc": 11552,
       "lp": 18,
       "pdp": 12479,
@@ -2050,7 +2050,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "wasagu-danko",
-      "lgaName": "WASAGU/DANKO",
+      "lgaName": "Wasagu/Danko",
       "apc": 14505,
       "lp": 2092,
       "pdp": 7560,
@@ -2060,7 +2060,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yauri",
-      "lgaName": "YAURI",
+      "lgaName": "Yauri",
       "apc": 11609,
       "lp": 324,
       "pdp": 13626,
@@ -2070,7 +2070,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "zuru",
-      "lgaName": "ZURU",
+      "lgaName": "Zuru",
       "apc": 10757,
       "lp": 3939,
       "pdp": 10392,
@@ -2082,7 +2082,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "ondo": [
     {
       "lgaId": "akoko-north-east",
-      "lgaName": "AKOKO NORTH EAST",
+      "lgaName": "Akoko North-East",
       "apc": 25757,
       "lp": 1242,
       "pdp": 2400,
@@ -2092,7 +2092,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "akoko-north-west",
-      "lgaName": "AKOKO NORTH WEST",
+      "lgaName": "Akoko North-West",
       "apc": 24613,
       "lp": 736,
       "pdp": 5200,
@@ -2102,7 +2102,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "akoko-south-east",
-      "lgaName": "AKOKO SOUTH EAST",
+      "lgaName": "Akoko South-East",
       "apc": 10765,
       "lp": 470,
       "pdp": 3016,
@@ -2112,7 +2112,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "akoko-south-west",
-      "lgaName": "AKOKO SOUTH WEST",
+      "lgaName": "Akoko South-West",
       "apc": 28367,
       "lp": 920,
       "pdp": 5376,
@@ -2122,7 +2122,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "akure-north",
-      "lgaName": "AKURE NORTH",
+      "lgaName": "Akure North",
       "apc": 14261,
       "lp": 2945,
       "pdp": 4633,
@@ -2132,7 +2132,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "akure-south",
-      "lgaName": "AKURE SOUTH",
+      "lgaName": "Akure South",
       "apc": 45694,
       "lp": 13950,
       "pdp": 9047,
@@ -2142,7 +2142,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ese-odo",
-      "lgaName": "ESE-ODO",
+      "lgaName": "Ese Odo",
       "apc": 11160,
       "lp": 1709,
       "pdp": 8200,
@@ -2152,7 +2152,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "idanre",
-      "lgaName": "IDANRE",
+      "lgaName": "Idanre",
       "apc": 13061,
       "lp": 2262,
       "pdp": 10532,
@@ -2162,7 +2162,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ifedore",
-      "lgaName": "IFEDORE",
+      "lgaName": "Ifedore",
       "apc": 15055,
       "lp": 954,
       "pdp": 5360,
@@ -2172,7 +2172,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ilaje",
-      "lgaName": "ILAJE",
+      "lgaName": "Ilaje",
       "apc": 19173,
       "lp": 1143,
       "pdp": 6780,
@@ -2181,8 +2181,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "ileoluji-okeigbo",
-      "lgaName": "ILEOLUJI/OKEIGBO",
+      "lgaId": "ile-oluji-okeigbo",
+      "lgaName": "Ile Oluji/Okeigbo",
       "apc": 14750,
       "lp": 1576,
       "pdp": 6199,
@@ -2192,7 +2192,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "irele",
-      "lgaName": "IRELE",
+      "lgaName": "Irele",
       "apc": 17334,
       "lp": 704,
       "pdp": 6523,
@@ -2202,7 +2202,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "odigbo",
-      "lgaName": "ODIGBO",
+      "lgaName": "Odigbo",
       "apc": 27521,
       "lp": 3504,
       "pdp": 7786,
@@ -2212,7 +2212,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "okitipupa",
-      "lgaName": "OKITIPUPA",
+      "lgaName": "Okitipupa",
       "apc": 26114,
       "lp": 1826,
       "pdp": 12025,
@@ -2222,7 +2222,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ondo-east",
-      "lgaName": "ONDO EAST",
+      "lgaName": "Ondo East",
       "apc": 8390,
       "lp": 2004,
       "pdp": 3912,
@@ -2232,7 +2232,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ondo-west",
-      "lgaName": "ONDO WEST",
+      "lgaName": "Ondo West",
       "apc": 24053,
       "lp": 6171,
       "pdp": 8534,
@@ -2242,7 +2242,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ose",
-      "lgaName": "OSE",
+      "lgaName": "Ose",
       "apc": 14376,
       "lp": 2031,
       "pdp": 4767,
@@ -2252,7 +2252,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "owo",
-      "lgaName": "OWO",
+      "lgaName": "Owo",
       "apc": 29480,
       "lp": 3200,
       "pdp": 5173,
@@ -2264,7 +2264,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "oyo": [
     {
       "lgaId": "afijio",
-      "lgaName": "AFIJIO",
+      "lgaName": "Afijio",
       "apc": 8876,
       "lp": 1925,
       "pdp": 4112,
@@ -2274,7 +2274,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "akinyele",
-      "lgaName": "AKINYELE",
+      "lgaName": "Akinyele",
       "apc": 20985,
       "lp": 6480,
       "pdp": 6478,
@@ -2284,7 +2284,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "atiba",
-      "lgaName": "ATIBA",
+      "lgaName": "Atiba",
       "apc": 15046,
       "lp": 1234,
       "pdp": 6180,
@@ -2294,7 +2294,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "atisbo",
-      "lgaName": "ATISBO",
+      "lgaName": "Atisbo",
       "apc": 7928,
       "lp": 1178,
       "pdp": 4031,
@@ -2304,7 +2304,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "egbeda",
-      "lgaName": "EGBEDA",
+      "lgaName": "Egbeda",
       "apc": 22363,
       "lp": 6511,
       "pdp": 5709,
@@ -2314,7 +2314,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibadan-north",
-      "lgaName": "IBADAN NORTH",
+      "lgaName": "Ibadan North",
       "apc": 28416,
       "lp": 13106,
       "pdp": 8385,
@@ -2323,8 +2323,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "ibadan-north-east",
-      "lgaName": "IBADAN NORTH EAST",
+      "lgaId": "ibadan-central",
+      "lgaName": "Ibadan Central",
       "apc": 19124,
       "lp": 2971,
       "pdp": 8534,
@@ -2334,7 +2334,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibadan-north-west",
-      "lgaName": "IBADAN NORTH WEST",
+      "lgaName": "Ibadan North-West",
       "apc": 13078,
       "lp": 4830,
       "pdp": 6011,
@@ -2344,7 +2344,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibadan-south-east",
-      "lgaName": "IBADAN SOUTH-EAST",
+      "lgaName": "Ibadan South-East",
       "apc": 20025,
       "lp": 2138,
       "pdp": 7687,
@@ -2354,7 +2354,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibadan-south-west",
-      "lgaName": "IBADAN SOUTH WEST",
+      "lgaName": "Ibadan South-West",
       "apc": 24329,
       "lp": 9079,
       "pdp": 6961,
@@ -2364,7 +2364,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibarapa-central",
-      "lgaName": "IBARAPA CENTRAL",
+      "lgaName": "Ibarapa Central",
       "apc": 10291,
       "lp": 726,
       "pdp": 5169,
@@ -2374,7 +2374,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibarapa-east",
-      "lgaName": "IBARAPA EAST",
+      "lgaName": "Ibarapa East",
       "apc": 10575,
       "lp": 779,
       "pdp": 4800,
@@ -2384,7 +2384,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibarapa-north",
-      "lgaName": "IBARAPA NORTH",
+      "lgaName": "Ibarapa North",
       "apc": 8088,
       "lp": 344,
       "pdp": 4024,
@@ -2394,7 +2394,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ido",
-      "lgaName": "IDO",
+      "lgaName": "Ido",
       "apc": 16505,
       "lp": 5161,
       "pdp": 3570,
@@ -2404,7 +2404,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "irepo",
-      "lgaName": "IREPO",
+      "lgaName": "Irepo",
       "apc": 12282,
       "lp": 414,
       "pdp": 3907,
@@ -2414,7 +2414,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "iseyin",
-      "lgaName": "ISEYIN",
+      "lgaName": "Iseyin",
       "apc": 19731,
       "lp": 1371,
       "pdp": 6588,
@@ -2424,7 +2424,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "itesiwaju",
-      "lgaName": "ITESIWAJU",
+      "lgaName": "Itesiwaju",
       "apc": 6180,
       "lp": 387,
       "pdp": 4948,
@@ -2434,7 +2434,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "iwajowa",
-      "lgaName": "IWAJOWA",
+      "lgaName": "Iwajowa",
       "apc": 6284,
       "lp": 279,
       "pdp": 5094,
@@ -2444,7 +2444,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kajola",
-      "lgaName": "KAJOLA",
+      "lgaName": "Kajola",
       "apc": 11917,
       "lp": 503,
       "pdp": 9358,
@@ -2454,7 +2454,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "lagelu",
-      "lgaName": "LAGELU",
+      "lgaName": "Lagelu",
       "apc": 16011,
       "lp": 4066,
       "pdp": 5112,
@@ -2463,8 +2463,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "ogbomoso-north",
-      "lgaName": "OGBOMOSO NORTH",
+      "lgaId": "ogbomosho-north",
+      "lgaName": "Ogbomosho North",
       "apc": 14336,
       "lp": 7061,
       "pdp": 5805,
@@ -2473,8 +2473,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "ogbomoso-south",
-      "lgaName": "OGBOMOSO SOUTH",
+      "lgaId": "ogbomosho-south",
+      "lgaName": "Ogbomosho South",
       "apc": 9793,
       "lp": 5828,
       "pdp": 6123,
@@ -2484,7 +2484,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ogo-oluwa",
-      "lgaName": "OGO-OLUWA",
+      "lgaName": "Ogo Oluwa",
       "apc": 7373,
       "lp": 2522,
       "pdp": 4759,
@@ -2494,7 +2494,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "olorunsogo",
-      "lgaName": "OLORUNSOGO",
+      "lgaName": "Olorunsogo",
       "apc": 5178,
       "lp": 568,
       "pdp": 3492,
@@ -2504,7 +2504,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oluyole",
-      "lgaName": "OLUYOLE",
+      "lgaName": "Oluyole",
       "apc": 16437,
       "lp": 4816,
       "pdp": 5119,
@@ -2514,7 +2514,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ona-ara",
-      "lgaName": "ONA-ARA",
+      "lgaName": "Ona-Ara",
       "apc": 11978,
       "lp": 1287,
       "pdp": 5085,
@@ -2523,8 +2523,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "oorelope",
-      "lgaName": "OORELOPE",
+      "lgaId": "orelope",
+      "lgaName": "Orelope",
       "apc": 8509,
       "lp": 804,
       "pdp": 3004,
@@ -2534,7 +2534,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ori-ire",
-      "lgaName": "ORI IRE",
+      "lgaName": "Ori Ire",
       "apc": 12133,
       "lp": 1712,
       "pdp": 6391,
@@ -2544,7 +2544,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oyo-east",
-      "lgaName": "OYO EAST",
+      "lgaName": "Oyo East",
       "apc": 13430,
       "lp": 1870,
       "pdp": 5091,
@@ -2554,7 +2554,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oyo-west",
-      "lgaName": "OYO WEST",
+      "lgaName": "Oyo West",
       "apc": 14076,
       "lp": 1724,
       "pdp": 4544,
@@ -2564,7 +2564,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "saki-east",
-      "lgaName": "SAKI EAST",
+      "lgaName": "Saki East",
       "apc": 6414,
       "lp": 1144,
       "pdp": 3634,
@@ -2574,7 +2574,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "saki-west",
-      "lgaName": "SAKI WEST",
+      "lgaName": "Saki West",
       "apc": 21040,
       "lp": 2950,
       "pdp": 5080,
@@ -2584,7 +2584,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "surulere",
-      "lgaName": "SURULERE",
+      "lgaName": "Surulere",
       "apc": 11153,
       "lp": 3343,
       "pdp": 8192,
@@ -2595,8 +2595,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   ],
   "plateau": [
     {
-      "lgaId": "barikin-ladi",
-      "lgaName": "BARIKIN LADI",
+      "lgaId": "barkin-ladi",
+      "lgaName": "Barkin Ladi",
       "apc": 12514,
       "lp": 32489,
       "pdp": 9073,
@@ -2606,7 +2606,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bassa",
-      "lgaName": "BASSA",
+      "lgaName": "Bassa",
       "apc": 16007,
       "lp": 28226,
       "pdp": 11306,
@@ -2616,7 +2616,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bokkos",
-      "lgaName": "BOKKOS",
+      "lgaName": "Bokkos",
       "apc": 10858,
       "lp": 32581,
       "pdp": 8569,
@@ -2626,7 +2626,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jos-east",
-      "lgaName": "JOS EAST",
+      "lgaName": "Jos East",
       "apc": 6348,
       "lp": 6392,
       "pdp": 5844,
@@ -2636,7 +2636,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jos-north",
-      "lgaName": "JOS NORTH",
+      "lgaName": "Jos North",
       "apc": 65656,
       "lp": 70357,
       "pdp": 22528,
@@ -2646,7 +2646,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jos-south",
-      "lgaName": "JOS SOUTH",
+      "lgaName": "Jos South",
       "apc": 15985,
       "lp": 112874,
       "pdp": 13803,
@@ -2656,7 +2656,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kanam",
-      "lgaName": "KANAM",
+      "lgaName": "Kanam",
       "apc": 41184,
       "lp": 4769,
       "pdp": 24843,
@@ -2666,7 +2666,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kanke",
-      "lgaName": "KANKE",
+      "lgaName": "Kanke",
       "apc": 13438,
       "lp": 13194,
       "pdp": 10538,
@@ -2676,7 +2676,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "langtang-north",
-      "lgaName": "LANGTANG NORTH",
+      "lgaName": "Langtang North",
       "apc": 8706,
       "lp": 21590,
       "pdp": 17751,
@@ -2686,7 +2686,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "langtang-south",
-      "lgaName": "LANGTANG SOUTH",
+      "lgaName": "Langtang South",
       "apc": 7478,
       "lp": 6045,
       "pdp": 12467,
@@ -2696,7 +2696,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mangu",
-      "lgaName": "MANGU",
+      "lgaName": "Mangu",
       "apc": 22692,
       "lp": 39387,
       "pdp": 27013,
@@ -2706,7 +2706,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mikang",
-      "lgaName": "MIKANG",
+      "lgaName": "Mikang",
       "apc": 6044,
       "lp": 7201,
       "pdp": 7211,
@@ -2716,7 +2716,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "pankshin",
-      "lgaName": "PANKSHIN",
+      "lgaName": "Pankshin",
       "apc": 11019,
       "lp": 25450,
       "pdp": 12225,
@@ -2726,7 +2726,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "qua-an-pan",
-      "lgaName": "QUA'AN PAN",
+      "lgaName": "Qua'an Pan",
       "apc": 16522,
       "lp": 18641,
       "pdp": 20963,
@@ -2736,7 +2736,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "riyom",
-      "lgaName": "RIYOM",
+      "lgaName": "Riyom",
       "apc": 6936,
       "lp": 15171,
       "pdp": 8181,
@@ -2746,7 +2746,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "shendam",
-      "lgaName": "SHENDAM",
+      "lgaName": "Shendam",
       "apc": 17132,
       "lp": 25825,
       "pdp": 8444,
@@ -2756,7 +2756,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "wase",
-      "lgaName": "WASE",
+      "lgaName": "Wase",
       "apc": 28675,
       "lp": 6080,
       "pdp": 23049,
@@ -2768,7 +2768,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "zamfara": [
     {
       "lgaId": "anka",
-      "lgaName": "ANKA",
+      "lgaName": "Anka",
       "apc": 13467,
       "lp": 60,
       "pdp": 5358,
@@ -2778,7 +2778,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bakura",
-      "lgaName": "BAKURA",
+      "lgaName": "Bakura",
       "apc": 34110,
       "lp": 17,
       "pdp": 10824,
@@ -2787,8 +2787,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "birnin-magaji",
-      "lgaName": "BIRNIN MAGAJI",
+      "lgaId": "birnin-magaji-kiyaw",
+      "lgaName": "Birnin Magaji/Kiyaw",
       "apc": 22638,
       "lp": 6,
       "pdp": 6467,
@@ -2798,7 +2798,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bukkuyum",
-      "lgaName": "BUKKUYUM",
+      "lgaName": "Bukkuyum",
       "apc": 15812,
       "lp": 7,
       "pdp": 9914,
@@ -2808,7 +2808,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bungudu",
-      "lgaName": "BUNGUDU",
+      "lgaName": "Bungudu",
       "apc": 22013,
       "lp": 51,
       "pdp": 22430,
@@ -2818,7 +2818,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gummi",
-      "lgaName": "GUMMI",
+      "lgaName": "Gummi",
       "apc": 22745,
       "lp": 24,
       "pdp": 20702,
@@ -2828,7 +2828,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gusau",
-      "lgaName": "GUSAU",
+      "lgaName": "Gusau",
       "apc": 25261,
       "lp": 1121,
       "pdp": 41073,
@@ -2838,7 +2838,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kaura-namoda",
-      "lgaName": "KAURA NAMODA",
+      "lgaName": "Kaura Namoda",
       "apc": 25301,
       "lp": 154,
       "pdp": 17664,
@@ -2848,7 +2848,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "maradun",
-      "lgaName": "MARADUN",
+      "lgaName": "Maradun",
       "apc": 21274,
       "lp": 0,
       "pdp": 5829,
@@ -2858,7 +2858,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "maru",
-      "lgaName": "MARU",
+      "lgaName": "Maru",
       "apc": 12064,
       "lp": 12,
       "pdp": 7776,
@@ -2868,7 +2868,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "shinkafi",
-      "lgaName": "SHINKAFI",
+      "lgaName": "Shinkafi",
       "apc": 8692,
       "lp": 15,
       "pdp": 7517,
@@ -2878,7 +2878,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "talata-mafara",
-      "lgaName": "TALATA MAFARA",
+      "lgaName": "Talata Mafara",
       "apc": 35384,
       "lp": 129,
       "pdp": 7472,
@@ -2888,7 +2888,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tsafe",
-      "lgaName": "TSAFE",
+      "lgaName": "Tsafe",
       "apc": 24984,
       "lp": 58,
       "pdp": 17871,
@@ -2898,7 +2898,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "zurmi",
-      "lgaName": "ZURMI",
+      "lgaName": "Zurmi",
       "apc": 14651,
       "lp": 8,
       "pdp": 13081,
@@ -2910,7 +2910,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "niger": [
     {
       "lgaId": "agaie",
-      "lgaName": "AGAIE",
+      "lgaName": "Agaie",
       "apc": 13865,
       "lp": 179,
       "pdp": 12908,
@@ -2920,7 +2920,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "agwara",
-      "lgaName": "AGWARA",
+      "lgaName": "Agwara",
       "apc": 7659,
       "lp": 1628,
       "pdp": 6046,
@@ -2930,7 +2930,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bida",
-      "lgaName": "BIDA",
+      "lgaName": "Bida",
       "apc": 22510,
       "lp": 2559,
       "pdp": 13107,
@@ -2940,7 +2940,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "borgu",
-      "lgaName": "BORGU",
+      "lgaName": "Borgu",
       "apc": 22491,
       "lp": 1982,
       "pdp": 9649,
@@ -2950,7 +2950,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bosso",
-      "lgaName": "BOSSO",
+      "lgaName": "Bosso",
       "apc": 19767,
       "lp": 6778,
       "pdp": 14062,
@@ -2960,7 +2960,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "chanchaga",
-      "lgaName": "CHANCHAGA",
+      "lgaName": "Chanchaga",
       "apc": 25858,
       "lp": 10855,
       "pdp": 21189,
@@ -2969,8 +2969,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "edatti",
-      "lgaName": "EDATTI",
+      "lgaId": "edati",
+      "lgaName": "Edati",
       "apc": 10508,
       "lp": 93,
       "pdp": 14779,
@@ -2980,7 +2980,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gbako",
-      "lgaName": "GBAKO",
+      "lgaName": "Gbako",
       "apc": 12436,
       "lp": 424,
       "pdp": 11017,
@@ -2990,7 +2990,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gurara",
-      "lgaName": "GURARA",
+      "lgaName": "Gurara",
       "apc": 12283,
       "lp": 3151,
       "pdp": 10479,
@@ -3000,7 +3000,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "katcha",
-      "lgaName": "KATCHA",
+      "lgaName": "Katcha",
       "apc": 10795,
       "lp": 180,
       "pdp": 13268,
@@ -3010,7 +3010,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kontagora",
-      "lgaName": "KONTAGORA",
+      "lgaName": "Kontagora",
       "apc": 20032,
       "lp": 2832,
       "pdp": 14248,
@@ -3020,7 +3020,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "lapai",
-      "lgaName": "LAPAI",
+      "lgaName": "Lapai",
       "apc": 17822,
       "lp": 927,
       "pdp": 13545,
@@ -3030,7 +3030,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "lavun",
-      "lgaName": "LAVUN",
+      "lgaName": "Lavun",
       "apc": 15107,
       "lp": 894,
       "pdp": 14395,
@@ -3040,7 +3040,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "magama",
-      "lgaName": "MAGAMA",
+      "lgaName": "Magama",
       "apc": 13287,
       "lp": 2932,
       "pdp": 9190,
@@ -3050,7 +3050,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mariga",
-      "lgaName": "MARIGA",
+      "lgaName": "Mariga",
       "apc": 13369,
       "lp": 724,
       "pdp": 6688,
@@ -3060,7 +3060,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mashegu",
-      "lgaName": "MASHEGU",
+      "lgaName": "Mashegu",
       "apc": 12665,
       "lp": 891,
       "pdp": 7206,
@@ -3070,7 +3070,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mokwa",
-      "lgaName": "MOKWA",
+      "lgaName": "Mokwa",
       "apc": 15491,
       "lp": 957,
       "pdp": 15658,
@@ -3080,7 +3080,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "munya",
-      "lgaName": "MUNYA",
+      "lgaName": "Munya",
       "apc": 7235,
       "lp": 3504,
       "pdp": 7178,
@@ -3090,7 +3090,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "paikoro",
-      "lgaName": "PAIKORO",
+      "lgaName": "Paikoro",
       "apc": 18550,
       "lp": 5465,
       "pdp": 13185,
@@ -3100,7 +3100,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "rafi",
-      "lgaName": "RAFI",
+      "lgaName": "Rafi",
       "apc": 16963,
       "lp": 1058,
       "pdp": 9581,
@@ -3110,7 +3110,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "rijau",
-      "lgaName": "RIJAU",
+      "lgaName": "Rijau",
       "apc": 11186,
       "lp": 2104,
       "pdp": 7969,
@@ -3120,7 +3120,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "shiroro",
-      "lgaName": "SHIRORO",
+      "lgaName": "Shiroro",
       "apc": 18954,
       "lp": 5993,
       "pdp": 9967,
@@ -3130,7 +3130,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "suleja",
-      "lgaName": "SULEJA",
+      "lgaName": "Suleja",
       "apc": 15917,
       "lp": 16978,
       "pdp": 11968,
@@ -3140,7 +3140,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tafa",
-      "lgaName": "TAFA",
+      "lgaName": "Tafa",
       "apc": 8927,
       "lp": 6904,
       "pdp": 8748,
@@ -3150,7 +3150,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "wushishi",
-      "lgaName": "WUSHISHI",
+      "lgaName": "Wushishi",
       "apc": 11504,
       "lp": 460,
       "pdp": 8868,
@@ -3162,7 +3162,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "cross-river": [
     {
       "lgaId": "abi",
-      "lgaName": "ABI",
+      "lgaName": "Abi",
       "apc": 8011,
       "lp": 3557,
       "pdp": 5943,
@@ -3172,7 +3172,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "akamkpa",
-      "lgaName": "AKAMKPA",
+      "lgaName": "Akamkpa",
       "apc": 4150,
       "lp": 7466,
       "pdp": 3040,
@@ -3182,7 +3182,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "akpabuyo",
-      "lgaName": "AKPABUYO",
+      "lgaName": "Akpabuyo",
       "apc": 5970,
       "lp": 4314,
       "pdp": 3950,
@@ -3192,7 +3192,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bakassi",
-      "lgaName": "BAKASSI",
+      "lgaName": "Bakassi",
       "apc": 306,
       "lp": 487,
       "pdp": 266,
@@ -3202,7 +3202,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bekwarra",
-      "lgaName": "BEKWARRA",
+      "lgaName": "Bekwarra",
       "apc": 5354,
       "lp": 9655,
       "pdp": 5299,
@@ -3212,7 +3212,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "biase",
-      "lgaName": "BIASE",
+      "lgaName": "Biase",
       "apc": 6668,
       "lp": 4705,
       "pdp": 4586,
@@ -3222,7 +3222,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "boki",
-      "lgaName": "BOKI",
+      "lgaName": "Boki",
       "apc": 10274,
       "lp": 9753,
       "pdp": 7800,
@@ -3232,7 +3232,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "calabar-municipality",
-      "lgaName": "CALABAR MUNICIPALITY",
+      "lgaName": "Calabar Municipality",
       "apc": 3973,
       "lp": 41198,
       "pdp": 3506,
@@ -3242,7 +3242,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "calabar-south",
-      "lgaName": "CALABAR SOUTH",
+      "lgaName": "Calabar South",
       "apc": 9060,
       "lp": 24247,
       "pdp": 4255,
@@ -3252,7 +3252,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "etung",
-      "lgaName": "ETUNG",
+      "lgaName": "Etung",
       "apc": 2713,
       "lp": 2345,
       "pdp": 2149,
@@ -3262,7 +3262,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikom",
-      "lgaName": "IKOM",
+      "lgaName": "Ikom",
       "apc": 6111,
       "lp": 11626,
       "pdp": 6003,
@@ -3272,7 +3272,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "obanliku",
-      "lgaName": "OBANLIKU",
+      "lgaName": "Obanliku",
       "apc": 6565,
       "lp": 4286,
       "pdp": 7253,
@@ -3282,7 +3282,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "obubra",
-      "lgaName": "OBUBRA",
+      "lgaName": "Obubra",
       "apc": 9041,
       "lp": 4488,
       "pdp": 7097,
@@ -3292,7 +3292,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "obudu",
-      "lgaName": "OBUDU",
+      "lgaName": "Obudu",
       "apc": 8987,
       "lp": 11218,
       "pdp": 5112,
@@ -3302,7 +3302,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "odukpani",
-      "lgaName": "ODUKPANI",
+      "lgaName": "Odukpani",
       "apc": 8597,
       "lp": 2704,
       "pdp": 3911,
@@ -3312,7 +3312,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ogoja",
-      "lgaName": "OGOJA",
+      "lgaName": "Ogoja",
       "apc": 9226,
       "lp": 10903,
       "pdp": 10026,
@@ -3321,8 +3321,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "LP"
     },
     {
-      "lgaId": "yakurr",
-      "lgaName": "YAKURR",
+      "lgaId": "yakuur",
+      "lgaName": "Yakuur",
       "apc": 9646,
       "lp": 10198,
       "pdp": 6600,
@@ -3332,7 +3332,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yala",
-      "lgaName": "YALA",
+      "lgaName": "Yala",
       "apc": 15868,
       "lp": 16767,
       "pdp": 8629,
@@ -3344,7 +3344,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "enugu": [
     {
       "lgaId": "aninri",
-      "lgaName": "ANINRI",
+      "lgaName": "Aninri",
       "apc": 64,
       "lp": 11339,
       "pdp": 395,
@@ -3354,7 +3354,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "awgu",
-      "lgaName": "AWGU",
+      "lgaName": "Awgu",
       "apc": 221,
       "lp": 19803,
       "pdp": 445,
@@ -3364,7 +3364,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "enugu-east",
-      "lgaName": "ENUGU EAST",
+      "lgaName": "Enugu East",
       "apc": 212,
       "lp": 48085,
       "pdp": 845,
@@ -3374,7 +3374,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "enugu-north",
-      "lgaName": "ENUGU NORTH",
+      "lgaName": "Enugu North",
       "apc": 229,
       "lp": 44666,
       "pdp": 338,
@@ -3384,7 +3384,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "enugu-south",
-      "lgaName": "ENUGU SOUTH",
+      "lgaName": "Enugu South",
       "apc": 194,
       "lp": 38511,
       "pdp": 336,
@@ -3394,7 +3394,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ezeagu",
-      "lgaName": "EZEAGU",
+      "lgaName": "Ezeagu",
       "apc": 186,
       "lp": 16245,
       "pdp": 537,
@@ -3404,7 +3404,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "igbo-etiti",
-      "lgaName": "IGBO ETITI",
+      "lgaName": "Igbo Etiti",
       "apc": 476,
       "lp": 25001,
       "pdp": 764,
@@ -3414,7 +3414,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "igbo-eze-north",
-      "lgaName": "IGBO EZE NORTH",
+      "lgaName": "Igbo Eze North",
       "apc": 181,
       "lp": 15135,
       "pdp": 1174,
@@ -3424,7 +3424,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "igbo-eze-south",
-      "lgaName": "IGBO EZE SOUTH",
+      "lgaName": "Igbo Eze South",
       "apc": 352,
       "lp": 17855,
       "pdp": 1009,
@@ -3434,7 +3434,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "isi-uzo",
-      "lgaName": "ISI UZO",
+      "lgaName": "Isi Uzo",
       "apc": 129,
       "lp": 16822,
       "pdp": 1768,
@@ -3444,7 +3444,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nkanu-east",
-      "lgaName": "NKANU EAST",
+      "lgaName": "Nkanu East",
       "apc": 94,
       "lp": 11746,
       "pdp": 1430,
@@ -3454,7 +3454,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nkanu-west",
-      "lgaName": "NKANU WEST",
+      "lgaName": "Nkanu West",
       "apc": 343,
       "lp": 15026,
       "pdp": 550,
@@ -3464,7 +3464,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nsukka",
-      "lgaName": "NSUKKA",
+      "lgaName": "Nsukka",
       "apc": 433,
       "lp": 56598,
       "pdp": 2037,
@@ -3474,7 +3474,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oji-river",
-      "lgaName": "OJI-RIVER",
+      "lgaName": "Oji River",
       "apc": 280,
       "lp": 17793,
       "pdp": 864,
@@ -3484,7 +3484,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "udenu",
-      "lgaName": "UDENU",
+      "lgaName": "Udenu",
       "apc": 327,
       "lp": 26633,
       "pdp": 1157,
@@ -3494,7 +3494,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "udi",
-      "lgaName": "UDI",
+      "lgaName": "Udi",
       "apc": 611,
       "lp": 35408,
       "pdp": 936,
@@ -3504,7 +3504,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "uzo-uwani",
-      "lgaName": "UZO-UWANI",
+      "lgaName": "Uzo Uwani",
       "apc": 440,
       "lp": 11974,
       "pdp": 1164,
@@ -3516,7 +3516,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "ekiti": [
     {
       "lgaId": "ado-ekiti",
-      "lgaName": "ADO EKITI",
+      "lgaName": "Ado Ekiti",
       "apc": 28751,
       "lp": 4485,
       "pdp": 8168,
@@ -3526,7 +3526,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "efon",
-      "lgaName": "EFON",
+      "lgaName": "Efon",
       "apc": 5873,
       "lp": 125,
       "pdp": 2521,
@@ -3536,7 +3536,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ekiti-east",
-      "lgaName": "EKITI EAST",
+      "lgaName": "Ekiti East",
       "apc": 12435,
       "lp": 375,
       "pdp": 7782,
@@ -3546,7 +3546,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ekiti-west",
-      "lgaName": "EKITI WEST",
+      "lgaName": "Ekiti West",
       "apc": 14516,
       "lp": 391,
       "pdp": 4318,
@@ -3556,7 +3556,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ekiti-south-west",
-      "lgaName": "EKITI SOUTH WEST",
+      "lgaName": "Ekiti South-West",
       "apc": 11334,
       "lp": 440,
       "pdp": 5047,
@@ -3566,7 +3566,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "emure",
-      "lgaName": "EMURE",
+      "lgaName": "Emure",
       "apc": 8159,
       "lp": 465,
       "pdp": 3035,
@@ -3576,7 +3576,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gbonyin",
-      "lgaName": "GBONYIN",
+      "lgaName": "Gbonyin",
       "apc": 11969,
       "lp": 245,
       "pdp": 4178,
@@ -3586,7 +3586,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ido-osi",
-      "lgaName": "IDO / OSI",
+      "lgaName": "Ido/Osi",
       "apc": 11917,
       "lp": 782,
       "pdp": 7476,
@@ -3596,7 +3596,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ijero",
-      "lgaName": "IJERO",
+      "lgaName": "Ijero",
       "apc": 12628,
       "lp": 373,
       "pdp": 5731,
@@ -3606,7 +3606,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikere",
-      "lgaName": "IKERE",
+      "lgaName": "Ikere",
       "apc": 11659,
       "lp": 910,
       "pdp": 7198,
@@ -3616,7 +3616,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikole",
-      "lgaName": "IKOLE",
+      "lgaName": "Ikole",
       "apc": 15465,
       "lp": 779,
       "pdp": 10198,
@@ -3626,7 +3626,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ilejemeje",
-      "lgaName": "ILEJEMEJE",
+      "lgaName": "Ilejemeje",
       "apc": 4599,
       "lp": 97,
       "pdp": 2662,
@@ -3636,7 +3636,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "irepodun-ifelodun",
-      "lgaName": "IREPODUN / IFELODUN",
+      "lgaName": "Irepodun/Ifelodun",
       "apc": 14265,
       "lp": 544,
       "pdp": 5516,
@@ -3646,7 +3646,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ise-orun",
-      "lgaName": "ISE / ORUN",
+      "lgaName": "Ise/Orun",
       "apc": 11415,
       "lp": 497,
       "pdp": 2734,
@@ -3656,7 +3656,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "moba",
-      "lgaName": "MOBA",
+      "lgaName": "Moba",
       "apc": 12046,
       "lp": 246,
       "pdp": 5847,
@@ -3666,7 +3666,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oye",
-      "lgaName": "OYE",
+      "lgaName": "Oye",
       "apc": 14472,
       "lp": 643,
       "pdp": 7143,
@@ -3678,7 +3678,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "federal-capital-territory": [
     {
       "lgaId": "abaji",
-      "lgaName": "ABAJI",
+      "lgaName": "Abaji",
       "apc": 10370,
       "lp": 2874,
       "pdp": 6888,
@@ -3688,7 +3688,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bwari",
-      "lgaName": "BWARI",
+      "lgaName": "Bwari",
       "apc": 13156,
       "lp": 67198,
       "pdp": 10835,
@@ -3698,7 +3698,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gwagwalada",
-      "lgaName": "GWAGWALADA",
+      "lgaName": "Gwagwalada",
       "apc": 15890,
       "lp": 19694,
       "pdp": 10982,
@@ -3708,7 +3708,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kuje",
-      "lgaName": "KUJE",
+      "lgaName": "Kuje",
       "apc": 10648,
       "lp": 14257,
       "pdp": 10028,
@@ -3718,7 +3718,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kwali",
-      "lgaName": "KWALI",
+      "lgaName": "Kwali",
       "apc": 11242,
       "lp": 7302,
       "pdp": 9054,
@@ -3727,8 +3727,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "municipal",
-      "lgaName": "MUNICIPAL",
+      "lgaId": "abuja-municipal",
+      "lgaName": "Abuja Municipal",
       "apc": 29596,
       "lp": 170392,
       "pdp": 26407,
@@ -3740,7 +3740,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "kwara": [
     {
       "lgaId": "asa",
-      "lgaName": "ASA",
+      "lgaName": "Asa",
       "apc": 15123,
       "lp": 678,
       "pdp": 10482,
@@ -3750,7 +3750,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "baruten",
-      "lgaName": "BARUTEN",
+      "lgaName": "Baruten",
       "apc": 23495,
       "lp": 830,
       "pdp": 10201,
@@ -3760,7 +3760,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "edu",
-      "lgaName": "EDU",
+      "lgaName": "Edu",
       "apc": 18564,
       "lp": 696,
       "pdp": 13249,
@@ -3770,7 +3770,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ekiti",
-      "lgaName": "EKITI",
+      "lgaName": "Ekiti",
       "apc": 5739,
       "lp": 721,
       "pdp": 3760,
@@ -3780,7 +3780,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ifelodun",
-      "lgaName": "IFELODUN",
+      "lgaName": "Ifelodun",
       "apc": 16369,
       "lp": 2517,
       "pdp": 6457,
@@ -3790,7 +3790,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ilorin-east",
-      "lgaName": "ILORIN EAST",
+      "lgaName": "Ilorin East",
       "apc": 24264,
       "lp": 2409,
       "pdp": 13325,
@@ -3800,7 +3800,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ilorin-south",
-      "lgaName": "ILORIN-SOUTH",
+      "lgaName": "Ilorin South",
       "apc": 21620,
       "lp": 7274,
       "pdp": 10806,
@@ -3810,7 +3810,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ilorin-west",
-      "lgaName": "ILORIN-WEST",
+      "lgaName": "Ilorin West",
       "apc": 47784,
       "lp": 5598,
       "pdp": 29978,
@@ -3820,7 +3820,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "irepodun",
-      "lgaName": "IREPODUN",
+      "lgaName": "Irepodun",
       "apc": 11545,
       "lp": 3000,
       "pdp": 6368,
@@ -3830,7 +3830,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "isin",
-      "lgaName": "ISIN",
+      "lgaName": "Isin",
       "apc": 4484,
       "lp": 1419,
       "pdp": 2506,
@@ -3840,7 +3840,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kaiama",
-      "lgaName": "KAIAMA",
+      "lgaName": "Kaiama",
       "apc": 14580,
       "lp": 435,
       "pdp": 6073,
@@ -3850,7 +3850,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "moro",
-      "lgaName": "MORO",
+      "lgaName": "Moro",
       "apc": 15287,
       "lp": 959,
       "pdp": 6429,
@@ -3860,7 +3860,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "offa",
-      "lgaName": "OFFA",
+      "lgaName": "Offa",
       "apc": 19475,
       "lp": 1444,
       "pdp": 3508,
@@ -3870,7 +3870,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oke-ero",
-      "lgaName": "OKE - ERO",
+      "lgaName": "Oke Ero",
       "apc": 6016,
       "lp": 592,
       "pdp": 3074,
@@ -3880,7 +3880,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oyun",
-      "lgaName": "OYUN",
+      "lgaName": "Oyun",
       "apc": 8838,
       "lp": 1867,
       "pdp": 4298,
@@ -3889,8 +3889,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "patigi",
-      "lgaName": "PATIGI",
+      "lgaId": "pategi",
+      "lgaName": "Pategi",
       "apc": 10389,
       "lp": 727,
       "pdp": 6395,
@@ -3902,7 +3902,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "nassarawa": [
     {
       "lgaId": "akwanga",
-      "lgaName": "AKWANGA",
+      "lgaName": "Akwanga",
       "apc": 9221,
       "lp": 18227,
       "pdp": 5955,
@@ -3912,7 +3912,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "awe",
-      "lgaName": "AWE",
+      "lgaName": "Awe",
       "apc": 14269,
       "lp": 4309,
       "pdp": 10416,
@@ -3922,7 +3922,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "doma",
-      "lgaName": "DOMA",
+      "lgaName": "Doma",
       "apc": 7532,
       "lp": 8864,
       "pdp": 11674,
@@ -3932,7 +3932,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "karu",
-      "lgaName": "KARU",
+      "lgaName": "Karu",
       "apc": 15843,
       "lp": 57638,
       "pdp": 18901,
@@ -3942,7 +3942,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "keana",
-      "lgaName": "KEANA",
+      "lgaName": "Keana",
       "apc": 7208,
       "lp": 4002,
       "pdp": 4335,
@@ -3952,7 +3952,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "keffi",
-      "lgaName": "KEFFI",
+      "lgaName": "Keffi",
       "apc": 13564,
       "lp": 9607,
       "pdp": 13007,
@@ -3962,7 +3962,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kokona",
-      "lgaName": "KOKONA",
+      "lgaName": "Kokona",
       "apc": 12198,
       "lp": 9647,
       "pdp": 8098,
@@ -3972,7 +3972,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "lafia",
-      "lgaName": "LAFIA",
+      "lgaName": "Lafia",
       "apc": 30796,
       "lp": 24935,
       "pdp": 29917,
@@ -3982,7 +3982,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nasarawa",
-      "lgaName": "NASARAWA",
+      "lgaName": "Nasarawa",
       "apc": 17241,
       "lp": 8680,
       "pdp": 10576,
@@ -3992,7 +3992,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nasarawa-eggon",
-      "lgaName": "NASARAWA EGGON",
+      "lgaName": "Nasarawa Eggon",
       "apc": 13669,
       "lp": 15624,
       "pdp": 9971,
@@ -4002,7 +4002,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "obi",
-      "lgaName": "OBI",
+      "lgaName": "Obi",
       "apc": 10838,
       "lp": 19423,
       "pdp": 12947,
@@ -4012,7 +4012,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "toto",
-      "lgaName": "TOTO",
+      "lgaName": "Toto",
       "apc": 11553,
       "lp": 5228,
       "pdp": 7077,
@@ -4022,7 +4022,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "wamba",
-      "lgaName": "WAMBA",
+      "lgaName": "Wamba",
       "apc": 8990,
       "lp": 5177,
       "pdp": 4219,
@@ -4034,7 +4034,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "delta": [
     {
       "lgaId": "aniocha-north",
-      "lgaName": "ANIOCHA NORTH",
+      "lgaName": "Aniocha North",
       "apc": 1146,
       "lp": 11678,
       "pdp": 3783,
@@ -4044,7 +4044,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "aniocha-south",
-      "lgaName": "ANIOCHA - SOUTH",
+      "lgaName": "Aniocha South",
       "apc": 1686,
       "lp": 14208,
       "pdp": 4672,
@@ -4054,7 +4054,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bomadi",
-      "lgaName": "BOMADI",
+      "lgaName": "Bomadi",
       "apc": 2421,
       "lp": 3134,
       "pdp": 4429,
@@ -4064,7 +4064,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "burutu",
-      "lgaName": "BURUTU",
+      "lgaName": "Burutu",
       "apc": 4605,
       "lp": 5745,
       "pdp": 7147,
@@ -4074,7 +4074,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ethiope-east",
-      "lgaName": "ETHIOPE  EAST",
+      "lgaName": "Ethiope East",
       "apc": 6314,
       "lp": 10806,
       "pdp": 7854,
@@ -4084,7 +4084,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ethiope-west",
-      "lgaName": "ETHIOPE  WEST",
+      "lgaName": "Ethiope West",
       "apc": 3850,
       "lp": 10199,
       "pdp": 5403,
@@ -4094,7 +4094,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ika-north-east",
-      "lgaName": "IKA NORTH- EAST",
+      "lgaName": "Ika North-East",
       "apc": 1902,
       "lp": 8980,
       "pdp": 16696,
@@ -4104,7 +4104,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ika-south",
-      "lgaName": "IKA - SOUTH",
+      "lgaName": "Ika South",
       "apc": 3290,
       "lp": 17868,
       "pdp": 7485,
@@ -4114,7 +4114,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "isoko-north",
-      "lgaName": "ISOKO NORTH",
+      "lgaName": "Isoko North",
       "apc": 2734,
       "lp": 17765,
       "pdp": 8254,
@@ -4124,7 +4124,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "isoko-south",
-      "lgaName": "ISOKO SOUTH",
+      "lgaName": "Isoko South",
       "apc": 4451,
       "lp": 18166,
       "pdp": 7039,
@@ -4134,7 +4134,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ndokwa-east",
-      "lgaName": "NDOKWA EAST",
+      "lgaName": "Ndokwa East",
       "apc": 3758,
       "lp": 7756,
       "pdp": 5996,
@@ -4144,7 +4144,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ndokwa-west",
-      "lgaName": "NDOKWA WEST",
+      "lgaName": "Ndokwa West",
       "apc": 3846,
       "lp": 12889,
       "pdp": 8760,
@@ -4154,7 +4154,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "okpe",
-      "lgaName": "OKPE",
+      "lgaName": "Okpe",
       "apc": 4773,
       "lp": 10754,
       "pdp": 8326,
@@ -4164,7 +4164,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oshimili-north",
-      "lgaName": "OSHIMILI - NORTH",
+      "lgaName": "Oshimili North",
       "apc": 1688,
       "lp": 14929,
       "pdp": 4796,
@@ -4174,7 +4174,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oshimili-south",
-      "lgaName": "OSHIMILI - SOUTH",
+      "lgaName": "Oshimili South",
       "apc": 894,
       "lp": 40085,
       "pdp": 2790,
@@ -4184,7 +4184,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "patani",
-      "lgaName": "PATANI",
+      "lgaName": "Patani",
       "apc": 2270,
       "lp": 2700,
       "pdp": 3346,
@@ -4194,7 +4194,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sapele",
-      "lgaName": "SAPELE",
+      "lgaName": "Sapele",
       "apc": 4099,
       "lp": 17408,
       "pdp": 6168,
@@ -4204,7 +4204,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "udu",
-      "lgaName": "UDU",
+      "lgaName": "Udu",
       "apc": 4937,
       "lp": 18579,
       "pdp": 4836,
@@ -4214,7 +4214,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ughelli-north",
-      "lgaName": "UGHELLI NORTH",
+      "lgaName": "Ughelli North",
       "apc": 11196,
       "lp": 22589,
       "pdp": 9241,
@@ -4224,7 +4224,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ughelli-south",
-      "lgaName": "UGHELLI SOUTH",
+      "lgaName": "Ughelli South",
       "apc": 8877,
       "lp": 9790,
       "pdp": 10244,
@@ -4234,7 +4234,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ukwuani",
-      "lgaName": "UKWUANI",
+      "lgaName": "Ukwuani",
       "apc": 2946,
       "lp": 11239,
       "pdp": 6713,
@@ -4244,7 +4244,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "uvwie",
-      "lgaName": "UVWIE",
+      "lgaName": "Uvwie",
       "apc": 3033,
       "lp": 36302,
       "pdp": 3375,
@@ -4254,7 +4254,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "warri-north",
-      "lgaName": "WARRI  NORTH",
+      "lgaName": "Warri North",
       "apc": 1379,
       "lp": 2417,
       "pdp": 3411,
@@ -4264,7 +4264,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "warri-south",
-      "lgaName": "WARRI SOUTH",
+      "lgaName": "Warri South",
       "apc": 1234,
       "lp": 13289,
       "pdp": 7653,
@@ -4274,7 +4274,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "warri-south-west",
-      "lgaName": "WARRI SOUTH  WEST",
+      "lgaName": "Warri South-West",
       "apc": 2857,
       "lp": 2591,
       "pdp": 3183,
@@ -4286,7 +4286,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "lagos": [
     {
       "lgaId": "agege",
-      "lgaName": "AGEGE",
+      "lgaName": "Agege",
       "apc": 29568,
       "lp": 13270,
       "pdp": 4498,
@@ -4296,7 +4296,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ajeromi-ifelodun",
-      "lgaName": "AJEROMI/IFELODUN",
+      "lgaName": "Ajeromi-Ifelodun",
       "apc": 25938,
       "lp": 35663,
       "pdp": 4680,
@@ -4306,7 +4306,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "alimosho",
-      "lgaName": "ALIMOSHO",
+      "lgaName": "Alimosho",
       "apc": 62909,
       "lp": 71327,
       "pdp": 8201,
@@ -4316,7 +4316,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "amuwo-odofin",
-      "lgaName": "AMUWO-ODOFIN",
+      "lgaName": "Amuwo-Odofin",
       "apc": 13318,
       "lp": 55547,
       "pdp": 2383,
@@ -4326,7 +4326,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "apapa",
-      "lgaName": "APAPA",
+      "lgaName": "Apapa",
       "apc": 15471,
       "lp": 7566,
       "pdp": 2997,
@@ -4336,7 +4336,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "badagry",
-      "lgaName": "BADAGRY",
+      "lgaName": "Badagry",
       "apc": 31903,
       "lp": 10956,
       "pdp": 6024,
@@ -4346,7 +4346,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "epe",
-      "lgaName": "EPE",
+      "lgaName": "Epe",
       "apc": 19867,
       "lp": 3497,
       "pdp": 5221,
@@ -4356,7 +4356,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "eti-osa",
-      "lgaName": "ETI-OSA",
+      "lgaName": "Eti-Osa",
       "apc": 15317,
       "lp": 42388,
       "pdp": 3369,
@@ -4366,7 +4366,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibeju-lekki",
-      "lgaName": "IBEJU/LEKKI",
+      "lgaName": "Ibeju-Lekki",
       "apc": 14685,
       "lp": 10410,
       "pdp": 2329,
@@ -4376,7 +4376,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ifako-ijaye",
-      "lgaName": "IFAKO-IJAYE",
+      "lgaName": "Ifako-Ijaye",
       "apc": 30756,
       "lp": 25437,
       "pdp": 3258,
@@ -4386,7 +4386,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikeja",
-      "lgaName": "IKEJA",
+      "lgaName": "Ikeja",
       "apc": 21276,
       "lp": 30004,
       "pdp": 2280,
@@ -4396,7 +4396,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikorodu",
-      "lgaName": "IKORODU",
+      "lgaName": "Ikorodu",
       "apc": 50353,
       "lp": 28951,
       "pdp": 4508,
@@ -4406,7 +4406,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kosofe",
-      "lgaName": "KOSOFE",
+      "lgaName": "Kosofe",
       "apc": 36883,
       "lp": 46554,
       "pdp": 4058,
@@ -4416,7 +4416,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "lagos-island",
-      "lgaName": "LAGOS ISLAND",
+      "lgaName": "Lagos Island",
       "apc": 27760,
       "lp": 3058,
       "pdp": 2521,
@@ -4426,7 +4426,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "lagos-mainland",
-      "lgaName": "LAGOS MAINLAND",
+      "lgaName": "Lagos Mainland",
       "apc": 20030,
       "lp": 18698,
       "pdp": 3005,
@@ -4436,7 +4436,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mushin",
-      "lgaName": "MUSHIN",
+      "lgaName": "Mushin",
       "apc": 41907,
       "lp": 23390,
       "pdp": 3478,
@@ -4446,7 +4446,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ojo",
-      "lgaName": "OJO",
+      "lgaName": "Ojo",
       "apc": 20603,
       "lp": 38859,
       "pdp": 3701,
@@ -4456,7 +4456,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oshodi-isolo",
-      "lgaName": "OSHODI/ISOLO",
+      "lgaName": "Oshodi-Isolo",
       "apc": 27181,
       "lp": 51020,
       "pdp": 3139,
@@ -4465,8 +4465,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "LP"
     },
     {
-      "lgaId": "somolu",
-      "lgaName": "SOMOLU",
+      "lgaId": "shomolu",
+      "lgaName": "Shomolu",
       "apc": 27879,
       "lp": 28936,
       "pdp": 3449,
@@ -4476,7 +4476,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "surulere",
-      "lgaName": "SURULERE",
+      "lgaName": "Surulere",
       "apc": 39002,
       "lp": 36923,
       "pdp": 2651,
@@ -4488,7 +4488,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "imo": [
     {
       "lgaId": "aboh-mbaise",
-      "lgaName": "ABOH MBAISE",
+      "lgaName": "Aboh Mbaise",
       "apc": 1197,
       "lp": 17604,
       "pdp": 4181,
@@ -4498,7 +4498,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ahiazu-mbaise",
-      "lgaName": "AHIAZU MBAISE",
+      "lgaName": "Ahiazu Mbaise",
       "apc": 970,
       "lp": 17332,
       "pdp": 1833,
@@ -4508,7 +4508,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ehime-mbano",
-      "lgaName": "EHIME MBANO",
+      "lgaName": "Ehime Mbano",
       "apc": 1018,
       "lp": 11959,
       "pdp": 711,
@@ -4517,8 +4517,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "LP"
     },
     {
-      "lgaId": "ezinihitte-mbaise",
-      "lgaName": "EZINIHITTE MBAISE",
+      "lgaId": "ezinihitte",
+      "lgaName": "Ezinihitte",
       "apc": 1612,
       "lp": 15560,
       "pdp": 3208,
@@ -4528,7 +4528,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ideato-north",
-      "lgaName": "IDEATO NORTH",
+      "lgaName": "Ideato North",
       "apc": 297,
       "lp": 10958,
       "pdp": 586,
@@ -4538,7 +4538,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ideato-south",
-      "lgaName": "IDEATO SOUTH",
+      "lgaName": "Ideato South",
       "apc": 440,
       "lp": 10216,
       "pdp": 779,
@@ -4548,7 +4548,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ihitte-uboma",
-      "lgaName": "IHITTE UBOMA",
+      "lgaName": "Ihitte/Uboma",
       "apc": 417,
       "lp": 11681,
       "pdp": 499,
@@ -4558,7 +4558,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikeduru",
-      "lgaName": "IKEDURU",
+      "lgaName": "Ikeduru",
       "apc": 1339,
       "lp": 23718,
       "pdp": 991,
@@ -4568,7 +4568,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "isiala-mbano",
-      "lgaName": "ISIALA MBANO",
+      "lgaName": "Isiala Mbano",
       "apc": 796,
       "lp": 15873,
       "pdp": 1026,
@@ -4578,7 +4578,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "isu",
-      "lgaName": "ISU",
+      "lgaName": "Isu",
       "apc": 681,
       "lp": 10383,
       "pdp": 690,
@@ -4588,7 +4588,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mbaitoli",
-      "lgaName": "MBAITOLI",
+      "lgaName": "Mbaitoli",
       "apc": 714,
       "lp": 21904,
       "pdp": 674,
@@ -4598,7 +4598,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ngor-okpala",
-      "lgaName": "NGOR OKPALA",
+      "lgaName": "Ngor Okpala",
       "apc": 2080,
       "lp": 18859,
       "pdp": 2725,
@@ -4608,7 +4608,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "njaba",
-      "lgaName": "NJABA",
+      "lgaName": "Njaba",
       "apc": 235,
       "lp": 7591,
       "pdp": 190,
@@ -4618,7 +4618,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nkwerre",
-      "lgaName": "NKWERRE",
+      "lgaName": "Nkwerre",
       "apc": 662,
       "lp": 7052,
       "pdp": 319,
@@ -4628,7 +4628,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nwangele",
-      "lgaName": "NWANGELE",
+      "lgaName": "Nwangele",
       "apc": 479,
       "lp": 9078,
       "pdp": 452,
@@ -4638,7 +4638,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "obowo",
-      "lgaName": "OBOWO",
+      "lgaName": "Obowo",
       "apc": 438,
       "lp": 17894,
       "pdp": 830,
@@ -4648,7 +4648,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oguta",
-      "lgaName": "OGUTA",
+      "lgaName": "Oguta",
       "apc": 128,
       "lp": 3031,
       "pdp": 226,
@@ -4658,7 +4658,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ohaji-egbema",
-      "lgaName": "OHAJI EGBEMA",
+      "lgaName": "Ohaji/Egbema",
       "apc": 1954,
       "lp": 7500,
       "pdp": 889,
@@ -4668,7 +4668,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "okigwe",
-      "lgaName": "OKIGWE",
+      "lgaName": "Okigwe",
       "apc": 12414,
       "lp": 20460,
       "pdp": 3843,
@@ -4677,8 +4677,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "LP"
     },
     {
-      "lgaId": "onuimo",
-      "lgaName": "ONUIMO",
+      "lgaId": "unuimo",
+      "lgaName": "Unuimo",
       "apc": 349,
       "lp": 2905,
       "pdp": 385,
@@ -4688,7 +4688,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "orlu",
-      "lgaName": "ORLU",
+      "lgaName": "Orlu",
       "apc": 274,
       "lp": 319,
       "pdp": 19,
@@ -4698,7 +4698,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "orsu",
-      "lgaName": "ORSU",
+      "lgaName": "Orsu",
       "apc": 35,
       "lp": 13,
       "pdp": 1,
@@ -4708,7 +4708,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oru-east",
-      "lgaName": "ORU EAST",
+      "lgaName": "Oru East",
       "apc": 17639,
       "lp": 2530,
       "pdp": 618,
@@ -4718,7 +4718,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oru-west",
-      "lgaName": "ORU WEST",
+      "lgaName": "Oru West",
       "apc": 18644,
       "lp": 8383,
       "pdp": 1530,
@@ -4728,7 +4728,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "owerri-municipal",
-      "lgaName": "OWERRI MUNICIPAL",
+      "lgaName": "Owerri Municipal",
       "apc": 434,
       "lp": 26290,
       "pdp": 821,
@@ -4738,7 +4738,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "owerri-north",
-      "lgaName": "OWERRI NORTH",
+      "lgaName": "Owerri North",
       "apc": 547,
       "lp": 32475,
       "pdp": 894,
@@ -4748,7 +4748,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "owerri-west",
-      "lgaName": "OWERRI WEST",
+      "lgaName": "Owerri West",
       "apc": 613,
       "lp": 28927,
       "pdp": 1318,
@@ -4760,7 +4760,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "gombe": [
     {
       "lgaId": "akko",
-      "lgaName": "AKKO",
+      "lgaName": "Akko",
       "apc": 22749,
       "lp": 2241,
       "pdp": 55202,
@@ -4770,7 +4770,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "balanga",
-      "lgaName": "BALANGA",
+      "lgaName": "Balanga",
       "apc": 11715,
       "lp": 3760,
       "pdp": 23326,
@@ -4780,7 +4780,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "billiri",
-      "lgaName": "BILLIRI",
+      "lgaName": "Billiri",
       "apc": 7232,
       "lp": 8898,
       "pdp": 21911,
@@ -4790,7 +4790,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dukku",
-      "lgaName": "DUKKU",
+      "lgaName": "Dukku",
       "apc": 12925,
       "lp": 49,
       "pdp": 21579,
@@ -4800,7 +4800,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "funakaye",
-      "lgaName": "FUNAKAYE",
+      "lgaName": "Funakaye",
       "apc": 12672,
       "lp": 320,
       "pdp": 25384,
@@ -4810,7 +4810,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gombe",
-      "lgaName": "GOMBE",
+      "lgaName": "Gombe",
       "apc": 19312,
       "lp": 2339,
       "pdp": 62347,
@@ -4820,7 +4820,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kaltungo",
-      "lgaName": "KALTUNGO",
+      "lgaName": "Kaltungo",
       "apc": 9464,
       "lp": 5149,
       "pdp": 20968,
@@ -4830,7 +4830,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kwami",
-      "lgaName": "KWAMI",
+      "lgaName": "Kwami",
       "apc": 16245,
       "lp": 78,
       "pdp": 24068,
@@ -4840,7 +4840,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nafada",
-      "lgaName": "NAFADA",
+      "lgaName": "Nafada",
       "apc": 8242,
       "lp": 7,
       "pdp": 12339,
@@ -4849,8 +4849,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "shongom",
-      "lgaName": "SHONGOM",
+      "lgaId": "shomgom",
+      "lgaName": "Shomgom",
       "apc": 7525,
       "lp": 2579,
       "pdp": 13520,
@@ -4859,8 +4859,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "yalmaltu-deba",
-      "lgaName": "YALMALTU/ DEBA",
+      "lgaId": "yamaltu-deba",
+      "lgaName": "Yamaltu/Deba",
       "apc": 18896,
       "lp": 740,
       "pdp": 38479,
@@ -4872,7 +4872,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "osun": [
     {
       "lgaId": "atakumosa-east",
-      "lgaName": "ATAKUMOSA EAST",
+      "lgaName": "Atakumosa East",
       "apc": 2768,
       "lp": 100,
       "pdp": 9405,
@@ -4882,7 +4882,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "atakumosa-west",
-      "lgaName": "ATAKUMOSA WEST",
+      "lgaName": "Atakumosa West",
       "apc": 5003,
       "lp": 355,
       "pdp": 7078,
@@ -4891,8 +4891,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "ayedaade",
-      "lgaName": "AYEDAADE",
+      "lgaId": "aiyedade",
+      "lgaName": "Aiyedade",
       "apc": 13352,
       "lp": 397,
       "pdp": 13251,
@@ -4901,8 +4901,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "ayedire",
-      "lgaName": "AYEDIRE",
+      "lgaId": "aiyedire",
+      "lgaName": "Aiyedire",
       "apc": 7714,
       "lp": 168,
       "pdp": 8015,
@@ -4912,7 +4912,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "boluwaduro",
-      "lgaName": "BOLUWADURO",
+      "lgaName": "Boluwaduro",
       "apc": 4566,
       "lp": 175,
       "pdp": 6076,
@@ -4922,7 +4922,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "boripe",
-      "lgaName": "BORIPE",
+      "lgaName": "Boripe",
       "apc": 15325,
       "lp": 294,
       "pdp": 8921,
@@ -4932,7 +4932,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ede-north",
-      "lgaName": "EDE NORTH",
+      "lgaName": "Ede North",
       "apc": 9194,
       "lp": 782,
       "pdp": 18908,
@@ -4942,7 +4942,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ede-south",
-      "lgaName": "EDE SOUTH",
+      "lgaName": "Ede South",
       "apc": 5477,
       "lp": 537,
       "pdp": 16142,
@@ -4952,7 +4952,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "egbedore",
-      "lgaName": "EGBEDORE",
+      "lgaName": "Egbedore",
       "apc": 8536,
       "lp": 1469,
       "pdp": 10432,
@@ -4962,7 +4962,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ejigbo",
-      "lgaName": "EJIGBO",
+      "lgaName": "Ejigbo",
       "apc": 15209,
       "lp": 499,
       "pdp": 12801,
@@ -4972,7 +4972,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ife-central",
-      "lgaName": "IFE CENTRAL",
+      "lgaName": "Ife Central",
       "apc": 19362,
       "lp": 3374,
       "pdp": 10777,
@@ -4982,7 +4982,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ifedayo",
-      "lgaName": "IFEDAYO",
+      "lgaName": "Ifedayo",
       "apc": 3610,
       "lp": 93,
       "pdp": 5744,
@@ -4992,7 +4992,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ife-east",
-      "lgaName": "IFE EAST",
+      "lgaName": "Ife East",
       "apc": 20903,
       "lp": 2422,
       "pdp": 12818,
@@ -5002,7 +5002,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ifelodun",
-      "lgaName": "IFELODUN",
+      "lgaName": "Ifelodun",
       "apc": 13459,
       "lp": 403,
       "pdp": 15157,
@@ -5012,7 +5012,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ife-north",
-      "lgaName": "IFE NORTH",
+      "lgaName": "Ife North",
       "apc": 7915,
       "lp": 667,
       "pdp": 9754,
@@ -5022,7 +5022,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ife-south",
-      "lgaName": "IFE SOUTH",
+      "lgaName": "Ife South",
       "apc": 9555,
       "lp": 554,
       "pdp": 9765,
@@ -5032,7 +5032,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ila",
-      "lgaName": "ILA",
+      "lgaName": "Ila",
       "apc": 9841,
       "lp": 230,
       "pdp": 12334,
@@ -5042,7 +5042,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ilesa-east",
-      "lgaName": "ILESA EAST",
+      "lgaName": "Ilesa East",
       "apc": 9580,
       "lp": 1358,
       "pdp": 10089,
@@ -5052,7 +5052,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ilesa-west",
-      "lgaName": "ILESA WEST",
+      "lgaName": "Ilesa West",
       "apc": 9803,
       "lp": 1651,
       "pdp": 10841,
@@ -5062,7 +5062,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "irepodun",
-      "lgaName": "IREPODUN",
+      "lgaName": "Irepodun",
       "apc": 10437,
       "lp": 210,
       "pdp": 14541,
@@ -5072,7 +5072,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "irewole",
-      "lgaName": "IREWOLE",
+      "lgaName": "Irewole",
       "apc": 17991,
       "lp": 333,
       "pdp": 13081,
@@ -5082,7 +5082,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "isokan",
-      "lgaName": "ISOKAN",
+      "lgaName": "Isokan",
       "apc": 9661,
       "lp": 172,
       "pdp": 8774,
@@ -5092,7 +5092,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "iwo",
-      "lgaName": "IWO",
+      "lgaName": "Iwo",
       "apc": 18887,
       "lp": 616,
       "pdp": 15661,
@@ -5102,7 +5102,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "obokun",
-      "lgaName": "OBOKUN",
+      "lgaName": "Obokun",
       "apc": 8196,
       "lp": 316,
       "pdp": 14084,
@@ -5112,7 +5112,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "odo-otin",
-      "lgaName": "ODO-OTIN",
+      "lgaName": "Odo Otin",
       "apc": 10825,
       "lp": 506,
       "pdp": 14098,
@@ -5122,7 +5122,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ola-oluwa",
-      "lgaName": "OLA-OLUWA",
+      "lgaName": "Ola Oluwa",
       "apc": 7355,
       "lp": 142,
       "pdp": 8134,
@@ -5132,7 +5132,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "olorunda",
-      "lgaName": "OLORUNDA",
+      "lgaName": "Olorunda",
       "apc": 21482,
       "lp": 1649,
       "pdp": 14674,
@@ -5142,7 +5142,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oriade",
-      "lgaName": "ORIADE",
+      "lgaName": "Oriade",
       "apc": 11745,
       "lp": 677,
       "pdp": 14982,
@@ -5152,7 +5152,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "orolu",
-      "lgaName": "OROLU",
+      "lgaName": "Orolu",
       "apc": 7720,
       "lp": 197,
       "pdp": 8944,
@@ -5162,7 +5162,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "osogbo",
-      "lgaName": "OSOGBO",
+      "lgaName": "Osogbo",
       "apc": 28474,
       "lp": 2937,
       "pdp": 19085,
@@ -5174,7 +5174,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "sokoto": [
     {
       "lgaId": "binji",
-      "lgaName": "BINJI",
+      "lgaName": "Binji",
       "apc": 9953,
       "lp": 15,
       "pdp": 8646,
@@ -5184,7 +5184,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bodinga",
-      "lgaName": "BODINGA",
+      "lgaName": "Bodinga",
       "apc": 13384,
       "lp": 10,
       "pdp": 13559,
@@ -5194,7 +5194,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dange-shuni",
-      "lgaName": "DANGE/SHUNI",
+      "lgaName": "Dange Shuni",
       "apc": 11954,
       "lp": 479,
       "pdp": 10306,
@@ -5204,7 +5204,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gada",
-      "lgaName": "GADA",
+      "lgaName": "Gada",
       "apc": 13631,
       "lp": 18,
       "pdp": 15343,
@@ -5214,7 +5214,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "goronyo",
-      "lgaName": "GORONYO",
+      "lgaName": "Goronyo",
       "apc": 8892,
       "lp": 16,
       "pdp": 11614,
@@ -5224,7 +5224,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gudu",
-      "lgaName": "GUDU",
+      "lgaName": "Gudu",
       "apc": 11194,
       "lp": 23,
       "pdp": 9295,
@@ -5234,7 +5234,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gwadabawa",
-      "lgaName": "GWADABAWA",
+      "lgaName": "Gwadabawa",
       "apc": 14694,
       "lp": 33,
       "pdp": 14194,
@@ -5244,7 +5244,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "illela",
-      "lgaName": "ILLELA",
+      "lgaName": "Illela",
       "apc": 15570,
       "lp": 138,
       "pdp": 14920,
@@ -5254,7 +5254,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "isa",
-      "lgaName": "ISA",
+      "lgaName": "Isa",
       "apc": 9391,
       "lp": 5,
       "pdp": 12481,
@@ -5264,7 +5264,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kware",
-      "lgaName": "KWARE",
+      "lgaName": "Kware",
       "apc": 10485,
       "lp": 63,
       "pdp": 12242,
@@ -5274,7 +5274,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kebbe",
-      "lgaName": "KEBBE",
+      "lgaName": "Kebbe",
       "apc": 9008,
       "lp": 1,
       "pdp": 10430,
@@ -5284,7 +5284,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "rabah",
-      "lgaName": "RABAH",
+      "lgaName": "Rabah",
       "apc": 5584,
       "lp": 3,
       "pdp": 5490,
@@ -5293,8 +5293,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "s-birni",
-      "lgaName": "S/BIRNI",
+      "lgaId": "sabon-birni",
+      "lgaName": "Sabon Birni",
       "apc": 17994,
       "lp": 23,
       "pdp": 15182,
@@ -5304,7 +5304,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "shagari",
-      "lgaName": "SHAGARI",
+      "lgaName": "Shagari",
       "apc": 11355,
       "lp": 3,
       "pdp": 13009,
@@ -5314,7 +5314,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "silame",
-      "lgaName": "SILAME",
+      "lgaName": "Silame",
       "apc": 7086,
       "lp": 5,
       "pdp": 8240,
@@ -5324,7 +5324,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sokoto-north",
-      "lgaName": "SOKOTO NORTH",
+      "lgaName": "Sokoto North",
       "apc": 17228,
       "lp": 566,
       "pdp": 17024,
@@ -5334,7 +5334,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sokoto-south",
-      "lgaName": "SOKOTO SOUTH",
+      "lgaName": "Sokoto South",
       "apc": 21385,
       "lp": 4504,
       "pdp": 20036,
@@ -5344,7 +5344,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tambuwal",
-      "lgaName": "TAMBUWAL",
+      "lgaName": "Tambuwal",
       "apc": 13814,
       "lp": 32,
       "pdp": 21708,
@@ -5354,7 +5354,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tangaza",
-      "lgaName": "TANGAZA",
+      "lgaName": "Tangaza",
       "apc": 10331,
       "lp": 25,
       "pdp": 6594,
@@ -5364,7 +5364,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tureta",
-      "lgaName": "TURETA",
+      "lgaName": "Tureta",
       "apc": 7684,
       "lp": 1,
       "pdp": 8144,
@@ -5373,8 +5373,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "wamakko",
-      "lgaName": "WAMAKKO",
+      "lgaId": "wamako",
+      "lgaName": "Wamako",
       "apc": 23189,
       "lp": 577,
       "pdp": 19121,
@@ -5384,7 +5384,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "wurno",
-      "lgaName": "WURNO",
+      "lgaName": "Wurno",
       "apc": 10988,
       "lp": 19,
       "pdp": 9832,
@@ -5394,7 +5394,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yabo",
-      "lgaName": "YABO",
+      "lgaName": "Yabo",
       "apc": 10650,
       "lp": 9,
       "pdp": 11269,
@@ -5406,7 +5406,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "borno": [
     {
       "lgaId": "abadam",
-      "lgaName": "ABADAM",
+      "lgaName": "Abadam",
       "apc": 2146,
       "lp": 0,
       "pdp": 686,
@@ -5416,7 +5416,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "askira-uba",
-      "lgaName": "ASKIRA / UBA",
+      "lgaName": "Askira/Uba",
       "apc": 8109,
       "lp": 688,
       "pdp": 15544,
@@ -5426,7 +5426,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bama",
-      "lgaName": "BAMA",
+      "lgaName": "Bama",
       "apc": 12579,
       "lp": 19,
       "pdp": 6617,
@@ -5436,7 +5436,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bayo",
-      "lgaName": "BAYO",
+      "lgaName": "Bayo",
       "apc": 8837,
       "lp": 26,
       "pdp": 6078,
@@ -5446,7 +5446,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "biu",
-      "lgaName": "BIU",
+      "lgaName": "Biu",
       "apc": 13906,
       "lp": 606,
       "pdp": 17872,
@@ -5456,7 +5456,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "chibok",
-      "lgaName": "CHIBOK",
+      "lgaName": "Chibok",
       "apc": 4191,
       "lp": 337,
       "pdp": 8714,
@@ -5466,7 +5466,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "damboa",
-      "lgaName": "DAMBOA",
+      "lgaName": "Damboa",
       "apc": 10119,
       "lp": 16,
       "pdp": 7489,
@@ -5476,7 +5476,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dikwa",
-      "lgaName": "DIKWA",
+      "lgaName": "Dikwa",
       "apc": 11030,
       "lp": 8,
       "pdp": 2773,
@@ -5486,7 +5486,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gubio",
-      "lgaName": "GUBIO",
+      "lgaName": "Gubio",
       "apc": 3519,
       "lp": 7,
       "pdp": 2127,
@@ -5496,7 +5496,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "guzamala",
-      "lgaName": "GUZAMALA",
+      "lgaName": "Guzamala",
       "apc": 2668,
       "lp": 0,
       "pdp": 969,
@@ -5506,7 +5506,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gwoza",
-      "lgaName": "GWOZA",
+      "lgaName": "Gwoza",
       "apc": 9732,
       "lp": 396,
       "pdp": 9674,
@@ -5516,7 +5516,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "hawul",
-      "lgaName": "HAWUL",
+      "lgaName": "Hawul",
       "apc": 9677,
       "lp": 781,
       "pdp": 16526,
@@ -5526,7 +5526,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jere",
-      "lgaName": "JERE",
+      "lgaName": "Jere",
       "apc": 21984,
       "lp": 991,
       "pdp": 19060,
@@ -5536,7 +5536,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kaga",
-      "lgaName": "KAGA",
+      "lgaName": "Kaga",
       "apc": 5361,
       "lp": 1,
       "pdp": 2608,
@@ -5546,7 +5546,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kala-balge",
-      "lgaName": "KALA BALGE",
+      "lgaName": "Kala/Balge",
       "apc": 3320,
       "lp": 4,
       "pdp": 912,
@@ -5556,7 +5556,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "konduga",
-      "lgaName": "KONDUGA",
+      "lgaName": "Konduga",
       "apc": 10012,
       "lp": 76,
       "pdp": 4119,
@@ -5566,7 +5566,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kukawa",
-      "lgaName": "KUKAWA",
+      "lgaName": "Kukawa",
       "apc": 3983,
       "lp": 1,
       "pdp": 1856,
@@ -5576,7 +5576,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kwaya-kusar",
-      "lgaName": "KWAYA / KUSAR",
+      "lgaName": "Kwaya Kusar",
       "apc": 8420,
       "lp": 123,
       "pdp": 7254,
@@ -5586,7 +5586,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mafa",
-      "lgaName": "MAFA",
+      "lgaName": "Mafa",
       "apc": 14821,
       "lp": 6,
       "pdp": 1077,
@@ -5596,7 +5596,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "magumeri",
-      "lgaName": "MAGUMERI",
+      "lgaName": "Magumeri",
       "apc": 5424,
       "lp": 1,
       "pdp": 3399,
@@ -5605,8 +5605,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "maiduguri-m-c",
-      "lgaName": "MAIDUGURI M. C.",
+      "lgaId": "maiduguri",
+      "lgaName": "Maiduguri",
       "apc": 42306,
       "lp": 2840,
       "pdp": 36948,
@@ -5616,7 +5616,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "marte",
-      "lgaName": "MARTE",
+      "lgaName": "Marte",
       "apc": 5455,
       "lp": 1,
       "pdp": 1653,
@@ -5626,7 +5626,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mobbar",
-      "lgaName": "MOBBAR",
+      "lgaName": "Mobbar",
       "apc": 3429,
       "lp": 0,
       "pdp": 1649,
@@ -5636,7 +5636,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "monguno",
-      "lgaName": "MONGUNO",
+      "lgaName": "Monguno",
       "apc": 7212,
       "lp": 8,
       "pdp": 2801,
@@ -5646,7 +5646,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ngala",
-      "lgaName": "NGALA",
+      "lgaName": "Ngala",
       "apc": 8165,
       "lp": 4,
       "pdp": 1950,
@@ -5656,7 +5656,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nganzai",
-      "lgaName": "NGANZAI",
+      "lgaName": "Nganzai",
       "apc": 3468,
       "lp": 1,
       "pdp": 1513,
@@ -5666,7 +5666,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "shani",
-      "lgaName": "SHANI",
+      "lgaName": "Shani",
       "apc": 12409,
       "lp": 264,
       "pdp": 9053,
@@ -5678,7 +5678,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "taraba": [
     {
       "lgaId": "ardo-kola",
-      "lgaName": "ARDO - KOLA",
+      "lgaName": "Ardo-Kola",
       "apc": 6227,
       "lp": 6045,
       "pdp": 13172,
@@ -5688,7 +5688,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bali",
-      "lgaName": "BALI",
+      "lgaName": "Bali",
       "apc": 6872,
       "lp": 5667,
       "pdp": 15081,
@@ -5698,7 +5698,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "donga",
-      "lgaName": "DONGA",
+      "lgaName": "Donga",
       "apc": 10953,
       "lp": 13611,
       "pdp": 5582,
@@ -5708,7 +5708,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gashaka",
-      "lgaName": "GASHAKA",
+      "lgaName": "Gashaka",
       "apc": 4239,
       "lp": 2453,
       "pdp": 5272,
@@ -5718,7 +5718,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gassol",
-      "lgaName": "GASSOL",
+      "lgaName": "Gassol",
       "apc": 13892,
       "lp": 5288,
       "pdp": 25993,
@@ -5728,7 +5728,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ibi",
-      "lgaName": "IBI",
+      "lgaName": "Ibi",
       "apc": 11876,
       "lp": 6507,
       "pdp": 5089,
@@ -5738,7 +5738,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jalingo",
-      "lgaName": "JALINGO",
+      "lgaName": "Jalingo",
       "apc": 20169,
       "lp": 19902,
       "pdp": 22301,
@@ -5748,7 +5748,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "karim-lamido",
-      "lgaName": "KARIM-LAMIDO",
+      "lgaName": "Karim Lamido",
       "apc": 9158,
       "lp": 5705,
       "pdp": 21669,
@@ -5757,8 +5757,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "kurmi",
-      "lgaName": "KURMI",
+      "lgaId": "kumi",
+      "lgaName": "Kumi",
       "apc": 3226,
       "lp": 5334,
       "pdp": 6591,
@@ -5768,7 +5768,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "lau",
-      "lgaName": "LAU",
+      "lgaName": "Lau",
       "apc": 4928,
       "lp": 6120,
       "pdp": 13080,
@@ -5778,7 +5778,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sardauna",
-      "lgaName": "SARDAUNA",
+      "lgaName": "Sardauna",
       "apc": 17292,
       "lp": 5308,
       "pdp": 15192,
@@ -5788,7 +5788,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "takum",
-      "lgaName": "TAKUM",
+      "lgaName": "Takum",
       "apc": 5944,
       "lp": 13406,
       "pdp": 4890,
@@ -5798,7 +5798,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ussa",
-      "lgaName": "USSA",
+      "lgaName": "Ussa",
       "apc": 6724,
       "lp": 18172,
       "pdp": 4303,
@@ -5808,7 +5808,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "wukari",
-      "lgaName": "WUKARI",
+      "lgaName": "Wukari",
       "apc": 6739,
       "lp": 23076,
       "pdp": 6091,
@@ -5818,7 +5818,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yorro",
-      "lgaName": "YORRO",
+      "lgaName": "Yorro",
       "apc": 3401,
       "lp": 5027,
       "pdp": 9775,
@@ -5828,7 +5828,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "zing",
-      "lgaName": "ZING",
+      "lgaName": "Zing",
       "apc": 3525,
       "lp": 4694,
       "pdp": 14936,
@@ -5840,7 +5840,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "adamawa": [
     {
       "lgaId": "demsa",
-      "lgaName": "DEMSA",
+      "lgaName": "Demsa",
       "apc": 5746,
       "lp": 7962,
       "pdp": 17166,
@@ -5850,7 +5850,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "fufore",
-      "lgaName": "FUFORE",
+      "lgaName": "Fufore",
       "apc": 12633,
       "lp": 897,
       "pdp": 26059,
@@ -5860,7 +5860,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ganye",
-      "lgaName": "GANYE",
+      "lgaName": "Ganye",
       "apc": 10112,
       "lp": 1069,
       "pdp": 21672,
@@ -5870,7 +5870,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "girei",
-      "lgaName": "GIREI",
+      "lgaName": "Girei",
       "apc": 8531,
       "lp": 3749,
       "pdp": 17557,
@@ -5880,7 +5880,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gombi",
-      "lgaName": "GOMBI",
+      "lgaName": "Gombi",
       "apc": 8341,
       "lp": 2628,
       "pdp": 21744,
@@ -5890,7 +5890,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "guyuk",
-      "lgaName": "GUYUK",
+      "lgaName": "Guyuk",
       "apc": 5904,
       "lp": 8165,
       "pdp": 13942,
@@ -5900,7 +5900,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "hong",
-      "lgaName": "HONG",
+      "lgaName": "Hong",
       "apc": 11489,
       "lp": 9532,
       "pdp": 24569,
@@ -5910,7 +5910,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jada",
-      "lgaName": "JADA",
+      "lgaName": "Jada",
       "apc": 8479,
       "lp": 984,
       "pdp": 28561,
@@ -5920,7 +5920,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "lamurde",
-      "lgaName": "LAMURDE",
+      "lgaName": "Lamurde",
       "apc": 3645,
       "lp": 9744,
       "pdp": 9912,
@@ -5930,7 +5930,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "madagali",
-      "lgaName": "MADAGALI",
+      "lgaName": "Madagali",
       "apc": 4935,
       "lp": 4034,
       "pdp": 18077,
@@ -5940,7 +5940,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "maiha",
-      "lgaName": "MAIHA",
+      "lgaName": "Maiha",
       "apc": 7335,
       "lp": 440,
       "pdp": 14088,
@@ -5950,7 +5950,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mayo-belwa",
-      "lgaName": "MAYO - BELWA",
+      "lgaName": "Mayo-Belwa",
       "apc": 13271,
       "lp": 1392,
       "pdp": 23479,
@@ -5960,7 +5960,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "michika",
-      "lgaName": "MICHIKA",
+      "lgaName": "Michika",
       "apc": 7062,
       "lp": 6047,
       "pdp": 28328,
@@ -5970,7 +5970,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mubi-north",
-      "lgaName": "MUBI NORTH",
+      "lgaName": "Mubi North",
       "apc": 10078,
       "lp": 12261,
       "pdp": 21528,
@@ -5980,7 +5980,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "mubi-south",
-      "lgaName": "MUBI SOUTH",
+      "lgaName": "Mubi South",
       "apc": 9399,
       "lp": 2936,
       "pdp": 15463,
@@ -5990,7 +5990,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "numan",
-      "lgaName": "NUMAN",
+      "lgaName": "Numan",
       "apc": 5115,
       "lp": 10229,
       "pdp": 8984,
@@ -6000,7 +6000,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "shelleng",
-      "lgaName": "SHELLENG",
+      "lgaName": "Shelleng",
       "apc": 6213,
       "lp": 1028,
       "pdp": 14765,
@@ -6010,7 +6010,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "song",
-      "lgaName": "SONG",
+      "lgaName": "Song",
       "apc": 10993,
       "lp": 8506,
       "pdp": 20406,
@@ -6020,7 +6020,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "toungo",
-      "lgaName": "TOUNGO",
+      "lgaName": "Toungo",
       "apc": 4163,
       "lp": 651,
       "pdp": 7401,
@@ -6030,7 +6030,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yola-north",
-      "lgaName": "YOLA NORTH",
+      "lgaName": "Yola North",
       "apc": 15885,
       "lp": 9925,
       "pdp": 32136,
@@ -6040,7 +6040,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yola-south",
-      "lgaName": "YOLA SOUTH",
+      "lgaName": "Yola South",
       "apc": 13552,
       "lp": 3469,
       "pdp": 31774,
@@ -6052,7 +6052,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "edo": [
     {
       "lgaId": "akoko-edo",
-      "lgaName": "AKOKO EDO",
+      "lgaName": "Akoko-Edo",
       "apc": 15183,
       "lp": 14002,
       "pdp": 8660,
@@ -6062,7 +6062,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "egor",
-      "lgaName": "EGOR",
+      "lgaName": "Egor",
       "apc": 3978,
       "lp": 40160,
       "pdp": 1766,
@@ -6072,7 +6072,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "esan-central",
-      "lgaName": "ESAN CENTRAL",
+      "lgaName": "Esan Central",
       "apc": 4458,
       "lp": 10192,
       "pdp": 3692,
@@ -6082,7 +6082,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "esan-north-east",
-      "lgaName": "ESAN NORTH EAST",
+      "lgaName": "Esan North-East",
       "apc": 2589,
       "lp": 18973,
       "pdp": 2091,
@@ -6092,7 +6092,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "esan-south-east",
-      "lgaName": "ESAN SOUTH EAST",
+      "lgaName": "Esan South-East",
       "apc": 4675,
       "lp": 10511,
       "pdp": 3961,
@@ -6102,7 +6102,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "esan-west",
-      "lgaName": "ESAN WEST",
+      "lgaName": "Esan West",
       "apc": 3417,
       "lp": 18793,
       "pdp": 2630,
@@ -6112,7 +6112,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "etsako-central",
-      "lgaName": "ETSAKO CENTRAL",
+      "lgaName": "Etsako Central",
       "apc": 10008,
       "lp": 3707,
       "pdp": 4691,
@@ -6122,7 +6122,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "etsako-east",
-      "lgaName": "ETSAKO EAST",
+      "lgaName": "Etsako East",
       "apc": 14799,
       "lp": 5506,
       "pdp": 6978,
@@ -6132,7 +6132,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "etsako-west",
-      "lgaName": "ETSAKO  WEST",
+      "lgaName": "Etsako West",
       "apc": 25581,
       "lp": 11148,
       "pdp": 9143,
@@ -6142,7 +6142,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "igueben",
-      "lgaName": "IGUEBEN",
+      "lgaName": "Igueben",
       "apc": 2419,
       "lp": 6449,
       "pdp": 3530,
@@ -6152,7 +6152,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikpoba-okha",
-      "lgaName": "IKPOBA/OKHA",
+      "lgaName": "Ikpoba-Okha",
       "apc": 4367,
       "lp": 63639,
       "pdp": 5931,
@@ -6162,7 +6162,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oredo",
-      "lgaName": "OREDO",
+      "lgaName": "Oredo",
       "apc": 6701,
       "lp": 60295,
       "pdp": 4202,
@@ -6172,7 +6172,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "orhionmwon",
-      "lgaName": "ORHIONMWON",
+      "lgaName": "Orhionmwon",
       "apc": 6527,
       "lp": 9049,
       "pdp": 4668,
@@ -6182,7 +6182,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ovia-north-east",
-      "lgaName": "OVIA NORTH EAST",
+      "lgaName": "Ovia North-East",
       "apc": 5877,
       "lp": 24484,
       "pdp": 3919,
@@ -6192,7 +6192,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ovia-south-west",
-      "lgaName": "OVIA SOUTH WEST",
+      "lgaName": "Ovia South-West",
       "apc": 7692,
       "lp": 8402,
       "pdp": 4722,
@@ -6202,7 +6202,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "owan-east",
-      "lgaName": "OWAN EAST",
+      "lgaName": "Owan East",
       "apc": 13634,
       "lp": 6786,
       "pdp": 9999,
@@ -6212,7 +6212,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "owan-west",
-      "lgaName": "OWAN WEST",
+      "lgaName": "Owan West",
       "apc": 9322,
       "lp": 6112,
       "pdp": 6026,
@@ -6221,8 +6221,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "uhunmwode",
-      "lgaName": "UHUNMWODE",
+      "lgaId": "uhunmwonde",
+      "lgaName": "Uhunmwonde",
       "apc": 3244,
       "lp": 12955,
       "pdp": 2976,
@@ -6234,7 +6234,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "jigawa": [
     {
       "lgaId": "auyo",
-      "lgaName": "AUYO",
+      "lgaName": "Auyo",
       "apc": 18201,
       "lp": 26,
       "pdp": 13210,
@@ -6244,7 +6244,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "babura",
-      "lgaName": "BABURA",
+      "lgaName": "Babura",
       "apc": 17817,
       "lp": 71,
       "pdp": 14069,
@@ -6254,7 +6254,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "birnin-kudu",
-      "lgaName": "BIRNIN KUDU",
+      "lgaName": "Birnin Kudu",
       "apc": 22592,
       "lp": 98,
       "pdp": 34792,
@@ -6263,8 +6263,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "birniwa",
-      "lgaName": "BIRNIWA",
+      "lgaId": "biriniwa",
+      "lgaName": "Biriniwa",
       "apc": 15150,
       "lp": 29,
       "pdp": 12977,
@@ -6274,7 +6274,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "buji",
-      "lgaName": "BUJI",
+      "lgaName": "Buji",
       "apc": 11867,
       "lp": 9,
       "pdp": 10868,
@@ -6284,7 +6284,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dutse",
-      "lgaName": "DUTSE",
+      "lgaName": "Dutse",
       "apc": 16739,
       "lp": 553,
       "pdp": 29951,
@@ -6294,7 +6294,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "garki",
-      "lgaName": "GARKI",
+      "lgaName": "Garki",
       "apc": 18332,
       "lp": 39,
       "pdp": 9614,
@@ -6304,7 +6304,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gagarawa",
-      "lgaName": "GAGARAWA",
+      "lgaName": "Gagarawa",
       "apc": 8091,
       "lp": 29,
       "pdp": 8870,
@@ -6314,7 +6314,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gumel",
-      "lgaName": "GUMEL",
+      "lgaName": "Gumel",
       "apc": 6696,
       "lp": 78,
       "pdp": 9816,
@@ -6324,7 +6324,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "guri",
-      "lgaName": "GURI",
+      "lgaName": "Guri",
       "apc": 13594,
       "lp": 25,
       "pdp": 6402,
@@ -6334,7 +6334,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gwaram",
-      "lgaName": "GWARAM",
+      "lgaName": "Gwaram",
       "apc": 19026,
       "lp": 127,
       "pdp": 32907,
@@ -6344,7 +6344,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gwiwa",
-      "lgaName": "GWIWA",
+      "lgaName": "Gwiwa",
       "apc": 16309,
       "lp": 2,
       "pdp": 7643,
@@ -6354,7 +6354,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "hadejia",
-      "lgaName": "HADEJIA",
+      "lgaName": "Hadejia",
       "apc": 12328,
       "lp": 126,
       "pdp": 10035,
@@ -6364,7 +6364,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jahun",
-      "lgaName": "JAHUN",
+      "lgaName": "Jahun",
       "apc": 24338,
       "lp": 32,
       "pdp": 21683,
@@ -6374,7 +6374,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kafin-hausa",
-      "lgaName": "KAFIN HAUSA",
+      "lgaName": "Kafin Hausa",
       "apc": 22108,
       "lp": 32,
       "pdp": 20088,
@@ -6384,7 +6384,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kaugama",
-      "lgaName": "KAUGAMA",
+      "lgaName": "Kaugama",
       "apc": 17506,
       "lp": 81,
       "pdp": 14514,
@@ -6394,7 +6394,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kazaure",
-      "lgaName": "KAZAURE",
+      "lgaName": "Kazaure",
       "apc": 9430,
       "lp": 119,
       "pdp": 9827,
@@ -6403,8 +6403,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "kirika-samma",
-      "lgaName": "KIRIKA SAMMA",
+      "lgaId": "kiri-kasama",
+      "lgaName": "Kiri Kasama",
       "apc": 15455,
       "lp": 17,
       "pdp": 12691,
@@ -6414,7 +6414,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kiyawa",
-      "lgaName": "KIYAWA",
+      "lgaName": "Kiyawa",
       "apc": 18701,
       "lp": 35,
       "pdp": 17435,
@@ -6424,7 +6424,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "maigatari",
-      "lgaName": "MAIGATARI",
+      "lgaName": "Maigatari",
       "apc": 14640,
       "lp": 34,
       "pdp": 13973,
@@ -6434,7 +6434,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "malam-madori",
-      "lgaName": "MALAM MADORI",
+      "lgaName": "Malam Madori",
       "apc": 14586,
       "lp": 49,
       "pdp": 13684,
@@ -6444,7 +6444,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "miga",
-      "lgaName": "MIGA",
+      "lgaName": "Miga",
       "apc": 15293,
       "lp": 19,
       "pdp": 12038,
@@ -6454,7 +6454,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ringim",
-      "lgaName": "RINGIM",
+      "lgaName": "Ringim",
       "apc": 18624,
       "lp": 57,
       "pdp": 11213,
@@ -6464,7 +6464,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "roni",
-      "lgaName": "RONI",
+      "lgaName": "Roni",
       "apc": 13073,
       "lp": 36,
       "pdp": 8001,
@@ -6474,7 +6474,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sule-tankarkar",
-      "lgaName": "SULE-TANKARKAR",
+      "lgaName": "Sule-Tankarkar",
       "apc": 14971,
       "lp": 24,
       "pdp": 12919,
@@ -6484,7 +6484,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "taura",
-      "lgaName": "TAURA",
+      "lgaName": "Taura",
       "apc": 18003,
       "lp": 134,
       "pdp": 11339,
@@ -6494,7 +6494,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yankwashi",
-      "lgaName": "YANKWASHI",
+      "lgaName": "Yankwashi",
       "apc": 7920,
       "lp": 8,
       "pdp": 6028,
@@ -6506,7 +6506,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "yobe": [
     {
       "lgaId": "bade",
-      "lgaName": "BADE",
+      "lgaName": "Bade",
       "apc": 8081,
       "lp": 215,
       "pdp": 15789,
@@ -6516,7 +6516,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bursari",
-      "lgaName": "BURSARI",
+      "lgaName": "Bursari",
       "apc": 6737,
       "lp": 19,
       "pdp": 7217,
@@ -6526,7 +6526,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "damaturu",
-      "lgaName": "DAMATURU",
+      "lgaName": "Damaturu",
       "apc": 7306,
       "lp": 769,
       "pdp": 16649,
@@ -6536,7 +6536,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "fika",
-      "lgaName": "FIKA",
+      "lgaName": "Fika",
       "apc": 12419,
       "lp": 227,
       "pdp": 19975,
@@ -6546,7 +6546,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "fune",
-      "lgaName": "FUNE",
+      "lgaName": "Fune",
       "apc": 12696,
       "lp": 49,
       "pdp": 18308,
@@ -6556,7 +6556,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "geidam",
-      "lgaName": "GEIDAM",
+      "lgaName": "Geidam",
       "apc": 5918,
       "lp": 7,
       "pdp": 7223,
@@ -6566,7 +6566,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gujba",
-      "lgaName": "GUJBA",
+      "lgaName": "Gujba",
       "apc": 6643,
       "lp": 25,
       "pdp": 8204,
@@ -6576,7 +6576,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gulani",
-      "lgaName": "GULANI",
+      "lgaName": "Gulani",
       "apc": 7995,
       "lp": 6,
       "pdp": 8646,
@@ -6586,7 +6586,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jakusko",
-      "lgaName": "JAKUSKO",
+      "lgaName": "Jakusko",
       "apc": 10554,
       "lp": 48,
       "pdp": 11836,
@@ -6595,8 +6595,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "karasawa",
-      "lgaName": "KARASAWA",
+      "lgaId": "karasuwa",
+      "lgaName": "Karasuwa",
       "apc": 9042,
       "lp": 33,
       "pdp": 6048,
@@ -6606,7 +6606,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "machina",
-      "lgaName": "MACHINA",
+      "lgaName": "Machina",
       "apc": 8067,
       "lp": 31,
       "pdp": 3501,
@@ -6616,7 +6616,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nangere",
-      "lgaName": "NANGERE",
+      "lgaName": "Nangere",
       "apc": 8060,
       "lp": 147,
       "pdp": 15813,
@@ -6626,7 +6626,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nguru",
-      "lgaName": "NGURU",
+      "lgaName": "Nguru",
       "apc": 9588,
       "lp": 313,
       "pdp": 12001,
@@ -6636,7 +6636,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "potiskum",
-      "lgaName": "POTISKUM",
+      "lgaName": "Potiskum",
       "apc": 13521,
       "lp": 473,
       "pdp": 34787,
@@ -6645,8 +6645,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "tarmuwa",
-      "lgaName": "TARMUWA",
+      "lgaId": "tarmua",
+      "lgaName": "Tarmua",
       "apc": 4416,
       "lp": 20,
       "pdp": 4178,
@@ -6656,7 +6656,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yunusari",
-      "lgaName": "YUNUSARI",
+      "lgaName": "Yunusari",
       "apc": 9638,
       "lp": 11,
       "pdp": 3692,
@@ -6666,7 +6666,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yusufari",
-      "lgaName": "YUSUFARI",
+      "lgaName": "Yusufari",
       "apc": 10778,
       "lp": 13,
       "pdp": 4700,
@@ -6678,7 +6678,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "bauchi": [
     {
       "lgaId": "alkaleri",
-      "lgaName": "ALKALERI",
+      "lgaName": "Alkaleri",
       "apc": 12238,
       "lp": 147,
       "pdp": 25098,
@@ -6688,7 +6688,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bauchi",
-      "lgaName": "BAUCHI",
+      "lgaName": "Bauchi",
       "apc": 44924,
       "lp": 7041,
       "pdp": 70874,
@@ -6698,7 +6698,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bogoro",
-      "lgaName": "BOGORO",
+      "lgaName": "Bogoro",
       "apc": 4850,
       "lp": 6866,
       "pdp": 15156,
@@ -6707,8 +6707,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "PDP"
     },
     {
-      "lgaId": "dambam",
-      "lgaName": "DAMBAM",
+      "lgaId": "damban",
+      "lgaName": "Damban",
       "apc": 7588,
       "lp": 42,
       "pdp": 12203,
@@ -6718,7 +6718,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "darazo",
-      "lgaName": "DARAZO",
+      "lgaName": "Darazo",
       "apc": 16070,
       "lp": 41,
       "pdp": 17459,
@@ -6728,7 +6728,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dass",
-      "lgaName": "DASS",
+      "lgaName": "Dass",
       "apc": 10939,
       "lp": 705,
       "pdp": 13242,
@@ -6738,7 +6738,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gamawa",
-      "lgaName": "GAMAWA",
+      "lgaName": "Gamawa",
       "apc": 13955,
       "lp": 53,
       "pdp": 15469,
@@ -6748,7 +6748,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ganjuwa",
-      "lgaName": "GANJUWA",
+      "lgaName": "Ganjuwa",
       "apc": 13021,
       "lp": 222,
       "pdp": 17380,
@@ -6758,7 +6758,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "giade",
-      "lgaName": "GIADE",
+      "lgaName": "Giade",
       "apc": 10382,
       "lp": 17,
       "pdp": 11977,
@@ -6768,7 +6768,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "itas-gadau",
-      "lgaName": "ITAS/GADAU",
+      "lgaName": "Itas/Gadau",
       "apc": 11978,
       "lp": 36,
       "pdp": 11757,
@@ -6778,7 +6778,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "jama-are",
-      "lgaName": "JAMA'ARE",
+      "lgaName": "Jama'are",
       "apc": 8140,
       "lp": 22,
       "pdp": 12535,
@@ -6788,7 +6788,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "katagum",
-      "lgaName": "KATAGUM",
+      "lgaName": "Katagum",
       "apc": 20030,
       "lp": 493,
       "pdp": 22987,
@@ -6798,7 +6798,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kirfi",
-      "lgaName": "KIRFI",
+      "lgaName": "Kirfi",
       "apc": 9599,
       "lp": 33,
       "pdp": 13431,
@@ -6808,7 +6808,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "misau",
-      "lgaName": "MISAU",
+      "lgaName": "Misau",
       "apc": 14199,
       "lp": 48,
       "pdp": 18354,
@@ -6818,7 +6818,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ningi",
-      "lgaName": "NINGI",
+      "lgaName": "Ningi",
       "apc": 20587,
       "lp": 56,
       "pdp": 21619,
@@ -6828,7 +6828,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "shira",
-      "lgaName": "SHIRA",
+      "lgaName": "Shira",
       "apc": 14369,
       "lp": 54,
       "pdp": 20683,
@@ -6838,7 +6838,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tafawa-balewa",
-      "lgaName": "TAFAWA BALEWA",
+      "lgaName": "Tafawa Balewa",
       "apc": 17897,
       "lp": 8776,
       "pdp": 30585,
@@ -6848,7 +6848,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "toro",
-      "lgaName": "TORO",
+      "lgaName": "Toro",
       "apc": 40150,
       "lp": 2517,
       "pdp": 37169,
@@ -6858,7 +6858,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "warji",
-      "lgaName": "WARJI",
+      "lgaName": "Warji",
       "apc": 11862,
       "lp": 185,
       "pdp": 17732,
@@ -6868,7 +6868,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "zaki",
-      "lgaName": "ZAKI",
+      "lgaName": "Zaki",
       "apc": 13916,
       "lp": 19,
       "pdp": 20897,
@@ -6880,7 +6880,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "ogun": [
     {
       "lgaId": "abeokuta-north",
-      "lgaName": "ABEOKUTA NORTH",
+      "lgaName": "Abeokuta North",
       "apc": 20094,
       "lp": 4092,
       "pdp": 5057,
@@ -6890,7 +6890,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "abeokuta-south",
-      "lgaName": "ABEOKUTA SOUTH",
+      "lgaName": "Abeokuta South",
       "apc": 28111,
       "lp": 8930,
       "pdp": 7787,
@@ -6900,7 +6900,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ado-odo-ota",
-      "lgaName": "ADO ODO-OTA",
+      "lgaName": "Ado-Odo/Ota",
       "apc": 46558,
       "lp": 17888,
       "pdp": 10838,
@@ -6909,8 +6909,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "egbado-north",
-      "lgaName": "EGBADO NORTH",
+      "lgaId": "yewa-north",
+      "lgaName": "Yewa North",
       "apc": 19053,
       "lp": 1535,
       "pdp": 9830,
@@ -6919,8 +6919,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "egbado-south",
-      "lgaName": "EGBADO SOUTH",
+      "lgaId": "yewa-south",
+      "lgaName": "Yewa South",
       "apc": 18471,
       "lp": 3126,
       "pdp": 5012,
@@ -6930,7 +6930,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ewekoro",
-      "lgaName": "EWEKORO",
+      "lgaName": "Ewekoro",
       "apc": 9778,
       "lp": 2287,
       "pdp": 3646,
@@ -6940,7 +6940,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ifo",
-      "lgaName": "IFO",
+      "lgaName": "Ifo",
       "apc": 26507,
       "lp": 9751,
       "pdp": 5760,
@@ -6950,7 +6950,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ijebu-east",
-      "lgaName": "IJEBU EAST",
+      "lgaName": "Ijebu East",
       "apc": 10970,
       "lp": 2163,
       "pdp": 4495,
@@ -6960,7 +6960,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ijebu-north",
-      "lgaName": "IJEBU NORTH",
+      "lgaName": "Ijebu North",
       "apc": 21844,
       "lp": 2372,
       "pdp": 7233,
@@ -6970,7 +6970,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ijebu-north-east",
-      "lgaName": "IJEBU NORTH EAST",
+      "lgaName": "Ijebu North East",
       "apc": 7430,
       "lp": 1779,
       "pdp": 2859,
@@ -6980,7 +6980,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ijebu-ode",
-      "lgaName": "IJEBU ODE",
+      "lgaName": "Ijebu Ode",
       "apc": 16072,
       "lp": 3162,
       "pdp": 4057,
@@ -6990,7 +6990,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikenne",
-      "lgaName": "IKENNE",
+      "lgaName": "Ikenne",
       "apc": 9431,
       "lp": 2698,
       "pdp": 6616,
@@ -7000,7 +7000,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "imeko-afon",
-      "lgaName": "IMEKO/AFON",
+      "lgaName": "Imeko Afon",
       "apc": 12146,
       "lp": 568,
       "pdp": 4560,
@@ -7010,7 +7010,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ipokia",
-      "lgaName": "IPOKIA",
+      "lgaName": "Ipokia",
       "apc": 16929,
       "lp": 1860,
       "pdp": 16082,
@@ -7020,7 +7020,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "obafemi-owode",
-      "lgaName": "OBAFEMI/OWODE",
+      "lgaName": "Obafemi Owode",
       "apc": 17387,
       "lp": 9964,
       "pdp": 3115,
@@ -7030,7 +7030,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "odeda",
-      "lgaName": "ODEDA",
+      "lgaName": "Odeda",
       "apc": 12945,
       "lp": 3064,
       "pdp": 3855,
@@ -7040,7 +7040,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "odogbolu",
-      "lgaName": "ODOGBOLU",
+      "lgaName": "Odogbolu",
       "apc": 12374,
       "lp": 2688,
       "pdp": 6176,
@@ -7049,8 +7049,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "ogun-water-side",
-      "lgaName": "OGUN WATER SIDE",
+      "lgaId": "ogun-waterside",
+      "lgaName": "Ogun Waterside",
       "apc": 8522,
       "lp": 481,
       "pdp": 5090,
@@ -7060,7 +7060,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "remo-north",
-      "lgaName": "REMO NORTH",
+      "lgaName": "Remo North",
       "apc": 5814,
       "lp": 984,
       "pdp": 3627,
@@ -7069,8 +7069,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "APC"
     },
     {
-      "lgaId": "sagamu",
-      "lgaName": "SAGAMU",
+      "lgaId": "shagamu",
+      "lgaName": "Shagamu",
       "apc": 21118,
       "lp": 6437,
       "pdp": 8136,
@@ -7082,7 +7082,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "rivers": [
     {
       "lgaId": "abua-odual",
-      "lgaName": "ABUA-ODUAL",
+      "lgaName": "Abua/Odual",
       "apc": 5653,
       "lp": 1663,
       "pdp": 4685,
@@ -7092,7 +7092,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ahoada-east",
-      "lgaName": "AHOADA EAST",
+      "lgaName": "Ahoada East",
       "apc": 8066,
       "lp": 5379,
       "pdp": 2358,
@@ -7102,7 +7102,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ahoada-west",
-      "lgaName": "AHOADA WEST",
+      "lgaName": "Ahoada West",
       "apc": 3443,
       "lp": 4634,
       "pdp": 2582,
@@ -7112,7 +7112,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "akuku-toru",
-      "lgaName": "AKUKU TORU",
+      "lgaName": "Akuku-Toru",
       "apc": 3182,
       "lp": 1700,
       "pdp": 3131,
@@ -7122,7 +7122,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "andoni",
-      "lgaName": "ANDONI",
+      "lgaName": "Andoni",
       "apc": 3306,
       "lp": 2324,
       "pdp": 4614,
@@ -7132,7 +7132,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "asari-toru",
-      "lgaName": "ASARI-TORU",
+      "lgaName": "Asari-Toru",
       "apc": 14483,
       "lp": 2094,
       "pdp": 4476,
@@ -7142,7 +7142,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bonny",
-      "lgaName": "BONNY",
+      "lgaName": "Bonny",
       "apc": 2708,
       "lp": 10488,
       "pdp": 2406,
@@ -7152,7 +7152,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "degema",
-      "lgaName": "DEGEMA",
+      "lgaName": "Degema",
       "apc": 2375,
       "lp": 2212,
       "pdp": 3108,
@@ -7162,7 +7162,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "eleme",
-      "lgaName": "ELEME",
+      "lgaName": "Eleme",
       "apc": 8368,
       "lp": 7529,
       "pdp": 2391,
@@ -7172,7 +7172,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "emohua",
-      "lgaName": "EMOHUA",
+      "lgaName": "Emohua",
       "apc": 9145,
       "lp": 4239,
       "pdp": 5242,
@@ -7182,7 +7182,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "etche",
-      "lgaName": "ETCHE",
+      "lgaName": "Etche",
       "apc": 8366,
       "lp": 11232,
       "pdp": 5919,
@@ -7192,7 +7192,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gokana",
-      "lgaName": "GOKANA",
+      "lgaName": "Gokana",
       "apc": 10122,
       "lp": 2215,
       "pdp": 8484,
@@ -7202,7 +7202,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ikwerre",
-      "lgaName": "IKWERRE",
+      "lgaName": "Ikwerre",
       "apc": 9609,
       "lp": 8752,
       "pdp": 4869,
@@ -7212,7 +7212,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "khana",
-      "lgaName": "KHANA",
+      "lgaName": "Khana",
       "apc": 7649,
       "lp": 1704,
       "pdp": 5483,
@@ -7222,7 +7222,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "obio-akpor",
-      "lgaName": "OBIO/AKPOR",
+      "lgaName": "Obio/Akpor",
       "apc": 80239,
       "lp": 3829,
       "pdp": 368,
@@ -7232,7 +7232,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ogba-egbema-ndoni",
-      "lgaName": "OGBA/EGBEMA/NDONI",
+      "lgaName": "Ogba/Egbema/Ndoni",
       "apc": 6057,
       "lp": 21883,
       "pdp": 4099,
@@ -7242,7 +7242,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ogu-bolo",
-      "lgaName": "OGU/BOLO",
+      "lgaName": "Ogu/Bolo",
       "apc": 2428,
       "lp": 1209,
       "pdp": 3187,
@@ -7252,7 +7252,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "okrika",
-      "lgaName": "OKRIKA",
+      "lgaName": "Okrika",
       "apc": 2729,
       "lp": 4018,
       "pdp": 8476,
@@ -7262,7 +7262,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "omuma",
-      "lgaName": "OMUMA",
+      "lgaName": "Omuma",
       "apc": 6328,
       "lp": 2154,
       "pdp": 1293,
@@ -7272,7 +7272,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "opobo-nkoro",
-      "lgaName": "OPOBO/NKORO",
+      "lgaName": "Opobo/Nkoro",
       "apc": 5701,
       "lp": 2093,
       "pdp": 1542,
@@ -7282,7 +7282,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "oyigbo",
-      "lgaName": "OYIGBO",
+      "lgaName": "Oyigbo",
       "apc": 16630,
       "lp": 10784,
       "pdp": 1046,
@@ -7292,7 +7292,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "port-harcourt",
-      "lgaName": "PORT HARCOURT",
+      "lgaName": "Port Harcourt",
       "apc": 5562,
       "lp": 62451,
       "pdp": 7203,
@@ -7302,7 +7302,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tai",
-      "lgaName": "TAI",
+      "lgaName": "Tai",
       "apc": 9442,
       "lp": 485,
       "pdp": 1506,
@@ -7314,7 +7314,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "kano": [
     {
       "lgaId": "ajingi",
-      "lgaName": "AJINGI",
+      "lgaName": "Ajingi",
       "apc": 7066,
       "lp": 182,
       "pdp": 1540,
@@ -7324,7 +7324,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "albasu",
-      "lgaName": "ALBASU",
+      "lgaName": "Albasu",
       "apc": 9618,
       "lp": 34,
       "pdp": 2350,
@@ -7334,7 +7334,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bagwai",
-      "lgaName": "BAGWAI",
+      "lgaName": "Bagwai",
       "apc": 14949,
       "lp": 102,
       "pdp": 1935,
@@ -7344,7 +7344,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bebeji",
-      "lgaName": "BEBEJI",
+      "lgaName": "Bebeji",
       "apc": 12616,
       "lp": 239,
       "pdp": 1475,
@@ -7354,7 +7354,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bichi",
-      "lgaName": "BICHI",
+      "lgaName": "Bichi",
       "apc": 31673,
       "lp": 178,
       "pdp": 1371,
@@ -7364,7 +7364,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "bunkure",
-      "lgaName": "BUNKURE",
+      "lgaName": "Bunkure",
       "apc": 11161,
       "lp": 76,
       "pdp": 1528,
@@ -7374,7 +7374,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "dala",
-      "lgaName": "DALA",
+      "lgaName": "Dala",
       "apc": 8262,
       "lp": 234,
       "pdp": 8543,
@@ -7383,8 +7383,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "NNPP"
     },
     {
-      "lgaId": "danbata",
-      "lgaName": "DANBATA",
+      "lgaId": "dambatta",
+      "lgaName": "Dambatta",
       "apc": 13179,
       "lp": 66,
       "pdp": 2099,
@@ -7393,8 +7393,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "NNPP"
     },
     {
-      "lgaId": "dawaki-kudu",
-      "lgaName": "DAWAKI KUDU",
+      "lgaId": "dawakin-kudu",
+      "lgaName": "Dawakin Kudu",
       "apc": 12258,
       "lp": 167,
       "pdp": 3768,
@@ -7403,8 +7403,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "NNPP"
     },
     {
-      "lgaId": "dawaki-tofa",
-      "lgaName": "DAWAKI TOFA",
+      "lgaId": "dawakin-tofa",
+      "lgaName": "Dawakin Tofa",
       "apc": 16773,
       "lp": 202,
       "pdp": 2477,
@@ -7414,7 +7414,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "doguwa",
-      "lgaName": "DOGUWA",
+      "lgaName": "Doguwa",
       "apc": 15424,
       "lp": 642,
       "pdp": 1408,
@@ -7424,7 +7424,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "fagge",
-      "lgaName": "FAGGE",
+      "lgaName": "Fagge",
       "apc": 4060,
       "lp": 14896,
       "pdp": 5416,
@@ -7434,7 +7434,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gabasawa",
-      "lgaName": "GABASAWA",
+      "lgaName": "Gabasawa",
       "apc": 11992,
       "lp": 48,
       "pdp": 2191,
@@ -7444,7 +7444,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "garko",
-      "lgaName": "GARKO",
+      "lgaName": "Garko",
       "apc": 8485,
       "lp": 313,
       "pdp": 2067,
@@ -7453,8 +7453,8 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
       "winner": "NNPP"
     },
     {
-      "lgaId": "garun-malam",
-      "lgaName": "GARUN MALAM",
+      "lgaId": "garun-mallam",
+      "lgaName": "Garun Mallam",
       "apc": 8642,
       "lp": 160,
       "pdp": 4409,
@@ -7464,7 +7464,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gaya",
-      "lgaName": "GAYA",
+      "lgaName": "Gaya",
       "apc": 8708,
       "lp": 158,
       "pdp": 1386,
@@ -7474,7 +7474,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gezawa",
-      "lgaName": "GEZAWA",
+      "lgaName": "Gezawa",
       "apc": 9915,
       "lp": 188,
       "pdp": 2980,
@@ -7484,7 +7484,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gwale",
-      "lgaName": "GWALE",
+      "lgaName": "Gwale",
       "apc": 6950,
       "lp": 270,
       "pdp": 7457,
@@ -7494,7 +7494,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "gwarzo",
-      "lgaName": "GWARZO",
+      "lgaName": "Gwarzo",
       "apc": 20627,
       "lp": 70,
       "pdp": 2125,
@@ -7504,7 +7504,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kabo",
-      "lgaName": "KABO",
+      "lgaName": "Kabo",
       "apc": 18767,
       "lp": 79,
       "pdp": 2463,
@@ -7514,7 +7514,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kano-municipal",
-      "lgaName": "KANO MUNICIPAL",
+      "lgaName": "Kano Municipal",
       "apc": 9948,
       "lp": 267,
       "pdp": 10298,
@@ -7524,7 +7524,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "karaye",
-      "lgaName": "KARAYE",
+      "lgaName": "Karaye",
       "apc": 10874,
       "lp": 134,
       "pdp": 2132,
@@ -7534,7 +7534,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kibiya",
-      "lgaName": "KIBIYA",
+      "lgaName": "Kibiya",
       "apc": 10283,
       "lp": 70,
       "pdp": 753,
@@ -7544,7 +7544,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kiru",
-      "lgaName": "KIRU",
+      "lgaName": "Kiru",
       "apc": 19155,
       "lp": 112,
       "pdp": 2467,
@@ -7554,7 +7554,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kumbotso",
-      "lgaName": "KUMBOTSO",
+      "lgaName": "Kumbotso",
       "apc": 6721,
       "lp": 815,
       "pdp": 5996,
@@ -7564,7 +7564,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kunchi",
-      "lgaName": "KUNCHI",
+      "lgaName": "Kunchi",
       "apc": 10359,
       "lp": 50,
       "pdp": 703,
@@ -7574,7 +7574,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kura",
-      "lgaName": "KURA",
+      "lgaName": "Kura",
       "apc": 10929,
       "lp": 126,
       "pdp": 3987,
@@ -7584,7 +7584,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "madobi",
-      "lgaName": "MADOBI",
+      "lgaName": "Madobi",
       "apc": 12038,
       "lp": 39,
       "pdp": 2393,
@@ -7594,7 +7594,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "makoda",
-      "lgaName": "MAKODA",
+      "lgaName": "Makoda",
       "apc": 12590,
       "lp": 40,
       "pdp": 1099,
@@ -7604,7 +7604,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "minjibir",
-      "lgaName": "MINJIBIR",
+      "lgaName": "Minjibir",
       "apc": 6777,
       "lp": 123,
       "pdp": 1833,
@@ -7614,7 +7614,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nasarawa",
-      "lgaName": "NASARAWA",
+      "lgaName": "Nasarawa",
       "apc": 10218,
       "lp": 3863,
       "pdp": 10599,
@@ -7624,7 +7624,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "rano",
-      "lgaName": "RANO",
+      "lgaName": "Rano",
       "apc": 11268,
       "lp": 115,
       "pdp": 1898,
@@ -7634,7 +7634,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "rimin-gado",
-      "lgaName": "RIMIN GADO",
+      "lgaName": "Rimin Gado",
       "apc": 10861,
       "lp": 76,
       "pdp": 907,
@@ -7644,7 +7644,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "rogo",
-      "lgaName": "ROGO",
+      "lgaName": "Rogo",
       "apc": 10403,
       "lp": 343,
       "pdp": 1616,
@@ -7654,7 +7654,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "shanono",
-      "lgaName": "SHANONO",
+      "lgaName": "Shanono",
       "apc": 11557,
       "lp": 44,
       "pdp": 1703,
@@ -7664,7 +7664,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sumaila",
-      "lgaName": "SUMAILA",
+      "lgaName": "Sumaila",
       "apc": 11341,
       "lp": 1106,
       "pdp": 1553,
@@ -7674,7 +7674,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "takai",
-      "lgaName": "TAKAI",
+      "lgaName": "Takai",
       "apc": 13770,
       "lp": 69,
       "pdp": 3124,
@@ -7684,7 +7684,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tarauni",
-      "lgaName": "TARAUNI",
+      "lgaName": "Tarauni",
       "apc": 6133,
       "lp": 659,
       "pdp": 6067,
@@ -7694,7 +7694,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tofa",
-      "lgaName": "TOFA",
+      "lgaName": "Tofa",
       "apc": 10280,
       "lp": 177,
       "pdp": 1192,
@@ -7704,7 +7704,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tsanyawa",
-      "lgaName": "TSANYAWA",
+      "lgaName": "Tsanyawa",
       "apc": 14052,
       "lp": 89,
       "pdp": 1721,
@@ -7714,7 +7714,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "tudun-wada",
-      "lgaName": "TUDUN WADA",
+      "lgaName": "Tudun Wada",
       "apc": 18017,
       "lp": 1053,
       "pdp": 1965,
@@ -7724,7 +7724,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ungogo",
-      "lgaName": "UNGOGO",
+      "lgaName": "Ungogo",
       "apc": 8011,
       "lp": 334,
       "pdp": 4659,
@@ -7734,7 +7734,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "warawa",
-      "lgaName": "WARAWA",
+      "lgaName": "Warawa",
       "apc": 10352,
       "lp": 125,
       "pdp": 1277,
@@ -7744,7 +7744,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "wudil",
-      "lgaName": "WUDIL",
+      "lgaName": "Wudil",
       "apc": 10279,
       "lp": 380,
       "pdp": 2785,
@@ -7756,7 +7756,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
   "bayelsa": [
     {
       "lgaId": "brass",
-      "lgaName": "BRASS",
+      "lgaName": "Brass",
       "apc": 3684,
       "lp": 2273,
       "pdp": 6209,
@@ -7766,7 +7766,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ekeremor",
-      "lgaName": "EKEREMOR",
+      "lgaName": "Ekeremor",
       "apc": 4398,
       "lp": 4489,
       "pdp": 9113,
@@ -7776,7 +7776,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "kolokuma-opokuma",
-      "lgaName": "KOLOKUMA/OPOKUMA",
+      "lgaName": "Kolokuma/Opokuma",
       "apc": 4137,
       "lp": 3395,
       "pdp": 8972,
@@ -7786,7 +7786,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "nembe",
-      "lgaName": "NEMBE",
+      "lgaName": "Nembe",
       "apc": 3005,
       "lp": 1807,
       "pdp": 2334,
@@ -7796,7 +7796,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "ogbia",
-      "lgaName": "OGBIA",
+      "lgaName": "Ogbia",
       "apc": 8444,
       "lp": 6721,
       "pdp": 6362,
@@ -7806,7 +7806,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "sagbama",
-      "lgaName": "SAGBAMA",
+      "lgaName": "Sagbama",
       "apc": 4603,
       "lp": 4629,
       "pdp": 10240,
@@ -7816,7 +7816,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "southern-ijaw",
-      "lgaName": "SOUTHERN IJAW",
+      "lgaName": "Southern Ijaw",
       "apc": 7650,
       "lp": 4400,
       "pdp": 11280,
@@ -7826,7 +7826,7 @@ export const ELECTION_DATA: Record<string, LGAElectionResult[]> = {
     },
     {
       "lgaId": "yenagoa",
-      "lgaName": "YENAGOA",
+      "lgaName": "Yenagoa",
       "apc": 6651,
       "lp": 22261,
       "pdp": 14308,
