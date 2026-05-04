@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import SearchBar from "./navbar/SearchBar";
 import Logo from "./navbar/Logo";
 import Carousel from "./navbar/Carousel";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { supabase } from "../lib/supabase";
 import profileIcon from "../assets/Profile by Rizky Studio.svg";
 
@@ -20,6 +20,8 @@ function Navbar() {
   /////////////////////////////////////////
   // This code snippet shows how to change something on user sign in or sign out
   const [session, setSession] = useState<any>(null);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleSync = async (currentSession: any) => {
@@ -43,10 +45,7 @@ function Navbar() {
 
     supabase.auth.getSession().then(async ({ data: { session } }) => {
       if (session) {
-        // Double-check with the server to ensure the user still actually exists
-        // (Handles the edge case where a user was manually deleted from the database)
         const { data: { user }, error } = await supabase.auth.getUser();
-        
         if (error || !user) {
           await supabase.auth.signOut();
           handleSync(null);
@@ -58,17 +57,31 @@ function Navbar() {
       }
     });
 
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       handleSync(session);
     });
 
     return () => subscription.unsubscribe();
   }, []);
 
-  // This code snippet shows how to change something on user sign in or sign out
-  /////////////////////////////////////////
+  // Handle clicking outside the dropdown
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setDropdownOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const handleSignOut = async () => {
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      console.error("Error signing out:", error.message);
+    }
+    setDropdownOpen(false);
+  };
 
   return (
     <nav id="navbar">
@@ -86,8 +99,32 @@ function Navbar() {
           <aside className="right-menu">
             <SearchBar />
             {session ? (
-              <div className="profile-icon-wrapper">
-                <img src={profileIcon} alt="Profile" className="profile-icon" />
+              <div className="profile-container" ref={dropdownRef}>
+                <div 
+                  className={`profile-icon-wrapper ${dropdownOpen ? 'active' : ''}`}
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                >
+                  <img src={profileIcon} alt="Profile" className="profile-icon" />
+                </div>
+                
+                {dropdownOpen && (
+                  <div className="profile-dropdown">
+                    <div className="dropdown-header">
+                      <span className="user-email">{session.user.email}</span>
+                    </div>
+                    <div className="dropdown-divider"></div>
+                    <Link to="/profile" className="dropdown-item" onClick={() => setDropdownOpen(false)}>
+                      Profile
+                    </Link>
+                    <Link to="/settings" className="dropdown-item" onClick={() => setDropdownOpen(false)}>
+                      Settings
+                    </Link>
+                    <div className="dropdown-divider"></div>
+                    <button className="dropdown-item sign-out" onClick={handleSignOut}>
+                      Sign Out
+                    </button>
+                  </div>
+                )}
               </div>
             ) : (
               <CustomButton text="Sign Up" href="/signup" />
@@ -100,3 +137,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
